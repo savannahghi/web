@@ -1,0 +1,11 @@
+/* styles/modules/navbar.module.css */
+.nav {
+  top: 0;
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100rem;
+  height: 60px;
+  background-color: #808080;
+}

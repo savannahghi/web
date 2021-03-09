@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Project setup
 
-First, run the development server:
+### Project prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. The **Savannah Global Health Institute** web-app runs on React and Next.js version v10.0.8, and react version v17.0.1, To check the Next.js version installed in your machine run `npx next --version`, or run `npm view react version` to check the react version installed on your machine.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. You’ll need Node.js version 10.13 or later.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. To check the details of the other dependencies in this project, check the `package.json` file in the root of the project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Looks like we are done with the prerequisites :-)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### How to setup and run SGHI-Web
+1. Use `git clone git@gitlab.slade360emr.com:optimalhealth/sil-web/sghi-web.git` to clone this project.
 
-## Learn More
+2. Navigate into the root project directory.
 
-To learn more about Next.js, take a look at the following resources:
+3. Finally, at the root of your project, run `npm run dev` on your terminal to start the development server.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Open your favourite browser at http://localhost:3000 to view your project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## How to setup and run unit, widget and integration tests locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Install the test dependencies; jest, testing-library by running ...

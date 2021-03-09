@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css';
 import NavBar from '../components/navbar';
 import TitleBar from '../components/head';
 
@@ -7,7 +6,7 @@ import TitleBar from '../components/head';
  */
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div className="container">
             <div className="navbar">
                 <TitleBar />
             </div>

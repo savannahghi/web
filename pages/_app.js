@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 /**
  * Next.js uses this component to initialize pages.

@@ -1,0 +1,23 @@
+/* styles/modules/navbar.module.css */
+.nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    width: 100rem;
+    height: 60px;
+    background-color: grey;
+}
+
+.brand {
+}
+
+.container {
+    padding: 0 5rem;
+    /* display: inline; */
+}
+
+.active {
+    color: red !important;
+}

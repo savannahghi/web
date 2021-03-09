@@ -8,7 +8,7 @@ export default function TitleBar() {
                 name="description"
                 content="We are on a mission, Access to quality affordable care remains out of reach for millions of Africans"
             />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/favicons/favicon.ico" />
         </Head>
     );
 }

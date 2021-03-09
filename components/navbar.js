@@ -14,7 +14,6 @@ export default function NavBar() {
             </div>
 
             <div>
-
                 <ul className={NavBarStyles.active}>
                     <li>Home</li>
                 </ul>

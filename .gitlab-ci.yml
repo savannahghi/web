@@ -1,29 +1,64 @@
-image: ubuntu
+image: eu.gcr.io/speedy-lattice-334/chromium-xvfb:0.1.0
+
+cache:
+    paths:
+        - node_modules/
+
+variables:
+    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 1
+    CYPRESS_INSTALL_BINARY: 0
+    CHROMIUM_BIN: /usr/bin/chromium-browser
 
 stages:
-    - setup
     - test
-    - deploy
+    # - publish
 
-setup:
-    stage: setup
-    script: 
-      - echo "Setting up the app"
-      - echo "Set up complete"
+before_script:
+    # - cp _.npm_rc ~/.npmrc
+    - apt-get update
+    - apt-get -qq -y install wget #install wget
+    - wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+    - source $HOME/.bashrc
+    - export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh" --no-use #load nvm
+    - eval "[ -f .nvmrc ] && nvm install || nvm install stable" #install node
+    - nvm install 12.20.1
+    - nvm use 12.20.1
 
-test:
+unit_tests:
     stage: test
-    script: 
-      - echo "Running tests"
-
-deploy_staging:
-    stage: deploy
+    tags:
+        - frontend
+        - docker
     script:
-        - echo "Deploy to staging server"
-    environment:
-        name: staging
-        url: http://bewell-app-testing.web.app/
-    when: manual
-    only:
-        - master
-        - develop
+        - npm install --silent
+        # - npm run bower-install -- --silent
+        - npm run build
+        - npm run test
+        - git fetch origin master
+        - git checkout master
+        - git checkout -B "$CI_BUILD_REF_NAME"
+        # - npm run commitlint
+
+    artifacts:
+        name: '${CI_PROJECT_NAME}_${CI_BUILD_ID}'
+        paths:
+            - build/
+            - coverage/
+            - junitxml_report/
+        expire_in: 1 hour
+# publish:
+#   stage: publish
+#   tags:
+#     - docker
+#     - frontend
+#   script:
+#     - npm install --silent
+#     - npm run bower-install -- --silent
+#     - npm run build
+#     - npm publish
+#   only:
+#     - master
+#   except:
+#     variables:
+#       - $CI_PIPELINE_SOURCE == "schedule"
+#   when: manual

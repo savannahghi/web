@@ -1,0 +1,29 @@
+image: ubuntu
+
+stages:
+    - setup
+    - test
+    - deploy
+
+setup:
+    stage: setup
+    script: 
+      - echo "Setting up the app"
+      - echo "Set up complete"
+
+test:
+    stage: test
+    script: 
+      - echo "Running tests"
+
+deploy_staging:
+    stage: deploy
+    script:
+        - echo "Deploy to staging server"
+    environment:
+        name: staging
+        url: http://bewell-app-testing.web.app/
+    when: manual
+    only:
+        - master
+        - develop

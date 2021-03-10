@@ -1,23 +1,57 @@
+
+// @include mq(650, max){
+//     padding: 2rem 1rem;
+//     .sitter-steps{
+//       flex-wrap: wrap;
+//       .sitter-step{
+//         width: 50%;
+//       }
+//     }
+
+// #1d6d9a
 /* styles/modules/navbar.module.css */
-.nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.sghi_nav {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 90px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    color: #333333;
-    width: 100rem;
-    height: 60px;
-    background-color: grey;
-}
+    padding: 10px 6rem;
 
-.brand {
-}
+    .logo {
+        width: 200px;
+    }
 
-.container {
-    padding: 0 5rem;
-    /* display: inline; */
-}
+    .menu {
+        display: flex;
+        list-style: none;
+        li{
+           padding: 0 1.5rem;
+        }
+    }
 
-.active {
-    color: red !important;
+    .search {
+        .search_box{
+            width: 200px;
+            height: 40px;
+            position: relative;
+            overflow: hidden;
+            input{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                border: none;
+                border-radius: 2rem;
+                padding: 0 2rem;
+                outline: none;
+            }
+            .search_icon{
+                position: absolute;
+                z-index: 200;
+                right: 2rem;
+                top: 10px;
+            }
+        }
+    }
 }

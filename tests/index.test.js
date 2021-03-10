@@ -5,7 +5,7 @@ describe('Home', () => {
     it('renders without crashing', () => {
         render(<Home />);
         expect(
-            screen.getByRole('heading', { name: 'Savannah Global Health Institute' })
+            screen.getByText('Savannah Global Health Institute')
         ).toBeInTheDocument();
     });
 });

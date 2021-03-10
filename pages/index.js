@@ -1,35 +1,38 @@
+import MainStyles from '../styles/modules/main.module.scss';
 import NavBar from '../components/navbar';
-import TitleBar from '../components/head';
+import Hero from '../components/hero';
+import Story from '../components/story';
+import WhyNow from '../components/why_now';
+import Work from '../components/work';
+import OurDna from '../components/dna';
+import Partners from '../components/partners';
+import Footer from '../components/footer';
 
 /**
  * This is the root component of the
  */
 export default function Home() {
     return (
-        <div className="container">
-            <div className="navbar">
-                <TitleBar />
-            </div>
-
+        <div>
             <main>
-                <div className="navbar">
-                    <NavBar />
-                </div>
-                <h1 className="title">Welcome to</h1>
+                <NavBar />
 
-                <p className="description">
-                    <code>Savannah Global Health Institute</code>
-                </p>
+                <Hero />
+
+                <div className={MainStyles.main}>
+                    <Story />
+
+                    <WhyNow />
+
+                    <Work />
+
+                    <OurDna />
+
+                    <Partners />
+                </div>
             </main>
 
-            <footer>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Powered by <code>Savannah Informatics</code>
-                </a>
-            </footer>
+            <Footer />
         </div>
     );
 }

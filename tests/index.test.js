@@ -4,8 +4,6 @@ import Home from '../pages/index';
 describe('Home', () => {
     it('renders without crashing', () => {
         render(<Home />);
-        expect(
-            screen.getByText('Savannah Global Health Institute')
-        ).toBeInTheDocument();
+        expect(screen.getByText('Our Story')).toBeInTheDocument();
     });
 });

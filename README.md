@@ -1,4 +1,3 @@
-
 ## Project setup
 
 ### Project prerequisites
@@ -12,6 +11,7 @@
 Looks like we are done with the prerequisites :-)
 
 ### How to setup and run SGHI-Web
+
 1. Use `git clone git@gitlab.slade360emr.com:optimalhealth/sil-web/sghi-web.git` to clone this project.
 
 2. Navigate into the root project directory.
@@ -20,13 +20,11 @@ Looks like we are done with the prerequisites :-)
 
 4. Finally run `npm run dev` on your terminal to start the development server.
 
-4. Open your favourite browser at http://localhost:3000 to view your project
-
+5. Open your favourite browser at http://localhost:3000 to view your project
 
 ## How to setup and run unit, widget and integration tests locally
 
 1. Ensure all test dependencies are installed from the above process
-
 
 ## Project structure
 
@@ -75,21 +73,21 @@ The message header is a single line that contains short and clear description of
 
 The following are **message header** examples that describe the kind of change that a commit is providing.
 
-- **feat** (feature)
-- **fix** (bug fix)
-- **docs** (documentation)
-- **style** (formatting, missing semi colons, …)
-- **refactor**
-- **test** (when adding missing tests)
-- **chore** (maintain)
+-   **feat** (feature)
+-   **fix** (bug fix)
+-   **docs** (documentation)
+-   **style** (formatting, missing semi colons, …)
+-   **refactor**
+-   **test** (when adding missing tests)
+-   **chore** (maintain)
 
 #### Header subject
 
 This is a very short description of the change.
 
-- use imperative, present tense: “change” not “changed” nor “changes”
-- don't capitalize first letter
-- no dot (.) at the end
+-   use imperative, present tense: “change” not “changed” nor “changes”
+-   don't capitalize first letter
+-   no dot (.) at the end
 
 #### Example of a good commit header
 
@@ -101,10 +99,10 @@ docs: healthcloud commit message convention
 
 Separated with the **Message Header** by a line break, the message body contains paragraphs of changes. Follow below conventions.
 
-- use imperative, present tense: “change” not “changed” nor “changes”
-- includes motivation for the change and contrasts with previous behavior
-- don't capitalize first letter
-- no dot (.) at the end
+-   use imperative, present tense: “change” not “changed” nor “changes”
+-   includes motivation for the change and contrasts with previous behavior
+-   don't capitalize first letter
+-   no dot (.) at the end
 
 ### Message footer
 

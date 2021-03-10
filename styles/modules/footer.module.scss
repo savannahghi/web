@@ -1,0 +1,20 @@
+.footer {
+    padding-top: 1rem;
+    background-color: purple;
+
+    .footer_title {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .footer_links {
+        list-style: none;
+        color: white;
+
+        .footer_item {
+            font-weight: 600;
+        }
+    }
+}

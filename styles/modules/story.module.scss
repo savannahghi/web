@@ -1,0 +1,43 @@
+.story {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0px;
+
+    .name {
+        font-weight: bold;
+    }
+
+    .story_title {
+        font-size: 40px;
+        color: purple;
+
+        .story_title_first {
+            font-weight: bold;
+        }
+    }
+
+    .story_subtitle {
+        font-weight: bold;
+    }
+
+    .story_btn {
+        padding: 20px 0px;
+    }
+
+    .story_sub {
+        font-size: 14px;
+    }
+
+    .mission {
+        padding-top: 5rem;
+    }
+
+    .mission_title {
+        font-size: 26px;
+        color: purple;
+
+        .mission_1 {
+            font-weight: bold;
+        }
+    }
+}

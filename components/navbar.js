@@ -1,89 +1,115 @@
 import NavBarStyles from '../styles/modules/navbar.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import Search from './search';
+import * as AssetConstants from './constants/app_assets';
 
 export default function NavBar() {
     return (
-        <div className={NavBarStyles.sghi_nav}>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light w-100">
-                <div className="container">
-                    <div className={(NavBarStyles.logo, 'navbar-brand')}>
-                        <Image
-                            src="/images/SGHI_logo.svg"
-                            alt="Brand Logo"
-                            width={200}
-                            height={200}
-                        />
-                    </div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light w-100">
+            <div className="container">
+                <a className="navbar-brand" href="/">
+                    <Image
+                        src={AssetConstants.navBarBrand}
+                        alt="Brand Logo"
+                        width={150}
+                        height={80}
+                    />
+                </a>
 
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <i className="fas fa-bars"></i>
-                    </button>
+                <button
+                    className="navbar-toggler menu-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i className="fas fa-bars"></i>
+                </button>
 
-                    <div className={'d-flex collapse navbar-collapse'} id="navbarSupportedContent">
-                        <ul className={(NavBarStyles.item, 'navbar-nav me-auto mb-2 mb-lg-0')}>
-                            <li className="nav-item">
-                                <Link
-                                    className={(NavBarStyles.active, 'nav-link')}
-                                    aria-current="page"
-                                    href="/">
-                                    <a>Home</a>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
+                <div
+                    className="collapse navbar-collapse text-center menu-links"
+                    id="navbarSupportedContent">
+                    <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
                                 <Link href="/">
                                     <a>Our Story</a>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
                                 <Link href="/">
                                     <a>Our Work</a>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
                                 <Link href="/">
                                     <a>Our DNA</a>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="/products">
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
+                                <Link href="/">
                                     <a>Products</a>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="/insights">
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
+                                <Link href="/">
                                     <a>Insights</a>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
                                 <Link href="/">
                                     <a>Partners</a>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="/team">
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
+                                <Link href="/">
                                     <a>Teams</a>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="/contact">
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link">
+                                <Link href="/">
                                     <a>Contacts</a>
                                 </Link>
-                            </li>
-                        </ul>
-
-                        <Search />
-                    </div>
+                            </div>
+                        </li>
+                        <div className={NavBarStyles.search}>
+                            <form className="d-flex input-group search-bar">
+                                <input
+                                    type="search"
+                                    className="form-control round"
+                                    placeholder="Search"
+                                    aria-label="Search"></input>
+                                <button
+                                    className="btn btn-sm btn-secondary round"
+                                    type="button"
+                                    data-mdb-ripple-color="dark">
+                                    <i className="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     );
 }

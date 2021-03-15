@@ -3,45 +3,29 @@
     background-color: #f4f4f4 !important;
     width: 100%;
     height: 70px;
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    margin-bottom: 15px;
+    margin-top: -10px;
+
+    .sghi_nav_padding {
+        padding: 0px 0px;
+    }
 
     .logo {
         width: 200px;
     }
-
-    .items{
-        font-size: 12px;
-        padding: 0 2rem;
+    .menu {
+        justify-content: space-between;
     }
-
-    .active{
-        color: blue !important;
+    .menu_items {
+        padding-left: 20px;
     }
-
+    .menu_button {
+        display: none;
+    }
     .search {
-        .search_box{
-            width: 200px;
-            height: 40px;
-            position: relative;
-            overflow: hidden;
-            input{
-                width: 100%;
-                height: 100%;
-                background-color: white;
-                border: none;
-                border-radius: 2rem;
-                padding: 0 2rem;
-                outline: none;
-            }
-            .search_icon{
-                position: absolute;
-                z-index: 200;
-                right: 2rem;
-                top: 10px;
-            }
-        }
+        max-width: 40px;
     }
 }

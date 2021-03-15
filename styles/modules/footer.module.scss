@@ -1,6 +1,6 @@
 .footer {
     padding-top: 1rem;
-    background-color: purple;
+    background-color: #c2368c;
 
     .footer_title {
         font-size: 18px;
@@ -12,9 +12,271 @@
     .footer_links {
         list-style: none;
         color: white;
+        padding-left: 0;
 
         .footer_item {
             font-weight: 600;
+        }
+    }
+
+    .footer_additional {
+        padding-left: -2rem;
+    }
+
+    .footer_additional_links {
+        list-style: none;
+        padding-left: -20px;
+        padding-left: 0;
+    }
+
+    .footer_tweets {
+        padding-left: 8rem;
+    }
+
+    .tweet_item {
+        font-size: 13px;
+    }
+
+    .footer_main {
+        padding-right: 2rem;
+    }
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    .footer {
+        .footer_brand {
+            text-align: center;
+            position: relative;
+            left: 2rem;
+        }
+
+        .footer_title {
+            text-align: center;
+            position: relative;
+            left: 2rem;
+            top: -1rem;
+        }
+
+        .footer_main_content {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 2rem;
+            top: -1rem;
+        }
+
+        .footer_additional_links {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 2rem;
+            top: -2rem;
+        }
+
+        .footer_item {
+            padding: 10rem 10rem;
+        }
+
+        .footer_tweets {
+            padding-left: 0rem;
+            position: relative;
+            top: -2rem;
+            text-align: center;
+        }
+
+        .tweet_item {
+            font-size: 13px;
+        }
+
+        .footer_main {
+            padding-right: 2rem;
+        }
+
+        .social_icons {
+            position: relative;
+            left: 6rem;
+        }
+    }
+}
+
+/* Small devices (phones, between 320px and 375px screenWidths) */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .footer {
+        .footer_brand {
+            text-align: center;
+            position: relative;
+            left: 2rem;
+        }
+
+        .footer_title {
+            text-align: center;
+            position: relative;
+            left: 2rem;
+            top: -1rem;
+        }
+
+        .footer_main_content {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 2rem;
+            top: -1rem;
+        }
+
+        .footer_additional_links {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 2rem;
+            top: -2rem;
+        }
+
+        .footer_item {
+            padding: 10rem 10rem;
+        }
+
+        .footer_tweets {
+            padding-left: 0rem;
+            position: relative;
+            top: -2rem;
+            text-align: center;
+        }
+
+        .tweet_item {
+            font-size: 13px;
+        }
+
+        .footer_main {
+            padding-right: 2rem;
+        }
+
+        .social_icons {
+            position: relative;
+            left: 9rem;
+        }
+    }
+}
+
+/* Medium devices (large-phones, between 375px and 425px screenWidths) */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    .footer {
+        position: relative;
+        top: -10rem;
+
+        .footer_brand {
+            text-align: center;
+            position: relative;
+            left: 2rem;
+        }
+
+        .footer_title {
+            text-align: center;
+            position: relative;
+            left: 0rem;
+            top: -1rem;
+        }
+
+        .footer_main_content {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 0rem;
+            top: -1rem;
+        }
+
+        .footer_additional_links {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 0rem;
+            top: -2rem;
+        }
+
+        .footer_item {
+            padding: 10rem 10rem;
+        }
+
+        .footer_tweets {
+            padding-left: 0rem;
+            position: relative;
+            width: 300px;
+            top: -2rem;
+            left: 10px;
+            text-align: center;
+        }
+
+        .tweet_item {
+            font-size: 13px;
+        }
+
+        .footer_main {
+            padding-right: 2rem;
+        }
+
+        .social_icons {
+            position: relative;
+            left: 5rem;
+        }
+    }
+}
+
+/* Medium devices (Tablets, between 425px and 768px screenWidths) */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .footer {
+        .footer_brand {
+            text-align: center;
+            position: relative;
+            left: 2rem;
+        }
+
+        .footer_title {
+            text-align: center;
+            position: relative;
+            left: 2rem;
+            top: -1rem;
+        }
+
+        .footer_main_content {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 2rem;
+            top: -1rem;
+        }
+
+        .footer_additional_links {
+            text-align: center;
+            padding: 0px 15px;
+            position: relative;
+            left: 2rem;
+            top: -2rem;
+        }
+
+        .footer_item {
+            padding: 10rem 10rem;
+        }
+
+        .footer_tweets {
+            padding-left: 0rem;
+            position: relative;
+            width: 300px;
+            top: -2rem;
+            left: 10px;
+            text-align: center;
+        }
+
+        .tweet_item {
+            font-size: 13px;
+        }
+
+        .footer_main {
+            padding-right: 2rem;
+        }
+
+        .social_icons {
+            position: relative;
+            left: 9rem;
         }
     }
 }

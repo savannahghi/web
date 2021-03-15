@@ -2,8 +2,8 @@
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/images/hero.svg');
-    height: 35rem;
-    width: 100%;
+    height: 39rem;
+    max-width: 100rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,35 +17,11 @@
         transform: translate(-50%, -50%);
         color: white;
 
-        .hero_title {
-            font-size: 60px;
-            color: #e29404;
-        }
-
-        .hero_subtitle {
-            font-size: 18px;
-            font-weight: 500;
-        }
-        .hero_cta {
-            background-color: transparent;
-            border: 1px solid white;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 10px 0px;
-            padding: 5px 5px;
-            border-radius: 100px;
-            height: 40px;
-            width: 150px;
-        }
-
         .hero_scroll_btn {
             background-color: transparent;
             color: #ffffff;
             border: none;
-            padding: 5px 5px;
+            padding-top: 3rem;
             position: absolute;
             bottom: 30px;
             margin: 0px -20px;
@@ -54,5 +30,55 @@
             right: 50%;
             top: 26em;
         }
+    }
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    .hero {
+        height: 36rem;
+        max-width: 100%;
+    }
+}
+
+/* Medium devices (large-phones, between 375px and 425px screenWidths) */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    .hero {
+        height: 30rem;
+        max-width: 100%;
+    }
+
+    .hero_scroll_btn {
+        display: none;
+    }
+}
+
+/* Medium devices (Tablets, between 425px and 768px screenWidths) */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .hero {
+        height: 30rem;
+        max-width: 100%;
+    }
+
+    .hero_scroll_btn {
+        position: relative;
+        left: 50%;
+        right: 50%;
+        top: 19rem !important;
+    }
+}
+
+/* Large devices (Desktops, Laptops above 2560 screenWidths) */
+@media only screen and (min-width: 2560px) {
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('/images/hero.svg');
+        height: 39rem;
+        max-width: 100rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        left: 40rem;
     }
 }

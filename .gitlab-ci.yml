@@ -33,7 +33,7 @@ unit_tests:
         - npm install --silent
         # - npm run bower-install -- --silent
         - npm run build
-        - npm run test
+        - npm run test -- --coverage --watchAll=false
         - git fetch origin master
         - git checkout master
         - git checkout -B "$CI_BUILD_REF_NAME"

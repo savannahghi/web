@@ -14,7 +14,7 @@ import Footer from '../components/footer';
 export default function Home() {
     return (
         <div>
-            <main>
+            <main className="container-gutter">
                 <NavBar />
 
                 <Hero />

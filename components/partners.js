@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import * as AssetConstants from './constants/app_assets';
 import PartnerStyles from '../styles/modules/partners.module.scss';
 
 export default function Partners() {
@@ -13,45 +14,88 @@ export default function Partners() {
                         </p>
                     </div>
                 </div>
-                <div className="row align-items-center">
-                    <div className="col-3">
-                        <Image src="/images/USAID.svg" alt="Brand Logo" width={140} height={140} />
-                    </div>
-                    <div className="col-3">
-                        <Image src="/images/pa.svg" alt="Brand Logo" width={120} height={120} />
-                    </div>
-                    <div className="col-3">
-                        <Image
-                            src="/images/jhpiego.svg"
-                            alt="Brand Logo"
-                            width={120}
-                            height={120}
-                        />
-                    </div>
-                    <div className="col-3">
-                        <Image src="/images/r4d.svg" alt="Brand Logo" width={130} height={130} />
-                    </div>
-                    <div className="col-3">
-                        <Image src="/images/path.svg" alt="Brand Logo" width={90} height={90} />
-                    </div>
-                    <div className="col-3">
-                        <Image src="/images/CHAI.svg" alt="Brand Logo" width={90} height={90} />
-                    </div>
-                    <div className="col-3">
-                        <Image
-                            src="/images/AstraZeneca.svg"
-                            alt="Brand Logo"
-                            width={140}
-                            height={140}
-                        />
-                    </div>
-                    <div className="col-3">
-                        <Image
-                            src="/images/dalberg.svg"
-                            alt="Brand Logo"
-                            width={120}
-                            height={120}
-                        />
+                <div className={PartnerStyles.all_partner_items}>
+                    <div className="row align-items-center">
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.usaidLogo}
+                                    alt="USAID Logo"
+                                    width={140}
+                                    height={140}
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.pharmAccessLogo}
+                                    alt="Pharm Access Logo"
+                                    width={120}
+                                    height={120}
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.jhpiegoLogo}
+                                    alt="jhpiego Logo"
+                                    width={120}
+                                    height={120}
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.resultsForDevLogo}
+                                    alt="Results for development Logo"
+                                    width={130}
+                                    height={130}
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.pathLogo}
+                                    alt="path Logo"
+                                    width={90}
+                                    height={90}
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.chaiLogo}
+                                    alt="CHAI Logo"
+                                    width={90}
+                                    height={90}
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.astraZenecaLogo}
+                                    alt="AstraZeneca Logo"
+                                    width={140}
+                                    height={140}
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className={PartnerStyles.partner_item}>
+                                <Image
+                                    src={AssetConstants.dalbergLogo}
+                                    alt="Dalberg Logo"
+                                    width={120}
+                                    height={120}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

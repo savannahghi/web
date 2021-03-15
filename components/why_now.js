@@ -1,13 +1,21 @@
 import Image from 'next/image';
+import * as AssetConstants from './constants/app_assets';
 import WhyNowStyles from '../styles/modules/why_now.module.scss';
 
 export default function WhyNow() {
     return (
         <div className={WhyNowStyles.why}>
-            <div className="row pt-3">
+            <div className="row pt-3 set_gutters why_now_gutter">
                 <div className="col-sm-12 col-md-6">
-                    <Image src="/images/muthee.svg" alt="Our story" width={300} height={300} />
-                    <p>
+                    <div className={WhyNowStyles.video_component}>
+                        <Image
+                            src={AssetConstants.whyNowVideoThumbnail}
+                            alt="Our story"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
+                    <p className={WhyNowStyles.salutation}>
                         <span className="font-weight-bold">John Muthee</span> <br></br> CEO,
                         Savannah Informatics
                     </p>

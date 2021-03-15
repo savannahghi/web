@@ -3,7 +3,7 @@
 
     .dna_title {
         font-size: 40px;
-        color: purple;
+        color: #c2368c;
         padding-bottom: 3rem;
 
         .dna_title_first {
@@ -11,8 +11,159 @@
         }
     }
 
-    .dna_content{
-        font-size: 14px;
+    .illustration {
+        width: 150px;
+        text-align: center;
+    }
+
+    .dna_content {
+        font-size: 12px;
+        font-weight: 500;
+        padding-top: 2rem;
         width: 280px;
+        text-align: center;
+
+        .dna_content_bold {
+            font-weight: bold;
+        }
+    }
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    .main {
+        .dna_title {
+            font-size: 20px;
+            position: relative;
+            top: -1rem;
+            text-align: center;
+
+            .dna_title_first {
+                font-weight: bold;
+            }
+        }
+
+        .illustration {
+            position: relative;
+            top: 10px;
+            text-align: center;
+        }
+        .dna_content {
+            padding-right: -5rem;
+            padding-top: 10px;
+        }
+    }
+}
+
+/* Small devices (phones, between 320px and 375px screenWidths) */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .main {
+        .dna_title {
+            font-size: 20px;
+            position: relative;
+            top: -1rem;
+            text-align: center;
+
+            .dna_title_first {
+                font-weight: bold;
+            }
+            justify-content: center;
+            left: 10px;
+        }
+
+        .dna_item {
+            position: relative;
+            left: 10px;
+        }
+
+        .illustration {
+            position: relative;
+            top: 10px;
+            text-align: center;
+        }
+        .dna_content {
+            padding-right: -5rem;
+            padding-top: 10px;
+        }
+    }
+}
+
+/* Medium devices (large-phones, between 375px and 425px screenWidths) */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    .main {
+        .dna_title {
+            font-size: 20px;
+            position: relative;
+            top: -9rem;
+            text-align: center;
+            left: 10px;
+
+            .dna_title_first {
+                font-weight: bold;
+            }
+        }
+
+        .dna_pillars {
+            position: relative;
+            top: -11rem;
+        }
+
+        .dna_item {
+            position: relative;
+            left: 10px;
+            width: 300px;
+        }
+
+        .illustration {
+            position: relative;
+            top: 10px;
+            text-align: center;
+        }
+        .dna_content {
+            padding-right: -5rem;
+            padding-top: 10px;
+        }
+    }
+}
+
+/* Medium devices (Tablets, between 425px and 768px screenWidths) */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .dna_title {
+        font-size: 20px;
+        position: relative;
+        top: -9rem;
+        text-align: center;
+        left: 10px;
+
+        .dna_title_first {
+            font-weight: bold;
+        }
+    }
+
+    .dna_pillars {
+        position: relative;
+        top: -11rem;
+        display: block;
+        direction: relative;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .dna_item {
+        position: absolute;
+        left: 10px;
+        width: auto;
+    }
+
+    .illustration {
+        position: relative;
+        top: 10px;
+        text-align: center;
+    }
+    .dna_content {
+        padding-right: -5rem;
+        padding-top: 10px;
     }
 }

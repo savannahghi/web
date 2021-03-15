@@ -3,7 +3,7 @@
 
     .work_title {
         font-size: 40px;
-        color: purple;
+        color: #c2368c;
 
         .work_title_second {
             font-weight: bold;
@@ -12,5 +12,138 @@
 
     .work_subtitle {
         font-size: 14px;
+        color: #0f73aa;
+    }
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    .work {
+        .work_title {
+            position: relative;
+            top: -10rem;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .work_subtitle {
+            position: relative;
+            top: -9rem;
+            text-align: center;
+        }
+
+        .read_more_btn {
+            position: relative;
+            top: -8rem;
+            text-align: center;
+        }
+
+        .map_graphic {
+            position: relative;
+            top: -5rem;
+            text-align: center;
+            width: 300rem;
+        }
+    }
+}
+
+/* Small devices (phones, between 320px and 375px screenWidths) */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .work {
+        .work_title {
+            position: relative;
+            top: -10rem;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .work_subtitle {
+            position: relative;
+            top: -9rem;
+            text-align: center;
+        }
+
+        .read_more_btn {
+            position: relative;
+            top: -8rem;
+            text-align: center;
+        }
+
+        .map_graphic {
+            position: relative;
+            top: -5rem;
+            text-align: center;
+            width: 300rem;
+        }
+    }
+}
+
+/* Medium devices (large-phones, between 375px and 425px screenWidths) */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    .work {
+        .work_title {
+            position: relative;
+            top: -15rem;
+            text-align: center;
+            font-size: 30px;
+            left: 0rem;
+        }
+
+        .work_subtitle {
+            position: relative;
+            top: -15rem;
+            text-align: center;
+            left: 10px;
+            width: 250px;
+        }
+
+        .read_more_btn {
+            position: relative;
+            top: -14rem;
+            text-align: center;
+            left: 0px;
+        }
+
+        .map_graphic {
+            position: relative;
+            top: -8rem;
+            text-align: center;
+            width: 20rem;
+        }
+    }
+}
+
+/* Medium devices (Tablets, between 425px and 768px screenWidths) */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .work {
+        .work_title {
+            min-width: 500px;
+            position: relative;
+            left: -6rem;
+            top: -7rem;
+        }
+
+        .work_subtitle {
+            position: relative;
+            top: -7rem;
+            text-align: center;
+            left: 30px;
+            min-width: 200px;
+        }
+
+        .read_more_btn {
+            position: relative;
+            top: -6rem;
+            text-align: center;
+            left: 0px;
+        }
+
+        .map_graphic {
+            position: relative;
+            right: -3rem;
+            top: -6rem;
+            text-align: center;
+            min-width: 20rem;
+        }
     }
 }

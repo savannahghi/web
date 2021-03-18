@@ -1,3 +1,4 @@
+// import fetch from 'isomorphic-unfetch';
 import MainStyles from '../styles/modules/main.module.scss';
 import NavBar from '../components/navbar';
 import Hero from '../components/hero';
@@ -12,9 +13,10 @@ import Footer from '../components/footer';
  * This is the root component of the
  */
 export default function Home() {
+    // console.log(articles);
     return (
         <div>
-            <main className="container-gutter">
+            <main className="sghi_container">
                 <NavBar />
 
                 <Hero />
@@ -36,3 +38,15 @@ export default function Home() {
         </div>
     );
 }
+
+// export async function getServerSideProps() {
+//     // const apiUrl = process.env;
+//     const res = await fetch('http://localhost:1337/articles');
+//     const data = await res.json();
+
+//     return {
+//         props: {
+//             articles: data
+//         }
+//     };
+// }

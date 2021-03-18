@@ -67,18 +67,3 @@
         top: 19rem !important;
     }
 }
-
-/* Large devices (Desktops, Laptops above 2560 screenWidths) */
-@media only screen and (min-width: 2560px) {
-    .hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('/images/hero.svg');
-        height: 39rem;
-        max-width: 100rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        left: 40rem;
-    }
-}

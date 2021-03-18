@@ -25,6 +25,11 @@ a {
     height: auto;
 }
 
+.sghi_container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
 .primary-color {
     color: #c2368c;
 }
@@ -319,13 +324,9 @@ a {
     }
 }
 
-/* Large devices (Desktops, Laptops above 2560px screenWidths) */
-@media only screen and (min-width: 2560px) {
+/* Large devices (Desktops, Laptops above 1440px screenWidths) */
+@media only screen and (min-width: 1440px) {
     .set_gutters {
-        max-width: 90rem;
-    }
-    .why_now_gutter{
-        position: relative;
-        left: 30rem;
+        max-width: 80rem;
     }
 }

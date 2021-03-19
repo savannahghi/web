@@ -1,3 +1,7 @@
+stages:
+    - test
+    - deploy
+
 image: eu.gcr.io/speedy-lattice-334/chromium-xvfb:0.1.0
 
 cache:
@@ -9,9 +13,10 @@ variables:
     CYPRESS_INSTALL_BINARY: 0
     CHROMIUM_BIN: /usr/bin/chromium-browser
 
-stages:
-    - test
-    # - publish
+services:
+    - name: docker:dind
+      entrypoint: ["env", "-u", "DOCKER_HOST"]
+      command: ["dockerd-entrypoint.sh"]
 
 before_script:
     # - cp _.npm_rc ~/.npmrc
@@ -46,19 +51,32 @@ unit_tests:
             - coverage/
             - junitxml_report/
         expire_in: 1 hour
-# publish:
-#   stage: publish
-#   tags:
-#     - docker
-#     - frontend
-#   script:
-#     - npm install --silent
-#     - npm run bower-install -- --silent
-#     - npm run build
-#     - npm publish
-#   only:
-#     - master
-#   except:
-#     variables:
-#       - $CI_PIPELINE_SOURCE == "schedule"
-#   when: manual
+
+deploy_to_testing:
+    before_script:
+        - apk add --update --no-cache curl py-pip jq
+        - apk add --update make ca-certificates openssl
+        - update-ca-certificates
+        - source  $CI_PROJECT_DIR/gcloud.sh
+        # Download and install Google Cloud SDK
+        - wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
+        - tar zxf google-cloud-sdk.tar.gz && ./google-cloud-sdk/install.sh --usage-reporting=false --path-update=true
+        # Instead of writing our GCP service account private key into a file, supply it as env variable
+        - google-cloud-sdk/bin/gcloud auth activate-service-account --key-file $GCLOUD_SERVICE_ACCOUNT
+        - google-cloud-sdk/bin/gcloud config set project sghi-307909
+        - docker login -u _json_key --password-stdin https://eu.gcr.io < $GCLOUD_SERVICE_ACCOUNT
+        - export CLOUDSDK_CORE_PROJECT=sghi-307909
+    image: docker:dind
+    stage: deploy
+    variables:
+        DOCKER_DRIVER: overlay2
+        DOCKER_TLS_CERTDIR: ""
+    resource_group: staging # control deploy concurrency
+    script:
+        - docker build -q --build-arg CI_JOB_TOKEN=$CI_JOB_TOKEN -f $CI_PROJECT_DIR/Dockerfile . -t eu.gcr.io/sghi-307909/sghi-testing:$(echo $CI_COMMIT_SHA | cut -c1-8)
+        - google-cloud-sdk/bin/gcloud auth configure-docker
+        - docker -- push eu.gcr.io/sghi-307909/sghi-testing:$(echo $CI_COMMIT_SHA | cut -c1-8)
+        - google-cloud-sdk/bin/gcloud run deploy sghi-testing --image eu.gcr.io/sghi-307909/sghi-testing:$(echo $CI_COMMIT_SHA | cut -c1-8) --region europe-west1 --platform managed --allow-unauthenticated
+        - google-cloud-sdk/bin/gcloud run services add-iam-policy-binding --platform managed --region=europe-west1 --member=allUsers --role=roles/run.invoker sghi-testing --quiet
+    tags:
+      - healthcloud-multi

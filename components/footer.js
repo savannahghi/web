@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import * as AssetConstants from './constants/app_assets';
+import * as StringConstants from './constants/app_strings';
 import FooterStyles from '../styles/modules/footer.module.scss';
 
 export default function Footer() {
@@ -19,19 +20,21 @@ export default function Footer() {
                                         height={100}
                                     />
                                 </div>
-                                <p className={FooterStyles.footer_title}>About the SGHI</p>
+                                <p className={FooterStyles.footer_title}>
+                                    {StringConstants.footerTitle}
+                                </p>
 
                                 <p className={FooterStyles.footer_main_content}>
-                                    SGHI is a development ecosystem builder and optimizer that
-                                    supports philanthropy and community effort to leverage
-                                    investment and deliver lasting impact
+                                    {StringConstants.footerContent}
                                 </p>
                             </div>
                         </div>
 
                         <div className="col-lg-2 col-md-6 mb-4 mb-md-0 pt-5 p-3">
                             <div className={FooterStyles.footer_additional}>
-                                <p className={FooterStyles.footer_title}>Additional links</p>
+                                <p className={FooterStyles.footer_title}>
+                                    {StringConstants.additionalLinksTitle}
+                                </p>
 
                                 <ul className={FooterStyles.footer_additional_links}>
                                     <li>
@@ -39,7 +42,7 @@ export default function Footer() {
                                             className={FooterStyles.footer_item}
                                             aria-current="page"
                                             href="/">
-                                            <a>Services</a>
+                                            <a>{StringConstants.services}</a>
                                         </Link>
                                     </li>
                                     <li>
@@ -47,7 +50,7 @@ export default function Footer() {
                                             className={FooterStyles.footer_item}
                                             aria-current="page"
                                             href="/">
-                                            <a>Contact us</a>
+                                            <a>{StringConstants.contactUs}</a>
                                         </Link>
                                     </li>
                                     <li>
@@ -55,7 +58,7 @@ export default function Footer() {
                                             className={FooterStyles.footer_item}
                                             aria-current="page"
                                             href="/">
-                                            <a>Why we exist</a>
+                                            <a>{StringConstants.whyWeExist}</a>
                                         </Link>
                                     </li>
                                     <li>
@@ -63,7 +66,7 @@ export default function Footer() {
                                             className={FooterStyles.footer_item}
                                             aria-current="page"
                                             href="/">
-                                            <a>SGHI MISSION AND VISION</a>
+                                            <a>{StringConstants.missionAndVision}</a>
                                         </Link>
                                     </li>
                                 </ul>
@@ -72,7 +75,9 @@ export default function Footer() {
 
                         <div className="col-lg-5 col-md-6 mb-4 mb-md-0 pt-5 ml-5">
                             <div className={FooterStyles.footer_tweets}>
-                                <p className={FooterStyles.footer_title}>Latest tweets</p>
+                                <p className={FooterStyles.footer_title}>
+                                    {StringConstants.latestTweets}
+                                </p>
 
                                 <ul className={FooterStyles.footer_links}>
                                     <li>
@@ -83,9 +88,7 @@ export default function Footer() {
                                             <div className="col-10">
                                                 <Link aria-current="page" href="/">
                                                     <a className={FooterStyles.tweet_item}>
-                                                        RT @wpklik: Here is our selection of 20
-                                                        #Worldrevolutionaries @edgethemes
-                                                        @selectthemes @mi…
+                                                        {StringConstants.tweetPlaceholder}
                                                     </a>
                                                 </Link>
                                             </div>
@@ -99,9 +102,7 @@ export default function Footer() {
                                             <div className="col-10">
                                                 <Link aria-current="page" href="/">
                                                     <a className={FooterStyles.tweet_item}>
-                                                        Meet Curly! https://t.co/ Hiy1pJmnKPNow
-                                                        trending on twitter, this theme is made for
-                                                        #philanthropists... https://t.co/ XNDaTAxXkM
+                                                        {StringConstants.tweetPlaceholder}
                                                     </a>
                                                 </Link>
                                             </div>
@@ -111,7 +112,9 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
-                            <p className={FooterStyles.footer_title}>Connect with us</p>
+                            <p className={FooterStyles.footer_title}>
+                                {StringConstants.conectWithUs}
+                            </p>
                             <div className={FooterStyles.social_icons}>
                                 <div className="row">
                                     <div className="col-1 mx-2">

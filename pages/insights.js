@@ -1,23 +1,38 @@
 import NavBar from '../components/navbar';
-import TitleBar from '../components/head';
+import Footer from '../components/footer';
+import InsightCard from '../components/insightsCard';
+import Pagination from '../components/pagination';
+import * as StringConstants from '../components/constants/app_strings';
 
-export default function Insights() {
+/**
+ * This component is the insights page
+ */
+export default function Home() {
     return (
-        <div className="container">
-            <div className="navbar">
-                <TitleBar />
-            </div>
+        <div>
+            <main className="sghi_container">
+                <NavBar />
 
-            <main>
-                <div className="navbar">
-                    <NavBar />
+                <div className="container insights-container">
+                    <div className="row py-5 px-5">
+                        <div className="col-12 my-3">
+                            <p className="page-title text-center">
+                                {StringConstants.ourText}
+                                <span className="page-title-second">
+                                    {StringConstants.insightsPageTitle}
+                                </span>
+                            </p>
+                        </div>
+                        <InsightCard />
+                        <InsightCard />
+                        <InsightCard />
+                        <InsightCard />
+                        <Pagination />
+                    </div>
                 </div>
-                <h1 className="title">Welcome to</h1>
-
-                <p className="description">
-                    <code>Insights</code>
-                </p>
             </main>
+
+            <Footer />
         </div>
     );
 }

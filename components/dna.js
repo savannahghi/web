@@ -1,16 +1,20 @@
 import Image from 'next/image';
 import * as AssetConstants from './constants/app_assets';
+import * as StringConstants from './constants/app_strings';
 import DNAStyles from '../styles/modules/OurDna.module.scss';
 
 export default function OurDna() {
     return (
-        <div className={DNAStyles.main}>
+        <div id="dna" className={DNAStyles.main}>
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
                         <p className={DNAStyles.dna_title}>
-                            Our <span className={DNAStyles.dna_title_first}>DNA</span> is centered
-                            on four key pillars
+                            {StringConstants.ourText}
+                            <span className={DNAStyles.dna_title_first}>
+                                {StringConstants.dnaText}
+                            </span>
+                            {StringConstants.ourDNATitle}
                         </p>
                     </div>
                 </div>
@@ -28,10 +32,9 @@ export default function OurDna() {
                                         />
                                     </div>
                                     <p className={DNAStyles.dna_content}>
-                                        We strengthen healthcare systems to make them more
-                                        resilient, agile and responsive to the{' '}
+                                        {StringConstants.dnaContentOne}
                                         <span className={DNAStyles.dna_content_bold}>
-                                            triple transition
+                                            {StringConstants.tripleTransition}
                                         </span>
                                     </p>
                                 </div>
@@ -49,9 +52,7 @@ export default function OurDna() {
                                         />
                                     </div>
                                     <p className={DNAStyles.dna_content}>
-                                        We are local and understand healthcare delivery in Africa
-                                        and emerging markets and design localized solutions and
-                                        approaches
+                                        {StringConstants.dnaContentTwo}
                                     </p>
                                 </div>
                             </div>
@@ -69,9 +70,7 @@ export default function OurDna() {
                                         />
                                     </div>
                                     <p className={DNAStyles.dna_content}>
-                                        We are entrepreneurial. We come from a startup environment
-                                        and take a sustainable, innovative and agile growth mindset
-                                        to the projects we undertake
+                                        {StringConstants.dnaContentThree}
                                     </p>
                                 </div>
                             </div>
@@ -89,9 +88,7 @@ export default function OurDna() {
                                         />
                                     </div>
                                     <p className={DNAStyles.dna_content}>
-                                        We deliver more health for the money. We are driven by
-                                        delivering results and impact that help strengthen
-                                        healthcare systems in emerging markets
+                                        {StringConstants.dnaContentFour}
                                     </p>
                                 </div>
                             </div>

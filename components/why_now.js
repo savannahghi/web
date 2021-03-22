@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import * as AssetConstants from './constants/app_assets';
+import * as StringConstants from './constants/app_strings';
 import WhyNowStyles from '../styles/modules/why_now.module.scss';
 
 export default function WhyNow() {
@@ -16,20 +17,20 @@ export default function WhyNow() {
                         />
                     </div>
                     <p className={WhyNowStyles.salutation}>
-                        <span className="font-weight-bold">John Muthee</span> <br></br> CEO,
-                        Savannah Informatics
+                        <span className="font-weight-bold">{StringConstants.silCEOName}</span>{' '}
+                        <br></br>
+                        {StringConstants.silCEOTitle}
                     </p>
                 </div>
                 <div className="col-sm-12 col-md-6">
                     <div className={WhyNowStyles.why_content}>
                         <p className={WhyNowStyles.why_title}>
-                            Why <span className={WhyNowStyles.why_title_second}>Now</span>
+                            {StringConstants.whyText}
+                            <span className={WhyNowStyles.why_title_second}>
+                                {StringConstants.nowText}
+                            </span>
                         </p>
-                        <p className={WhyNowStyles.why_sub}>
-                            COVID19 has challenged the healthcare system in multiple ways which has
-                            further impacted on access, affordability to care and is likely to
-                            worsen health outcomes for decades to come…
-                        </p>
+                        <p className={WhyNowStyles.why_sub}>{StringConstants.whyNowContent}</p>
                     </div>
                 </div>
             </div>

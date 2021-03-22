@@ -1,22 +1,39 @@
 import NavBar from '../components/navbar';
-import TitleBar from '../components/head';
+import Footer from '../components/footer';
+import * as StringConstants from '../components/constants/app_strings';
+import ProductsCard from '../components/productsCard';
 
+/**
+ * This component is the Products page
+ */
 export default function Products() {
     return (
-        <div className="container">
-            <div className="navbar">
-                <TitleBar />
-            </div>
+        <div>
+            <main className="sghi_container">
+                <NavBar />
 
-            <main>
-                <div className="navbar">
-                    <NavBar />
+                <div className="container">
+                    <div className="row py-5 px-5">
+                        <div className="col-12 my-3">
+                            <p className="page-title text-center">
+                                {StringConstants.ourText}
+                                <span className="page-title-second">
+                                    {StringConstants.productsPageTitle}
+                                </span>
+                            </p>
+                        </div>
+
+                        <ProductsCard />
+                        <ProductsCard />
+                        <ProductsCard />
+                        <ProductsCard />
+                        <ProductsCard />
+                        <ProductsCard />
+                    </div>
                 </div>
-
-                <p className="description">
-                    <code>Products</code>
-                </p>
             </main>
+
+            <Footer />
         </div>
     );
 }

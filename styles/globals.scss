@@ -95,6 +95,48 @@ a {
     width: 180px;
 }
 
+.insights-container {
+    width: 900px;
+}
+
+.sghi-card {
+    width: 350px;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+.page-title {
+    font-size: 40px;
+    color: #c2368c;
+
+    .page-title-second {
+        font-weight: bold;
+    }
+}
+
+.team-subtitle {
+    text-align: center;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+}
+
+.team-name {
+    font-weight: bold;
+}
+
+.pagination {
+    align-items: center;
+    justify-content: center;
+}
+
 /* Extra small devices (phones, 320 and down screenWidths) */
 @media only screen and (max-width: 320px) {
     html,
@@ -133,6 +175,28 @@ a {
     .hero_cta {
         font-size: 14px;
         padding: 2px 5px;
+    }
+
+    .page-title {
+        font-size: 25px;
+        color: #c2368c;
+
+        .page-title-second {
+            font-weight: bold;
+        }
+    }
+
+    .insights-container {
+        width: 100%;
+    }
+
+    .sghi-card {
+        min-width: 250px;
+        position: relative;
+        right: 30px;
+        align-items: center;
+        text-align: center;
+        margin: 1rem;
     }
 }
 

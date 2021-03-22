@@ -2,6 +2,7 @@ import NavBarStyles from '../styles/modules/navbar.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import * as AssetConstants from './constants/app_assets';
+import * as StringConstants from './constants/app_strings';
 
 export default function NavBar() {
     return (
@@ -33,62 +34,62 @@ export default function NavBar() {
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="/">
-                                Home
+                                {StringConstants.homeNav}
                             </a>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Our Story</a>
+                                <Link href="#our-story">
+                                    <a>{StringConstants.storyNav}</a>
                                 </Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Our Work</a>
+                                <Link href="#our-work">
+                                    <a>{StringConstants.workNav}</a>
                                 </Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Our DNA</a>
+                                <Link href="#dna">
+                                    <a>{StringConstants.dnaNav}</a>
                                 </Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Products</a>
+                                <Link href="#partners">
+                                    <a>{StringConstants.partnersNav}</a>
                                 </Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Insights</a>
+                                <Link href="/products">
+                                    <a>{StringConstants.productsNav}</a>
                                 </Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Partners</a>
+                                <Link href="/insights">
+                                    <a>{StringConstants.insightsNav}</a>
                                 </Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Teams</a>
+                                <Link href="/team">
+                                    <a>{StringConstants.teamNav}</a>
                                 </Link>
                             </div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href="/">
-                                    <a>Contacts</a>
+                                <Link href="/contact">
+                                    <a>{StringConstants.contactsNav}</a>
                                 </Link>
                             </div>
                         </li>
@@ -98,7 +99,7 @@ export default function NavBar() {
                                     type="search"
                                     className="form-control round"
                                     placeholder="Search"
-                                    aria-label="Search"></input>
+                                    aria-label={StringConstants.searchPlaceHolder}></input>
                                 <button
                                     className="btn btn-sm btn-secondary round"
                                     type="button"

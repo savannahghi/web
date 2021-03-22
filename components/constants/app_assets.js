@@ -34,3 +34,6 @@ export const dalbergLogo = '/images/dalberg.svg';
 
 // footer component
 export const brandLogoWhite = '/images/SGHI_White.svg';
+
+// teams component
+export const testTeamMemberAvatar = '/images/team_member.jpg';

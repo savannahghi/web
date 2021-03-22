@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import * as AssetConstants from './constants/app_assets';
-import * as StringConstants from './constants/app_strings';
+import * as AssetConstants from '../components/constants/app_assets';
+import * as StringConstants from '../components/constants/app_strings';
 import FooterStyles from '../styles/modules/footer.module.scss';
 
 export default function Footer() {
@@ -136,7 +136,7 @@ export default function Footer() {
                                     <div className="col-1 mx-2">
                                         <a
                                             target="_blank"
-                                            href="https://twitter.com/SGHI76989573"
+                                            href="https://fb.me/SavannahGlobalHealth"
                                             rel="noopener noreferrer">
                                             <i className="fab fa-facebook-f fa-2x"></i>
                                         </a>

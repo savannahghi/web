@@ -1,12 +1,12 @@
-import NavBarStyles from '../styles/modules/navbar.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import * as AssetConstants from './constants/app_assets';
-import * as StringConstants from './constants/app_strings';
+import * as AssetConstants from '../components/constants/app_assets';
+import * as StringConstants from '../components/constants/app_strings';
+import NavBarStyles from '../styles/modules/navbar.module.scss';
 
 export default function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light w-100">
+        <nav id="navbar" className="navbar sticky-top navbar-expand-lg navbar-light bg-light w-100">
             <div className="container">
                 <a className="navbar-brand" href="/">
                     <Image

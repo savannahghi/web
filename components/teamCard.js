@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import * as AssetConstants from './constants/app_assets';
+import * as AssetConstants from '../components/constants/app_assets';
 import * as StringConstants from '../components/constants/app_strings';
 
 export default function TeamCard() {

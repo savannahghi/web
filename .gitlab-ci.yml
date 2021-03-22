@@ -15,11 +15,10 @@ variables:
 
 services:
     - name: docker:dind
-      entrypoint: ["env", "-u", "DOCKER_HOST"]
-      command: ["dockerd-entrypoint.sh"]
+      entrypoint: ['env', '-u', 'DOCKER_HOST']
+      command: ['dockerd-entrypoint.sh']
 
 before_script:
-    # - cp _.npm_rc ~/.npmrc
     - apt-get update
     - apt-get -qq -y install wget #install wget
     - wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
@@ -29,20 +28,18 @@ before_script:
     - nvm install 12.20.1
     - nvm use 12.20.1
 
-unit_tests:
+tests:
     stage: test
     tags:
         - frontend
         - docker
     script:
         - npm install --silent
-        # - npm run bower-install -- --silent
         - npm run build
         - npm run test -- --coverage --watchAll=false
         - git fetch origin master
         - git checkout master
         - git checkout -B "$CI_BUILD_REF_NAME"
-        # - npm run commitlint
 
     artifacts:
         name: '${CI_PROJECT_NAME}_${CI_BUILD_ID}'
@@ -53,6 +50,8 @@ unit_tests:
         expire_in: 1 hour
 
 deploy_to_testing:
+    only:
+        - master
     before_script:
         - apk add --update --no-cache curl py-pip jq
         - apk add --update make ca-certificates openssl
@@ -70,7 +69,7 @@ deploy_to_testing:
     stage: deploy
     variables:
         DOCKER_DRIVER: overlay2
-        DOCKER_TLS_CERTDIR: ""
+        DOCKER_TLS_CERTDIR: ''
     resource_group: staging # control deploy concurrency
     script:
         - docker build -q --build-arg CI_JOB_TOKEN=$CI_JOB_TOKEN -f $CI_PROJECT_DIR/Dockerfile . -t eu.gcr.io/sghi-307909/sghi-testing:$(echo $CI_COMMIT_SHA | cut -c1-8)
@@ -79,4 +78,4 @@ deploy_to_testing:
         - google-cloud-sdk/bin/gcloud run deploy sghi-testing --image eu.gcr.io/sghi-307909/sghi-testing:$(echo $CI_COMMIT_SHA | cut -c1-8) --region europe-west1 --platform managed --allow-unauthenticated
         - google-cloud-sdk/bin/gcloud run services add-iam-policy-binding --platform managed --region=europe-west1 --member=allUsers --role=roles/run.invoker sghi-testing --quiet
     tags:
-      - healthcloud-multi
+        - healthcloud-multi

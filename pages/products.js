@@ -1,7 +1,7 @@
-import NavBar from '../components/navbar';
-import Footer from '../components/footer';
-import * as StringConstants from '../components/constants/app_strings';
-import ProductsCard from '../components/productsCard';
+import NavBar from 'components/navbar';
+import Footer from 'components/footer';
+import ProductsCard from 'components/productsCard';
+import * as StringConstants from 'components/constants/app_strings';
 
 /**
  * This component is the Products page

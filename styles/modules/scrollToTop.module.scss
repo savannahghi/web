@@ -1,0 +1,44 @@
+.toTop {
+    outline: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #c555b7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.95);
+    color: white;
+    cursor: pointer;
+    border: none;
+    z-index: 9;
+}
+
+/* Large devices (Desktops, Laptops between 1366px and 1440px screenWidths) */
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+    .toTop {
+        outline: none;
+        position: fixed;
+        right: 70px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #c555b7;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.95);
+        color: white;
+        cursor: pointer;
+        border: none;
+        z-index: 9;
+    }
+}
+
+/* Large devices (Desktops, Laptops above 1440px screenWidths) */
+@media only screen and (min-width: 1440px) {
+    .toTop {
+        outline: none;
+        position: fixed;
+        right: auto;
+        margin-left: 20px;
+    }
+}

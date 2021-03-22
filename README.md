@@ -135,3 +135,37 @@ Closes #03
 
 1. The **commit message header** can be used in solitary with a clear subject on issues with elementary changes.
 2. To close an issue automatically include the footer with a reference to the GitLab issue as demonstrated above.
+
+## Packages import
+
+Packages imported in every javascript file follow this order;
+
+```javascript
+1 . Next.js imports
+2 . Third-party package imports
+2 . Lib imports ('lib/*')
+3 . Pages imports ('pages/*')
+4 . Component imports ('components/*')
+5 . Constants imports ('components/constants/*')
+6 . Global Style imports ('styles/*')
+7 . Styled Modules imports ('styles/modules/*')
+8 . Relative files ('../../')
+```
+
+All the imports MUST follow the paths defined at the `./jsconfig.json` file to enhance readability and eliminate long chains of relative imports and their associated changes. Here are a few examples
+
+```javascript
+// Next.js imports imports
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+
+// Third party package imports
+import GhostContentAPI from '@tryghost/content-api';
+
+// lib imports
+import { getPosts } from 'lib/posts';
+
+// pages imports
+import Team from 'pages/team';
+```

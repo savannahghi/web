@@ -95,10 +95,6 @@ a {
     width: 180px;
 }
 
-.insights-container {
-    width: 900px;
-}
-
 .sghi-card {
     width: 350px;
     align-items: center;
@@ -108,6 +104,10 @@ a {
 
 .card-title {
     font-size: 14px;
+}
+
+.card-text{
+    font-size: 12px;
 }
 
 .page-title {
@@ -135,6 +135,19 @@ a {
 .pagination {
     align-items: center;
     justify-content: center;
+}
+
+.iframe_size {
+    width: 100rem !important;
+    height: 30rem;
+    border-radius: 5px;
+    padding-top: 3rem;
+    padding: 0px 0px;
+    margin-bottom: 10rem !important;
+}
+
+.contact-submit-btn{
+    text-align: center;
 }
 
 /* Extra small devices (phones, 320 and down screenWidths) */
@@ -184,10 +197,6 @@ a {
         .page-title-second {
             font-weight: bold;
         }
-    }
-
-    .insights-container {
-        width: 100%;
     }
 
     .sghi-card {

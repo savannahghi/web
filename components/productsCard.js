@@ -1,4 +1,4 @@
-import * as StringConstants from './constants/app_strings';
+import * as StringConstants from '../components/constants/app_strings';
 
 export default function ProductsCard() {
     return (

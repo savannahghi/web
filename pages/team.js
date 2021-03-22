@@ -1,7 +1,7 @@
-import NavBar from '../components/navbar';
-import Footer from '../components/footer';
-import TeamCard from '../components/teamCard';
-import * as StringConstants from '../components/constants/app_strings';
+import NavBar from 'components/navbar';
+import Footer from 'components/footer';
+import TeamCard from 'components/teamCard';
+import * as StringConstants from 'components/constants/app_strings';
 
 /**
  * This component is the Teams page

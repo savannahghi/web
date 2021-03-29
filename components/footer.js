@@ -120,6 +120,7 @@ export default function Footer() {
                                     <div className="col-1 mx-2">
                                         <a
                                             target="_blank"
+                                            aria-label="LinkedIn"
                                             href="https://www.linkedin.com/company/savannahglobalhealth"
                                             rel="noopener noreferrer">
                                             <i className="fab fa-linkedin-in fa-2x"></i>
@@ -128,6 +129,7 @@ export default function Footer() {
                                     <div className="col-1 mx-2">
                                         <a
                                             target="_blank"
+                                            aria-label="Twitter"
                                             href="https://twitter.com/SGHI76989573"
                                             rel="noopener noreferrer">
                                             <i className="fab fa-twitter fa-2x"></i>
@@ -136,6 +138,7 @@ export default function Footer() {
                                     <div className="col-1 mx-2">
                                         <a
                                             target="_blank"
+                                            aria-label="Facebook"
                                             href="https://fb.me/SavannahGlobalHealth"
                                             rel="noopener noreferrer">
                                             <i className="fab fa-facebook-f fa-2x"></i>

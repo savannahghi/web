@@ -1,3 +1,8 @@
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+import ReactMapGL from 'react-map-gl';
+import { Marker } from 'react-map-gl';
+import axios from 'axios';
 import NavBar from 'components/navbar';
 import Footer from 'components/footer';
 
@@ -5,6 +10,38 @@ import Footer from 'components/footer';
  * This component is the Contacts page
  */
 export default function Contact() {
+    const [viewport, setViewport] = useState({
+        latitude: -1.2879224276460453,
+        longitude: 36.78368589113946,
+        zoom: 15,
+        height: '30rem',
+        width: '100rem'
+    });
+
+    const { register, handleSubmit, errors, reset } = useForm();
+
+    async function onSubmitForm(values) {
+        // console.log(values);
+        let config = {
+            method: 'post',
+            url: `http://localhost:3000/api/contact`,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: { values }
+        };
+
+        try {
+            const response = await axios(config);
+            if (response.status == 200) {
+                console.log('Response was successful');
+                reset();
+            }
+            console.log(response);
+        } catch (e) {
+            console.log(e);
+        }
+    }
     return (
         <div>
             <main className="sghi_container">
@@ -21,35 +58,91 @@ export default function Contact() {
                         <div className="col-12">
                             <div className="">
                                 <div className="mb-5">
-                                    <form className="p-3">
+                                    <form
+                                        onSubmit={handleSubmit(onSubmitForm)}
+                                        method="post"
+                                        className="p-3">
                                         <div className="mb-4">
                                             <label className="form-label" htmlFor="form2Example1">
                                                 Name
                                             </label>
                                             <input
-                                                type="name"
+                                                type="text"
+                                                name="name"
+                                                ref={register({
+                                                    required: {
+                                                        value: true,
+                                                        message: 'Your Name is required'
+                                                    }
+                                                })}
                                                 id="form2Example1"
                                                 className="form-control"
                                             />
+                                            <span className="error_message">
+                                                {errors?.name?.message}
+                                            </span>
                                         </div>
                                         <div className="mb-4">
                                             <label className="form-label" htmlFor="form2Example1">
                                                 Email
                                             </label>
                                             <input
-                                                type="name"
+                                                type="email"
+                                                name="email"
+                                                ref={register({
+                                                    required: {
+                                                        value: true,
+                                                        message: 'Your email address is required'
+                                                    },
+                                                    minLength: {
+                                                        value: 8,
+                                                        message:
+                                                            'This is too short to be a valid email'
+                                                    },
+                                                    maxLength: {
+                                                        value: 120,
+                                                        message:
+                                                            'This is too long to be a valid email'
+                                                    },
+                                                    pattern: {
+                                                        value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                                                        message:
+                                                            'Please enter a valid email address'
+                                                    }
+                                                })}
                                                 id="form2Example1"
                                                 className="form-control"
                                             />
+                                            <span className="error_message">
+                                                {errors?.email?.message}
+                                            </span>
                                         </div>
                                         <div className="mb-4">
                                             <label className="form-label" htmlFor="form2Example1">
                                                 Message
                                             </label>
                                             <textarea
+                                                name="message"
+                                                ref={register({
+                                                    required: {
+                                                        value: true,
+                                                        message: 'Your Message is required'
+                                                    },
+                                                    minLength: {
+                                                        value: 50,
+                                                        message: 'This message is too short'
+                                                    },
+                                                    maxLength: {
+                                                        value: 1000,
+                                                        message: 'This message is too long'
+                                                    }
+                                                })}
                                                 className="form-control"
                                                 id="form4Example3"
                                                 rows="4"></textarea>
+                                            <span className="error_message">
+                                                {errors?.message?.message}
+                                            </span>
                                         </div>
 
                                         <div className="contact-submit-btn ">
@@ -65,37 +158,61 @@ export default function Contact() {
                                             <button
                                                 type="button"
                                                 className="btn btn-lg btn-secondary btn-floating mx-1">
-                                                <i className="fab fa-facebook-f"></i>
+                                                <a
+                                                    target="_blank"
+                                                    aria-label="LinkedIn"
+                                                    href="https://www.linkedin.com/company/savannahglobalhealth"
+                                                    rel="noopener noreferrer">
+                                                    <i className="fab fa-linkedin-in"></i>
+                                                </a>
                                             </button>
 
                                             <button
                                                 type="button"
                                                 className="btn btn-lg btn-secondary btn-floating mx-1">
-                                                <i className="fab fa-twitter"></i>
+                                                <a
+                                                    target="_blank"
+                                                    aria-label="Twitter"
+                                                    href="https://twitter.com/SGHI76989573"
+                                                    rel="noopener noreferrer">
+                                                    <i className="fab fa-twitter"></i>
+                                                </a>
                                             </button>
 
                                             <button
                                                 type="button"
                                                 className="btn btn-lg btn-secondary btn-floating mx-1">
-                                                <i className="fab fa-linkedin-in"></i>
+                                                <a
+                                                    target="_blank"
+                                                    aria-label="Facebook"
+                                                    href="https://fb.me/SavannahGlobalHealth"
+                                                    rel="noopener noreferrer">
+                                                    <i className="fab fa-facebook-f"></i>
+                                                </a>
                                             </button>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 my-5">
-                            <div className="card">
-                                <iframe
-                                    className="iframe_size"
-                                    title="Savannah Informatics Location"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.810035836058!2d36.781561614168446!3d-1.288136135990082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109a1500e0b7%3A0xb21ecf1c940de8bf!2sSavannah%20Informatics%20Limited!5e0!3m2!1sen!2ske!4v1616577307308!5m2!1sen!2ske"
-                                    width="100%"
-                                    height="600"
-                                    style={{ border: 0 }}
-                                    allowFullScreen=""
-                                    loading="lazy"></iframe>
-                            </div>
+                        <div className="col-12 py-5">
+                            <ReactMapGL
+                                className="card iframe_size"
+                                {...viewport}
+                                onViewportChange={(viewport) => {
+                                    setViewport(viewport);
+                                }}
+                                mapboxApiAccessToken="pk.eyJ1IjoiYWJkaS1hZGFuIiwiYSI6ImNrbXVteW9iaTEzNW0ycXBiemlwbmpidjcifQ.I43XBM1HVu-cauLRbdiFVw">
+                                <Marker
+                                    latitude={-1.2879224276460453}
+                                    longitude={36.78368589113946}>
+                                    <i className="fas fa-map-marker-alt fa-3x primary-color"></i>
+                                    <br />
+                                    <p className="sghi_marker primary-color">
+                                        Savannah Global Health Institute
+                                    </p>
+                                </Marker>
+                            </ReactMapGL>
                         </div>
                     </div>
                 </main>

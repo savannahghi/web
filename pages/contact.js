@@ -3,8 +3,9 @@ import { useState } from 'react';
 import ReactMapGL from 'react-map-gl';
 import { Marker } from 'react-map-gl';
 import axios from 'axios';
-import NavBar from 'components/navbar';
-import Footer from 'components/footer';
+import NavBar from 'components/Navbar';
+import Footer from 'components/Footer';
+import TitleBar from '../components/TitleBar';
 
 /**
  * This component is the Contacts page
@@ -42,10 +43,17 @@ export default function Contact() {
             console.log(e);
         }
     }
+
+    const titleProps = {
+        title: 'Contact Us'
+    };
+
     return (
         <div>
+            <TitleBar props={titleProps} />
+
             <main className="sghi_container">
-                <NavBar />
+                <NavBar props={titleProps} />
 
                 <main className="container">
                     <div className="row">

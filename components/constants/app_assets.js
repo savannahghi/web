@@ -7,7 +7,7 @@ export const navBarBrand = '/images/SGHI_logo.svg';
 export const scrollBtn = '/icons/scroll_icon.svg';
 
 // story component
-export const ourStoryVideoThumbnail = '/images/phd.svg';
+export const videoThumbnail = 'https://www.youtube.com/embed/gcv2Z2AdpjM';
 export const africaGraphic = '/images/africa.svg';
 
 // why now component

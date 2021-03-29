@@ -1,11 +1,11 @@
 import { getPosts } from 'lib/posts';
-import NavBar from 'components/navbar';
-import Footer from 'components/footer';
-import InsightCard from 'components/insightsCard';
-import Pagination from 'components/pagination';
+import TitleBar from '../components/TitleBar';
+import NavBar from 'components/Navbar';
+import Footer from 'components/Footer';
+import InsightCard from 'components/InsightsCard';
+import Pagination from 'components/Pagination';
 import * as StringConstants from 'components/constants/app_strings';
 
-// eslint-disable-next-line no-unused-vars
 export async function getStaticProps(context) {
     const posts = await getPosts();
 
@@ -16,15 +16,22 @@ export async function getStaticProps(context) {
     }
 
     return {
-        props: { posts }
+        props: { posts },
+        revalidate: 30
     };
 }
 
 export default function Insights({ posts }) {
+    const titleProps = {
+        title: 'Our Insights'
+    };
+
     return (
         <div>
+            <TitleBar props={titleProps} />
+
             <main className="sghi_container">
-                <NavBar />
+                <NavBar props={titleProps} />
 
                 <div className="container">
                     {posts ? (
@@ -40,7 +47,7 @@ export default function Insights({ posts }) {
                             {posts.map((post) => (
                                 <InsightCard key={post.id} props={post} />
                             ))}
-                            <Pagination /> {/* todo: make dynamic */}
+                            <Pagination />
                         </div>
                     ) : (
                         <p>An Error Occured, Try again</p>

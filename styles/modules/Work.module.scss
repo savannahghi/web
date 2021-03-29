@@ -19,11 +19,11 @@
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (max-width: 320px) {
     .work {
+        padding-top: 10rem;
         .work_title {
-            position: relative;
-            top: -10rem;
             text-align: center;
             font-size: 30px;
+            top: 1rem;
         }
 
         .work_subtitle {
@@ -39,10 +39,7 @@
         }
 
         .map_graphic {
-            position: relative;
-            top: -5rem;
-            text-align: center;
-            width: 300rem;
+            display: none !important;
         }
     }
 }
@@ -50,30 +47,33 @@
 /* Small devices (phones, between 320px and 375px screenWidths) */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
     .work {
+        position: relative !important;
+        // top: -3rem !important;
+
         .work_title {
             position: relative;
-            top: -10rem;
             text-align: center;
             font-size: 30px;
+            top: -10rem !important;
+            left:1rem;
         }
 
         .work_subtitle {
             position: relative;
             top: -9rem;
             text-align: center;
+            left: 1rem;
         }
 
         .read_more_btn {
             position: relative;
             top: -8rem;
             text-align: center;
+            left: 1rem;
         }
 
         .map_graphic {
-            position: relative;
-            top: -5rem;
-            text-align: center;
-            width: 300rem;
+            display: none;
         }
     }
 }
@@ -83,7 +83,7 @@
     .work {
         .work_title {
             position: relative;
-            top: -15rem;
+            padding-top: 4rem;
             text-align: center;
             font-size: 30px;
             left: 0rem;
@@ -91,7 +91,7 @@
 
         .work_subtitle {
             position: relative;
-            top: -15rem;
+            top: -8rem;
             text-align: center;
             left: 10px;
             width: 250px;
@@ -99,16 +99,13 @@
 
         .read_more_btn {
             position: relative;
-            top: -14rem;
+            top: -5rem;
             text-align: center;
             left: 0px;
         }
 
         .map_graphic {
-            position: relative;
-            top: -8rem;
-            text-align: center;
-            width: 20rem;
+            display: none;
         }
     }
 }
@@ -116,18 +113,21 @@
 /* Medium devices (Tablets, between 425px and 768px screenWidths) */
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     .work {
+        position: relative;
+        top: 5rem;
+
         .work_title {
             min-width: 500px;
             position: relative;
-            left: -6rem;
             top: -7rem;
+            left: 0rem;
         }
 
         .work_subtitle {
             position: relative;
             top: -7rem;
             text-align: center;
-            left: 30px;
+            left: 20px;
             min-width: 200px;
         }
 
@@ -135,12 +135,12 @@
             position: relative;
             top: -6rem;
             text-align: center;
-            left: 0px;
+            left: 1rem;
         }
 
         .map_graphic {
             position: relative;
-            right: -3rem;
+            right: -1rem;
             top: -6rem;
             text-align: center;
             min-width: 20rem;

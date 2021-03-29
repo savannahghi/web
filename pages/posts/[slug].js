@@ -1,18 +1,25 @@
 import { getSinglePost, getPosts } from '../../lib/posts';
-import NavBar from 'components/navbar';
-import Footer from 'components/footer';
-import PostStyles from 'styles/modules/posts.module.scss';
+import TitleBar from '../../components/TitleBar';
+import NavBar from 'components/Navbar';
+import Footer from 'components/Footer';
+import PostStyles from 'styles/modules/Posts.module.scss';
 
 // PostPage page component
 export default function PostPage(props) {
+    const titleProps = {
+        title: 'post'
+    };
+
     return (
         <main className="sghi-container">
-            <NavBar />
+            <TitleBar props={titleProps} />
+
+            <NavBar props={titleProps} />
 
             <div className="container pb-5">
                 {props ? (
                     <div className={PostStyles.posts}>
-                        <h1 className="py-5">{props.post.title}</h1>
+                        <h1 className="py-5">{props.title}</h1>
                         <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
                     </div>
                 ) : (
@@ -49,6 +56,7 @@ export async function getStaticProps(context) {
     }
 
     return {
-        props: { post }
+        props: { post },
+        revalidate: 30
     };
 }

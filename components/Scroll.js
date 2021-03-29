@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ScrollToTopBtn from '../components/scrollToTop';
+import ScrollToTopBtn from './ScrollToTop';
 
 export default function ScrollArrow() {
     const [showScroll, setShowScroll] = useState(false);

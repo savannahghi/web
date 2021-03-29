@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ReactMapGL from 'react-map-gl';
-import * as StringConstants from '../components/constants/app_strings';
-import WorkStyles from '../styles/modules/work.module.scss';
+import * as StringConstants from './constants/app_strings';
+import WorkStyles from '../styles/modules/Work.module.scss';
 
 export default function Work() {
     const [viewport, setViewport] = useState({
@@ -30,13 +30,15 @@ export default function Work() {
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 py-5">
-                        <ReactMapGL
-                            className="card iframe_size"
-                            {...viewport}
-                            onViewportChange={(viewport) => {
-                                setViewport(viewport);
-                            }}
-                            mapboxApiAccessToken="pk.eyJ1IjoiYWJkaS1hZGFuIiwiYSI6ImNrbXVteW9iaTEzNW0ycXBiemlwbmpidjcifQ.I43XBM1HVu-cauLRbdiFVw"></ReactMapGL>
+                        <div className={WorkStyles.map_graphic}>
+                            <ReactMapGL
+                                className="card iframe_size"
+                                {...viewport}
+                                onViewportChange={(viewport) => {
+                                    setViewport(viewport);
+                                }}
+                                mapboxApiAccessToken="pk.eyJ1IjoiYWJkaS1hZGFuIiwiYSI6ImNrbXVteW9iaTEzNW0ycXBiemlwbmpidjcifQ.I43XBM1HVu-cauLRbdiFVw"></ReactMapGL>
+                        </div>
                     </div>
                 </div>
             </div>

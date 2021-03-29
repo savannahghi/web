@@ -42,6 +42,11 @@ export default function TitleBar({ props }) {
                 rel="stylesheet"
             />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+            <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+            <link
+                href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
+                rel="stylesheet"
+            />
         </Head>
     );
 }

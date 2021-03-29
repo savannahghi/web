@@ -1,16 +1,23 @@
-import NavBar from 'components/navbar';
-import Footer from 'components/footer';
-import TeamCard from 'components/teamCard';
+import TitleBar from '../components/TitleBar';
+import NavBar from 'components/Navbar';
+import Footer from 'components/Footer';
+import TeamCard from 'components/TeamCard';
 import * as StringConstants from 'components/constants/app_strings';
 
 /**
  * This component is the Teams page
  */
 export default function Team() {
+    const titleProps = {
+        title: 'Our Team'
+    };
+
     return (
         <div>
+            <TitleBar props={titleProps} />
+
             <main className="sghi_container">
-                <NavBar />
+                <NavBar props={titleProps} />
 
                 <div className="container">
                     <div className="row py-5 px-5">

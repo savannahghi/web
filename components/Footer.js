@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import * as AssetConstants from '../components/constants/app_assets';
-import * as StringConstants from '../components/constants/app_strings';
-import FooterStyles from '../styles/modules/footer.module.scss';
+import * as AssetConstants from './constants/app_assets';
+import * as StringConstants from './constants/app_strings';
+import FooterStyles from '../styles/modules/Footer.module.scss';
 
 export default function Footer() {
     return (
@@ -112,37 +112,39 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
-                            <p className={FooterStyles.footer_title}>
-                                {StringConstants.conectWithUs}
-                            </p>
-                            <div className={FooterStyles.social_icons}>
-                                <div className="row">
-                                    <div className="col-1 mx-2">
-                                        <a
-                                            target="_blank"
-                                            aria-label="LinkedIn"
-                                            href="https://www.linkedin.com/company/savannahglobalhealth"
-                                            rel="noopener noreferrer">
-                                            <i className="fab fa-linkedin-in fa-2x"></i>
-                                        </a>
-                                    </div>
-                                    <div className="col-1 mx-2">
-                                        <a
-                                            target="_blank"
-                                            aria-label="Twitter"
-                                            href="https://twitter.com/SGHI76989573"
-                                            rel="noopener noreferrer">
-                                            <i className="fab fa-twitter fa-2x"></i>
-                                        </a>
-                                    </div>
-                                    <div className="col-1 mx-2">
-                                        <a
-                                            target="_blank"
-                                            aria-label="Facebook"
-                                            href="https://fb.me/SavannahGlobalHealth"
-                                            rel="noopener noreferrer">
-                                            <i className="fab fa-facebook-f fa-2x"></i>
-                                        </a>
+                            <div className={FooterStyles.connect}>
+                                <p className={FooterStyles.footer_title}>
+                                    {StringConstants.conectWithUs}
+                                </p>
+                                <div className={FooterStyles.social_icons}>
+                                    <div className="row">
+                                        <div className="col-1 mx-2">
+                                            <a
+                                                target="_blank"
+                                                aria-label="LinkedIn"
+                                                href="https://www.linkedin.com/company/savannahglobalhealth"
+                                                rel="noopener noreferrer">
+                                                <i className="fab fa-linkedin-in fa-2x"></i>
+                                            </a>
+                                        </div>
+                                        <div className="col-1 mx-2">
+                                            <a
+                                                target="_blank"
+                                                aria-label="Twitter"
+                                                href="https://twitter.com/SGHI76989573"
+                                                rel="noopener noreferrer">
+                                                <i className="fab fa-twitter fa-2x"></i>
+                                            </a>
+                                        </div>
+                                        <div className="col-1 mx-2">
+                                            <a
+                                                target="_blank"
+                                                aria-label="Facebook"
+                                                href="https://fb.me/SavannahGlobalHealth"
+                                                rel="noopener noreferrer">
+                                                <i className="fab fa-facebook-f fa-2x"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

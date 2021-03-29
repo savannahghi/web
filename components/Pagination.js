@@ -1,6 +1,6 @@
 export default function Pagination() {
     return (
-        <div className="my-5 text-center pagination">
+        <div className="my-5 text-center pagination d-none">
             <nav aria-label="...">
                 <ul className="pagination">
                     <li className="page-item disabled">

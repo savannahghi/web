@@ -4,27 +4,25 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         // Process a POST request
 
-        const { name, email, message } = req.body;
-
         const transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
             port: 465,
             secure: true,
             auth: {
-                user: 'savannahghi.web@gmail.com',
-                pass: 'savannahghi'
+                user: process.env.REACT_APP_SEND_MAIL_URL,
+                pass: process.env.REACT_APP_SEND_MAIL_PASS
             }
         });
 
         try {
             await transporter.sendMail({
-                from: email,
-                to: 'savannahghi.web@gmail.com',
+                from: process.env.REACT_APP_SEND_MAIL_URL,
+                to: req.body.values.email,
                 subject: 'Savannah Global Health Institute Contact',
-                html: `<p> <Strong>${name}</strong> sent you an email from sghi-contact form with the following message: <strong>${message}</strong>`
+                html: `<p> <Strong>${req.body.values.name}</strong> sent you an email from sghi-contact form with the following message: <strong>${req.body.values.message}</strong>`
             });
             console.log('email was sent');
-            console.log(req.body);
+            console.log(req.body.values.email);
         } catch (error) {
             console.log(error);
         }

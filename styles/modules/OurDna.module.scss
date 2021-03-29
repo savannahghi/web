@@ -1,10 +1,9 @@
 .main {
-    padding-top: 5rem;
+    padding-top: 5rem !important;
 
     .dna_title {
         font-size: 40px;
         color: #c2368c;
-        padding-bottom: 3rem;
 
         .dna_title_first {
             font-weight: bold;
@@ -32,10 +31,11 @@
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (max-width: 320px) {
     .main {
+        position: relative;
+        top: -10rem !important;
+        
         .dna_title {
             font-size: 20px;
-            position: relative;
-            top: -1rem;
             text-align: center;
 
             .dna_title_first {
@@ -131,7 +131,6 @@
     .dna_title {
         font-size: 20px;
         position: relative;
-        top: -9rem;
         text-align: center;
         left: 10px;
 
@@ -140,19 +139,8 @@
         }
     }
 
-    .dna_pillars {
-        position: relative;
-        top: -11rem;
-        display: block;
-        direction: relative;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-    }
-
     .dna_item {
-        position: absolute;
+        // position: absolute;
         left: 10px;
         width: auto;
     }

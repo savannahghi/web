@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import * as StringConstants from '../components/constants/app_strings';
+import * as StringConstants from './constants/app_strings';
 
 export default function InsightCard({ props }) {
     // console.log(props);

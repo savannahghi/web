@@ -1,0 +1,151 @@
+.mission {
+    padding-top: 5rem;
+}
+
+.mission_title {
+    font-size: 26px;
+    color: #c2368c;
+
+    .mission_1 {
+        font-weight: bold;
+    }
+}
+
+.africa_graphic {
+    width: 200rem;
+}
+
+.story_btn {
+    padding: 20px 0px;
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    .mission_title {
+        text-align: center;
+        position: relative;
+        top: -50px;
+        left: 1rem;
+        font-size: 20px;
+    }
+
+    .mission_content {
+        text-align: center;
+        position: relative;
+        top: -15px;
+        left: 1rem;
+    }
+
+    .story_btn {
+        text-align: center;
+        position: relative;
+        left: 1rem;
+    }
+
+    .africa_graphic {
+        position: relative;
+        left: -4rem !important;
+        min-width: 30rem;
+        text-align: center;
+        padding-right: 50px;
+    }
+}
+
+/* Small devices (phones, between 320px and 375px screenWidths) */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .mission_title {
+        text-align: center;
+        position: relative;
+        top: -50px;
+        font-size: 20px;
+    }
+
+    .mission_content {
+        text-align: center;
+        position: relative;
+        top: -15px;
+    }
+
+    .africa_graphic {
+        position: relative;
+        left: -30px;
+        min-width: 30rem;
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    .story_btn {
+        text-align: center;
+        position: relative;
+        left: 1rem;
+    }
+}
+
+/* Medium devices (large-phones, between 375px and 425px screenWidths) */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    .mission_title {
+        text-align: center;
+        position: relative;
+        top: -50px;
+        font-size: 20px;
+        left: 10px;
+    }
+
+    .mission_content {
+        text-align: center;
+        position: relative;
+        top: -15px;
+        left: 30px;
+        width: 250px;
+    }
+
+    .africa_graphic {
+        position: relative;
+        left: -40px !important;
+        min-width: 30rem;
+        text-align: center;
+    }
+
+    .story_btn {
+        text-align: center;
+        position: relative;
+        left: 0rem;
+    }
+}
+
+/* Medium devices (Tablets, between 425px and 768px screenWidths) */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .mission {
+        position: relative;
+        top: 1rem;
+
+        .mission_title {
+            text-align: center;
+            position: relative;
+            top: -50px;
+            font-size: 20px;
+            left: 10px;
+        }
+
+        .mission_content {
+            text-align: center;
+            position: relative;
+            top: -15px;
+            left: 20px;
+            width: 250px;
+        }
+
+        .africa_graphic {
+            position: relative;
+            left: -70px;
+            min-width: 30rem;
+            text-align: center;
+            justify-content: center;
+        }
+        .story_btn {
+            text-align: center;
+            position: relative;
+            left: 1rem;
+        }
+    }
+}

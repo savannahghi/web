@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ScrollToTopStyles from '../styles/modules/scrollToTop.module.scss';
+import ScrollToTopStyles from '../styles/modules/ScrollToTop.module.scss';
 
 export default function ScrollToTopBtn() {
     return (

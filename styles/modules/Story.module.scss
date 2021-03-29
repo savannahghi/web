@@ -9,8 +9,8 @@
 
     .salutation {
         position: relative;
-        top: -30px;
-        left: -3rem;
+        top: 10px;
+        // left: -3rem;
         text-align: center;
     }
 
@@ -23,33 +23,19 @@
         }
     }
 
+    .video_component {
+        margin-top: 3rem;
+        width: 600px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
     .story_subtitle {
         font-weight: bold;
     }
 
-    .story_btn {
-        padding: 20px 0px;
-    }
-
     .story_sub {
         font-size: 14px;
-    }
-
-    .mission {
-        padding-top: 5rem;
-    }
-
-    .mission_title {
-        font-size: 26px;
-        color: #c2368c;
-
-        .mission_1 {
-            font-weight: bold;
-        }
-    }
-
-    .africa_graphic {
-        width: 200rem;
     }
 }
 
@@ -58,7 +44,8 @@
     .story {
         .salutation {
             position: relative;
-            top: -30px;
+            top: 3rem !important;
+            left: 1rem !important;
             text-align: center;
         }
 
@@ -72,38 +59,15 @@
         .video_component {
             position: relative;
             top: 50px;
-            left: -50px;
+            left: 2rem !important;
         }
 
-        .story_btn {
-            text-align: center;
-        }
 
         .story_sub {
             position: relative;
-            top: -30px;
+            top: -1rem !important;
+            left: 2rem !important;
             text-align: center;
-        }
-
-        .mission_title {
-            text-align: center;
-            position: relative;
-            top: -50px;
-            font-size: 20px;
-        }
-
-        .mission_content {
-            text-align: center;
-            position: relative;
-            top: -15px;
-        }
-
-        .africa_graphic {
-            position: relative;
-            left: -50px;
-            min-width: 30rem;
-            text-align: center;
-            padding-right: 50px;
         }
     }
 }
@@ -114,6 +78,7 @@
         .story_title {
             position: relative;
             top: -300px;
+            left: 20px !important;
             text-align: center;
             font-size: 30px;
         }
@@ -126,9 +91,9 @@
 
         .salutation {
             position: relative;
-            top: -30px;
+            top: 30px !important;
             text-align: center;
-            left: -20px;
+            left: 20px !important;
         }
 
         .story_sub {
@@ -138,27 +103,6 @@
         }
         .story_btn {
             text-align: center;
-        }
-
-        .mission_title {
-            text-align: center;
-            position: relative;
-            top: -50px;
-            font-size: 20px;
-        }
-
-        .mission_content {
-            text-align: center;
-            position: relative;
-            top: -15px;
-        }
-
-        .africa_graphic {
-            position: relative;
-            left: -30px;
-            min-width: 30rem;
-            text-align: center;
-            padding-right: 50px;
         }
     }
 }
@@ -177,51 +121,28 @@
         .video_component {
             position: relative;
             top: 30px;
-            left: 20px;
+            left: 2rem !important;
         }
 
         .salutation {
             position: relative;
-            top: -30px;
+            top: 30px !important;
             text-align: center;
-            left: -30px;
+            left: 20px !important;
         }
 
         .story_sub {
             position: relative;
             top: -30px;
             text-align: center;
-            left: 20px;
+            left: 35px;
             width: 250px;
         }
 
         .story_btn {
             text-align: center;
             position: relative;
-            left: 10px;
-        }
-
-        .mission_title {
-            text-align: center;
-            position: relative;
-            top: -50px;
-            font-size: 20px;
-            left: 0px;
-        }
-
-        .mission_content {
-            text-align: center;
-            position: relative;
-            top: -15px;
             left: 20px;
-            width: 250px;
-        }
-
-        .africa_graphic {
-            position: relative;
-            left: -50px;
-            min-width: 30rem;
-            text-align: center;
         }
     }
 }
@@ -231,29 +152,29 @@
     .story {
         .story_title {
             position: relative;
-            top: -300px;
-            left: 10px;
+            top: -3rem;
+            left: -7rem;
         }
 
         .video_component {
             position: relative;
             top: 30px;
             left: 40px;
-            width: auto
+            width: auto;
         }
 
         .salutation {
             position: relative;
-            top: -30px;
             text-align: center;
-            left: -30px;
+            left: 30px;
+            top: 30px;
         }
 
         .story_sub {
             position: relative;
-            top: -30px;
+            top: 20px;
             text-align: center;
-            left: 40px;
+            left: 20px;
             width: 250px;
         }
 
@@ -261,31 +182,6 @@
             text-align: center;
             position: relative;
             left: 10px;
-        }
-
-        .mission_title {
-            text-align: center;
-            position: relative;
-            top: -50px;
-            font-size: 20px;
-            left: 10px;
-        }
-
-        .mission_content {
-            text-align: center;
-            position: relative;
-            top: -15px;
-            left: 40px;
-            width: 250px;
-        }
-
-        .africa_graphic {
-            position: relative;
-            left: 0px;
-            min-width: 30rem;
-            text-align: center;
-            justify-content: center;
-            //padding-right: 50px;
         }
     }
 }

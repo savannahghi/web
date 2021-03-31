@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import * as StringConstants from './constants/app_strings';
 import * as AssetConstants from '../components/constants/app_assets';
 import MissionStyles from '../styles/modules/Mission.module.scss';
@@ -22,9 +23,11 @@ export default function Mission() {
                         </span>
                     </p>
                     <div className={MissionStyles.story_btn}>
-                        <button className="btn btn-secondary btn-rounded text-capitalize px-5">
-                            {StringConstants.readMoreBtnText}
-                        </button>
+                        <Link href="/posts/mission">
+                            <div className="btn btn-secondary btn-rounded text-capitalize px-5">
+                                {StringConstants.readMoreBtnText}
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-5">

@@ -118,6 +118,7 @@ export default function NavBar({ props }) {
                                 <button
                                     className="btn btn-sm btn-secondary round"
                                     type="button"
+                                    aria-label="Search Button"
                                     data-mdb-ripple-color="dark">
                                     <i className="fas fa-search"></i>
                                 </button>

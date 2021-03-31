@@ -12,7 +12,8 @@ export default function Story({ props }) {
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
+                            allowFullScreen
+                            loading="lazy"></iframe>
                         <p className={StoryStles.salutation}>
                             <span className={StoryStles.name}>{props.name}</span>
                             <br></br> {props.position}

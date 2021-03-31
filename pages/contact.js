@@ -1,11 +1,14 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-import ReactMapGL from 'react-map-gl';
-import { Marker } from 'react-map-gl';
+import dynamic from 'next/dynamic';
 import axios from 'axios';
 import NavBar from 'components/Navbar';
 import Footer from 'components/Footer';
 import TitleBar from '../components/TitleBar';
+
+const ReactMapGL = dynamic(import('react-map-gl'), { loading: () => 'Loading Map...' });
+const Marker = dynamic(() => import('react-map-gl').then((mod) => mod.Marker));
+const Popup = dynamic(() => import('react-map-gl').then((mod) => mod.Popup));
 
 /**
  * This component is the Contacts page
@@ -21,8 +24,9 @@ export default function Contact() {
 
     const { register, handleSubmit, errors, reset } = useForm();
 
+    const [selectedLocation, setSelectedLocation] = useState(null);
+
     async function onSubmitForm(values) {
-        // console.log(values);
         let config = {
             method: 'post',
             url: `http://localhost:3000/api/contact`,
@@ -35,7 +39,7 @@ export default function Contact() {
         try {
             const response = await axios(config);
             if (response.status == 200) {
-                console.log('Response was successful');
+                console.log('Successful');
                 reset();
             }
             console.log(response);
@@ -155,6 +159,7 @@ export default function Contact() {
 
                                         <div className="contact-submit-btn ">
                                             <button
+                                                aria-label="Submit Button"
                                                 type="submit"
                                                 className="btn btn-secondary font-weight-bold text-capitalize mb-4">
                                                 Submit
@@ -165,6 +170,7 @@ export default function Contact() {
                                             <p>Or Reach Out to Us Via Our Social media handles</p>
                                             <button
                                                 type="button"
+                                                aria-label="LinkedIn Button"
                                                 className="btn btn-lg btn-secondary btn-floating mx-1">
                                                 <a
                                                     target="_blank"
@@ -177,6 +183,7 @@ export default function Contact() {
 
                                             <button
                                                 type="button"
+                                                aria-label="Twitter Button"
                                                 className="btn btn-lg btn-secondary btn-floating mx-1">
                                                 <a
                                                     target="_blank"
@@ -189,6 +196,7 @@ export default function Contact() {
 
                                             <button
                                                 type="button"
+                                                aria-label="Facebook Button"
                                                 className="btn btn-lg btn-secondary btn-floating mx-1">
                                                 <a
                                                     target="_blank"
@@ -214,12 +222,37 @@ export default function Contact() {
                                 <Marker
                                     latitude={-1.2879224276460453}
                                     longitude={36.78368589113946}>
-                                    <i className="fas fa-map-marker-alt fa-3x primary-color"></i>
-                                    <br />
-                                    <p className="sghi_marker primary-color">
-                                        Savannah Global Health Institute
-                                    </p>
+                                    <div className="row">
+                                        <i className="fas fa-map-marker-alt fa-3x primary-color"></i>
+                                        <button
+                                            aria-label="Location Marker Button"
+                                            className="contact-marker-btn btn btn-sm btn-secondary text-capitalize mt-2"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                setSelectedLocation(true);
+                                            }}>
+                                            Savannah Global Health Institute
+                                        </button>
+                                    </div>
                                 </Marker>
+                                {selectedLocation ? (
+                                    <Popup
+                                        className="marker_popup"
+                                        latitude={-1.2879224276460453}
+                                        longitude={36.78368589113946}
+                                        onClose={() => {
+                                            setSelectedLocation(null);
+                                        }}>
+                                        <div className="marker_popup">
+                                            <div className="row p-3">
+                                                <div className="country-name">
+                                                    Directions to Our Offices
+                                                </div>
+                                                <hr className="divider"></hr>
+                                            </div>
+                                        </div>
+                                    </Popup>
+                                ) : null}
                             </ReactMapGL>
                         </div>
                     </div>

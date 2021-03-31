@@ -1,7 +1,14 @@
 import { useState } from 'react';
-import ReactMapGL, { Layer, Marker, Popup } from 'react-map-gl';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import Image from 'next/image';
 import * as StringConstants from './constants/app_strings';
 import WorkStyles from '../styles/modules/Work.module.scss';
+
+const ReactMapGL = dynamic(import('react-map-gl'), { loading: () => 'Loading Map...' });
+const Layer = dynamic(() => import('react-map-gl').then((mod) => mod.Layer));
+const Marker = dynamic(() => import('react-map-gl').then((mod) => mod.Marker));
+const Popup = dynamic(() => import('react-map-gl').then((mod) => mod.Popup));
 
 const countriesLayer = {
     id: 'country-boundaries',
@@ -42,7 +49,9 @@ export default function Work() {
                         </p>
                         <p className={WorkStyles.work_subtitle}>{StringConstants.ourWorkContent}</p>
                         <div className={WorkStyles.read_more_btn}>
-                            <button className="btn btn-secondary btn-rounded text-capitalize px-5">
+                            <button
+                                aria-label="Read More Button"
+                                className="btn btn-secondary btn-rounded text-capitalize px-5">
                                 {StringConstants.readMoreBtnText}
                             </button>
                         </div>
@@ -63,6 +72,7 @@ export default function Work() {
                                         longitude={country.longitude}
                                         latitude={country.latitude}>
                                         <button
+                                            aria-label="Marker Button"
                                             className="marker-btn btn btn-sm btn-secondary text-capitalize"
                                             onClick={(e) => {
                                                 e.preventDefault();
@@ -83,10 +93,13 @@ export default function Work() {
                                         <div className="row">
                                             <div className="col-2">
                                                 <div className="">
-                                                    <img
+                                                    <Image
                                                         className="country-flag"
                                                         src={selectedCountry.flag}
-                                                        alt={selectedCountry.name}></img>
+                                                        alt="Country Flag"
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </div>
                                             </div>
                                             <div className="col-10">
@@ -121,6 +134,11 @@ export default function Work() {
                                                     </p>
                                                 </div>
                                             </div>
+                                            <Link href="/posts/mission">
+                                                <div className="round btn btn-sm btn-secondary mx-2 text-capitalize font-weight-bold">
+                                                    View More
+                                                </div>
+                                            </Link>
                                         </div>
                                     </Popup>
                                 ) : null}
@@ -136,10 +154,10 @@ export default function Work() {
 const data = [
     {
         name: 'United States Of America',
-        id: 1,
+        id: 0,
         initials: 'USA',
         'iso-code': 'USA',
-        flag: '/flags/ke.png',
+        flag: '/flags/us.png',
         title: 'Project Title, Pillar of Focus, AOI',
         screened: '250,000 +',
         regions: '38 +',
@@ -148,10 +166,10 @@ const data = [
     },
     {
         name: 'United Kingdom',
-        id: 2,
+        id: 1,
         initials: 'UK',
         'iso-code': 'GBR',
-        flag: '/flags/ke.png',
+        flag: '/flags/gb.png',
         title: 'Project Title, Pillar of Focus, AOI',
         screened: '250,000 +',
         regions: '38 +',
@@ -160,10 +178,10 @@ const data = [
     },
     {
         name: 'South Africa',
-        id: 3,
-        initials: 'SA',
+        id: 2,
+        initials: 'ZA',
         'iso-code': 'ZAF',
-        flag: '/flags/ke.png',
+        flag: '/flags/za.png',
         title: 'Project Title, Pillar of Focus, AOI',
         screened: '250,000 +',
         regions: '38 +',
@@ -172,7 +190,7 @@ const data = [
     },
     {
         name: 'Kenya',
-        id: 4,
+        id: 3,
         initials: 'KE',
         'iso-code': 'KEN',
         flag: '/flags/ke.png',
@@ -184,10 +202,10 @@ const data = [
     },
     {
         name: 'India',
-        id: 5,
+        id: 4,
         initials: 'IN',
         'iso-code': 'IND',
-        flag: '/flags/ke.png',
+        flag: '/flags/in.png',
         title: 'Project Title, Pillar of Focus, AOI',
         screened: '250,000 +',
         regions: '38 +',
@@ -196,10 +214,10 @@ const data = [
     },
     {
         name: 'Saudi Arabia',
-        id: 6,
+        id: 5,
         initials: 'KSA',
         'iso-code': 'SAU',
-        flag: '/flags/ke.png',
+        flag: '/flags/sa.png',
         title: 'Project Title, Pillar of Focus, AOI',
         screened: '250,000 +',
         regions: '38 +',
@@ -208,10 +226,10 @@ const data = [
     },
     {
         name: 'Nigeria',
-        id: 7,
+        id: 6,
         initials: 'NG',
         'iso-code': 'NGA',
-        flag: '/flags/ke.png',
+        flag: '/flags/ng.png',
         title: 'Project Title, Pillar of Focus, AOI',
         screened: '250,000 +',
         regions: '38 +',

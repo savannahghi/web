@@ -19,7 +19,7 @@ export default function PostPage(props) {
             <div className="container pb-5">
                 {props ? (
                     <div className={PostStyles.posts}>
-                        <h1 className="py-5">{props.title}</h1>
+                        <h1 className="py-5">{props.post.title}</h1>
                         <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
                     </div>
                 ) : (
@@ -35,7 +35,6 @@ export default function PostPage(props) {
 export async function getStaticPaths() {
     const posts = await getPosts();
 
-    // Get the paths we want to create based on posts
     const paths = posts.map((post) => ({
         params: { slug: post.slug }
     }));
@@ -44,8 +43,6 @@ export async function getStaticPaths() {
     return { paths, fallback: false };
 }
 
-// Pass the page slug over to the "getSinglePost" function
-// In turn passing it to the posts.read() to query the Ghost Content API
 export async function getStaticProps(context) {
     const post = await getSinglePost(context.params.slug);
 

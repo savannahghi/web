@@ -35,17 +35,22 @@ export default function TitleBar({ props }) {
             <link
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
                 rel="stylesheet"
+                async
             />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link
                 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
                 rel="stylesheet"
+                async
             />
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
-            <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+            <script
+                async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+            <script async src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
             <link
                 href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
                 rel="stylesheet"
+                async
             />
         </Head>
     );

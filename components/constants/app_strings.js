@@ -13,9 +13,8 @@ export const contactsNav = 'Contacts';
 export const searchPlaceHolder = 'Search';
 
 // hero component
-export const heroTitle = 'We’re on a mission';
-export const heroSubTitle =
-    'Access to quality affordable care remains out of reach for millions of Africans';
+export const heroTitle = '1.2 BN Africans lack access to quality healthcare.';
+export const heroSubTitle = 'We are making a difference ';
 export const learnMoreBtnText = 'Learn More';
 
 // our story component
@@ -24,9 +23,9 @@ export const storyText = 'Story';
 export const sghiPresident = 'SGHI President';
 export const sghiPresidentName = 'Riro Matiko';
 export const storyContents =
-    'Our belief is that by strengthening African healthcare systems so as to make them more resilient to the triple transition, we will be able to change and impact on the lives of our fellow Africans in the next decade…';
+    'Millions of Africans lack access to quality, affordable healthcare. By strengthening healthcare systems undergoing the triple transition, we will be able to change and impact the lives of our fellow Africans in the next decade”';
 export const missionTitle = 'We’re on a mission to make ';
-export const missionHealthCareTitle = 'healthcare accessible';
+export const missionHealthCareTitle = 'health systems resilient, responsive & people centric';
 export const missionContent =
     'Our vision is to improve access to quality and affordable healthcare to millions of African’s through the use of technology so as to strengthen healthcare systems which are undergoing the';
 export const tripleTransition = ' Triple Transition';
@@ -50,11 +49,11 @@ export const dnaText = 'DNA ';
 export const dnaContentOne =
     'We strengthen healthcare systems to make them more resilient, agile and responsive to the';
 export const dnaContentTwo =
-    'We are local and understand healthcare delivery in Africa and emerging markets and design localized solutions and approaches ';
+    'We are local. We design solutions based on our understanding of  healthcare delivery in Africa and emerging markets ';
 export const dnaContentThree =
     'We are entrepreneurial. We come from a startup environment and take a sustainable, innovative and agile growth mindset to the projects we undertake';
 export const dnaContentFour =
-    'We deliver more health for the money. We are driven by delivering results and impact that help strengthen healthcare systems in emerging markets';
+    'We deliver more health for the money. We are driven by delivering results and impact. ';
 
 // our partners component
 export const partnerTitle = ' Partners';

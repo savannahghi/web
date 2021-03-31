@@ -8,6 +8,10 @@ module.exports = {
         return config;
     },
     images: {
-        domains: ['static.ghost.org', 'ghost-cms-testing-ym4odmjn3a-ew.a.run.app']
+        domains: [
+            'static.ghost.org',
+            'ghost-cms-testing-ym4odmjn3a-ew.a.run.app',
+            'mdbootstrap.com'
+        ]
     }
 };

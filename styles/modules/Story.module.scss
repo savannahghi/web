@@ -10,7 +10,6 @@
     .salutation {
         position: relative;
         top: 10px;
-        // left: -3rem;
         text-align: center;
     }
 
@@ -28,10 +27,6 @@
         width: 600px;
         height: 200px;
         border-radius: 5px;
-    }
-
-    .story_subtitle {
-        font-weight: bold;
     }
 
     .story_sub {
@@ -112,7 +107,7 @@
     .story {
         .story_title {
             position: relative;
-            top: -300px;
+            top: -350px;
             left: 0px;
             text-align: center;
             font-size: 30px;
@@ -126,14 +121,14 @@
 
         .salutation {
             position: relative;
-            top: 30px !important;
+            top: -40px !important;
             text-align: center;
             left: 20px !important;
         }
 
         .story_sub {
             position: relative;
-            top: -30px;
+            top: -80px;
             text-align: center;
             left: 35px;
             width: 250px;
@@ -153,7 +148,6 @@
         .story_title {
             position: relative;
             top: -3rem;
-            left: -7rem;
         }
 
         .video_component {

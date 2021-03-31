@@ -22,7 +22,6 @@ export default async function handler(req, res) {
                 html: `<p> <Strong>${req.body.values.name}</strong> sent you an email from sghi-contact form with the following message: <strong>${req.body.values.message}</strong>`
             });
             console.log('email was sent');
-            console.log(req.body.values.email);
         } catch (error) {
             console.log(error);
         }

@@ -30,12 +30,9 @@ export default function Products() {
                             </p>
                         </div>
 
-                        <ProductsCard />
-                        <ProductsCard />
-                        <ProductsCard />
-                        <ProductsCard />
-                        <ProductsCard />
-                        <ProductsCard />
+                        {productsData.map((product) => (
+                            <ProductsCard key={product.id} props={product} />
+                        ))}
                     </div>
                 </div>
             </main>
@@ -44,3 +41,36 @@ export default function Products() {
         </div>
     );
 }
+
+const productsData = [
+    {
+        id: 0,
+        title: 'Healthcare governance',
+        iconClasses: 'fas fa-hospital fa-5x primary-color'
+    },
+    {
+        id: 1,
+        title: 'Information and Technology',
+        iconClasses: 'fas fa-sitemap fa-5x primary-color'
+    },
+    {
+        id: 2,
+        title: 'Healthcare Financing',
+        iconClasses: 'fas fa-piggy-bank fa-5x primary-color'
+    },
+    {
+        id: 3,
+        title: 'Service delivery',
+        iconClasses: 'fas fa-people-carry fa-5x primary-color'
+    },
+    {
+        id: 4,
+        title: 'Healthcare workforce',
+        iconClasses: 'fas fa-user-nurse fa-5x primary-color'
+    },
+    {
+        id: 5,
+        title: 'Medicine & Technologies',
+        iconClasses: 'fas fa-pills fa-5x primary-color'
+    }
+];

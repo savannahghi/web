@@ -10,8 +10,10 @@ export default function Hero() {
             <div className={HeroStyles.hero_text}>
                 <h1 className="hero_title">{StringConstants.heroTitle}</h1>
                 <p className="hero_subtitle">{StringConstants.heroSubTitle}</p>
-                <button className="hero_cta">{StringConstants.learnMoreBtnText}</button>
-                <button className={HeroStyles.hero_scroll_btn}>
+                <button aria-label="Learn More Button" className="hero_cta">
+                    {StringConstants.learnMoreBtnText}
+                </button>
+                <button aria-label="Search Button" className={HeroStyles.hero_scroll_btn}>
                     <Link href="#our-story">
                         <Image
                             src={AssetConstants.scrollBtn}

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import * as StringConstants from './constants/app_strings';
 
 export default function InsightCard({ props }) {
-    // console.log(props);
     return (
         <div className="col-lg-4 col-md-4 col-sm-12">
             <div className="card sghi-card">

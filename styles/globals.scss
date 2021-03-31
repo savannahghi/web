@@ -168,6 +168,59 @@ a {
     text-align: center;
 }
 
+.marker-btn {
+    background-color: rgba(194, 54, 140, 0.5);
+    font-size: 10px;
+    font-weight: bold;
+    height: 25px;
+    border-radius: 30px;
+}
+
+.marker_popup {
+    border-radius: 10px !important;
+    max-width: 250px;
+
+    .country-flag {
+        width: 100%;
+        height: 100%;
+    }
+
+    .country-name {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .divider {
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+
+    .project-title {
+        color: #0f73aa;
+        font-weight: bold;
+    }
+
+    .project-subtitle {
+        color: #777;
+        font-weight: bold;
+    }
+
+    .project-screens {
+        color: #0f73aa;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .patients {
+        color: #0f73aa;
+    }
+
+    .project-sub{
+        font-size: 13px;
+    }
+}
+
 /* Extra small devices (phones, 320 and down screenWidths) */
 @media only screen and (max-width: 320px) {
     html,

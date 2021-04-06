@@ -17,27 +17,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-
-        .hero_scroll_btn {
-            background-color: transparent;
-            color: #ffffff;
-            border: none;
-            padding-top: 3rem;
-            position: absolute;
-            bottom: 30px;
-            margin: 0px -20px;
-            z-index: 9;
-            left: 50%;
-            right: 50%;
-            top: 26em;
-        }
     }
 }
 
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (max-width: 320px) {
     .hero {
-        height: 36rem;
+        height: 70vh;
         max-width: 100%;
     }
 }
@@ -48,10 +34,6 @@
         height: 30rem;
         max-width: 100%;
     }
-
-    .hero_scroll_btn {
-        display: none;
-    }
 }
 
 /* Medium devices (Tablets, between 425px and 768px screenWidths) */
@@ -60,11 +42,12 @@
         height: 30rem;
         max-width: 100%;
     }
+}
 
-    .hero_scroll_btn {
-        position: relative;
-        left: 50%;
-        right: 50%;
-        top: 19rem !important;
+/* Medium devices (Tablets, between 768px and 992px screenWidths) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hero {
+        height: 70vh;
+        max-width: 100%;
     }
 }

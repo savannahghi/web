@@ -73,7 +73,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-lg-5 col-md-6 mb-4 mb-md-0 pt-5 ml-5">
+                        <div className="col-lg-5 col-md-6 col-sm-12 mb-4 mb-md-0 pt-5 ml-5">
                             <div className={FooterStyles.footer_tweets}>
                                 <p className={FooterStyles.footer_title}>
                                     {StringConstants.latestTweets}

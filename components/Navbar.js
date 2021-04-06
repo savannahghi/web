@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import * as AssetConstants from './constants/app_assets';
 import * as StringConstants from './constants/app_strings';
-import NavBarStyles from '../styles/modules/Navbar.module.scss';
 
 export default function NavBar({ props }) {
     return (
@@ -31,7 +30,7 @@ export default function NavBar({ props }) {
                 <div
                     className="collapse navbar-collapse text-center menu-links"
                     id="navbarSupportedContent">
-                    <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav ms-auto mx-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <a
                                 className={props.title == 'Home' ? 'nav-link active' : 'nav-link'}
@@ -81,16 +80,6 @@ export default function NavBar({ props }) {
                         <li className="nav-item">
                             <div
                                 className={
-                                    props.title == 'Our Insights' ? 'nav-link active' : 'nav-link'
-                                }>
-                                <Link href="/insights">
-                                    <a>{StringConstants.insightsNav}</a>
-                                </Link>
-                            </div>
-                        </li>
-                        <li className="nav-item">
-                            <div
-                                className={
                                     props.title == 'Our Team' ? 'nav-link active' : 'nav-link'
                                 }>
                                 <Link href="/team">
@@ -108,22 +97,24 @@ export default function NavBar({ props }) {
                                 </Link>
                             </div>
                         </li>
-                        <div className={NavBarStyles.search}>
-                            <form className="d-flex input-group search-bar-item ">
-                                <input
-                                    type="search"
-                                    className="form-control round"
-                                    placeholder="Search"
-                                    aria-label={StringConstants.searchPlaceHolder}></input>
-                                <button
-                                    className="btn btn-sm btn-secondary round"
-                                    type="button"
-                                    aria-label="Search Button"
-                                    data-mdb-ripple-color="dark">
-                                    <i className="fas fa-search"></i>
-                                </button>
-                            </form>
-                        </div>
+                        {props.title == 'Our Insights' ? (
+                            <div>
+                                <form className="input-group search-bar-item ">
+                                    <input
+                                        type="search"
+                                        className="form-control round"
+                                        placeholder="Search"
+                                        aria-label={StringConstants.searchPlaceHolder}></input>
+                                    <button
+                                        className="btn btn-sm btn-secondary round"
+                                        type="button"
+                                        aria-label="Search Button"
+                                        data-mdb-ripple-color="dark">
+                                        <i className="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        ) : null}
                     </ul>
                 </div>
             </div>

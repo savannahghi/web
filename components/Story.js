@@ -1,4 +1,5 @@
 import StoryStles from '../styles/modules/Story.module.scss';
+import Image from 'next/image';
 
 export default function Story({ props }) {
     return (
@@ -6,14 +7,14 @@ export default function Story({ props }) {
             <div className={StoryStles.story}>
                 <div className="row align-items-center set_gutters">
                     <div className="col-sm-12 col-md-6 h-100">
-                        <iframe
+                        <Image
                             className={StoryStles.video_component}
-                            src={props.video}
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            loading="lazy"></iframe>
+                            src={props.image}
+                            alt="Our Story Image"
+                            width={500}
+                            height={500}
+                            loading="lazy"
+                        />
                         <p className={StoryStles.salutation}>
                             <span className={StoryStles.name}>{props.name}</span>
                             <br></br> {props.position}

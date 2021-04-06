@@ -139,6 +139,47 @@
         }
     }
 
+    .dna_pillars {
+        position: relative;
+        top: -11rem;
+        left: 2rem;
+    }
+
+    .dna_item {
+        left: 10px;
+        width: auto;
+    }
+
+    .illustration {
+        position: relative;
+        top: 10px;
+        text-align: center;
+    }
+    .dna_content {
+        padding-right: -5rem;
+        padding-top: 10px;
+    }
+}
+
+/* Medium devices (Tablets, between 768px and 992px screenWidths) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .dna_title {
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        left: 10px;
+
+        .dna_title_first {
+            font-weight: bold;
+        }
+    }
+
+    .dna_pillars {
+        position: relative;
+        top: 0rem;
+        left: 2rem;
+    }
+
     .dna_item {
         left: 10px;
         width: auto;

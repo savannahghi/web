@@ -191,6 +191,7 @@ a {
 .marker_popup {
     border-radius: 10px !important;
     max-width: 250px;
+    text-align: start;
 
     .country-flag {
         width: 100%;
@@ -228,7 +229,7 @@ a {
         color: #0f73aa;
     }
 
-    .project-sub{
+    .project-sub {
         font-size: 13px;
     }
 }
@@ -251,7 +252,7 @@ a {
 
     .navbar-brand {
         width: 200px;
-        height: 100px;
+        height: 60px;
     }
 
     .search-bar {
@@ -261,23 +262,33 @@ a {
     }
     .hero_title {
         padding-top: 5rem;
-        font-size: 40px;
+        font-size: 20px;
         width: 900px;
+        position: relative;
+        right: 0rem;
     }
     .hero_subtitle {
-        font-size: 18px;
+        font-size: 13px;
         font-weight: 500;
         width: 270px;
         text-align: center;
         position: relative;
-        right: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        left: -13rem;
     }
 
     .hero_cta {
-        font-size: 14px;
-        padding: 2px 5px;
+        font-size: 12px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 100px;
+        height: 25px;
+        width: 140px;
     }
 
     .page-title {
@@ -299,8 +310,22 @@ a {
     }
 }
 
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+    .hero_title {
+        width: 360px !important;
+    }
+    .hero_subtitle {
+        font-size: 14px !important;
+        font-weight: 500;
+        width: 270px;
+        text-align: center;
+        position: relative;
+        left: -12rem !important;
+    }
+}
+
 /* Small devices (phones, between 320px and 375px screenWidths) */
-@media only screen and (min-width: 320px) and (max-width: 375px) {
+@media only screen and (min-width: 321px) and (max-width: 375px) {
     html,
     body {
         padding: 0;
@@ -322,22 +347,27 @@ a {
     }
     .hero_title {
         padding-top: 5rem;
-        font-size: 40px;
+        font-size: 23px !important;
         width: 900px;
     }
     .hero_subtitle {
-        font-size: 18px;
+        font-size: 14px !important;
         font-weight: 500;
         width: 270px;
         text-align: center;
-        margin-left: 50px;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        position: relative;
+        // left: -3rem;
     }
 
     .hero_cta {
         font-size: 14px;
         padding: 2px 5px;
+    }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 424px) {
+    .hero_title {
+        font-size: 30px !important;
     }
 }
 
@@ -387,6 +417,13 @@ a {
     }
 }
 
+@media only screen and (min-width: 425px) and (max-width: 480px) {
+    .hero_subtitle {
+        position: relative;
+        left: -6rem !important;
+    }
+}
+
 /* Medium devices (Tablets, between 425px and 768px screenWidths) */
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     html,
@@ -404,12 +441,6 @@ a {
     }
 
     .search-bar {
-        width: 200px;
-        margin-left: 80px;
-        border-radius: 10rem !important;
-    }
-
-    .search-bar {
         position: relative;
         left: 12rem;
         width: 200px;
@@ -417,10 +448,10 @@ a {
     }
     .hero_title {
         padding-top: 1rem;
-        font-size: 30px;
+        font-size: 20px;
         width: 700px;
         position: relative;
-        left: 25px;
+        left: 8px;
     }
     .hero_subtitle {
         font-size: 18px;
@@ -464,6 +495,76 @@ a {
     }
 }
 
+/* Medium devices (Tablets, between 768px and 992px screenWidths) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500 !important;
+        line-height: 1.5;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero_title {
+        padding-top: 1rem;
+        font-size: 30px;
+        width: 700px;
+        position: relative;
+        left: 8px;
+    }
+    .hero_subtitle {
+        font-size: 24px;
+        font-weight: 500;
+        width: 355px;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+        justify-content: center;
+        left: -32px;
+    }
+
+    .hero_cta {
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px 0px;
+        padding: 2px 5px;
+        border-radius: 100px;
+        height: 40px;
+        width: 180px;
+    }
+
+    .first-illustration {
+        position: relative;
+        left: -10rem;
+    }
+
+    .second-illustration {
+        position: relative;
+        right: -5rem;
+    }
+
+    .third-illustration {
+        position: relative;
+        left: -10rem;
+        top: 5rem;
+    }
+
+    .fourth-illustration {
+        position: relative;
+        right: -5rem;
+        top: 5rem;
+    }
+}
+
 /* Large devices (Desktops, Laptops between 1366px and 1440px screenWidths) */
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
     .set_gutters {
@@ -471,7 +572,7 @@ a {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+@media only screen and (min-width: 992px) and (max-width: 1365px) {
     .search-bar-item {
         display: none !important;
     }

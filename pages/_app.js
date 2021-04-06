@@ -1,4 +1,9 @@
 import 'styles/globals.scss';
+
+export function reportWebVitals(metric) {
+    console.log(metric);
+}
+
 /**
  * Next.js uses this component to initialize pages.
  */

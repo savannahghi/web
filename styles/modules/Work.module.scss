@@ -20,10 +20,12 @@
 @media only screen and (max-width: 320px) {
     .work {
         padding-top: 10rem;
+
         .work_title {
             text-align: center;
-            font-size: 30px;
-            top: 1rem;
+            font-size: 25px;
+            position: relative;
+            top: -9rem;
         }
 
         .work_subtitle {
@@ -44,18 +46,23 @@
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+    .work {
+        padding-top: 13rem;
+    }
+}
+
 /* Small devices (phones, between 320px and 375px screenWidths) */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
     .work {
         position: relative !important;
-        // top: -3rem !important;
 
         .work_title {
             position: relative;
             text-align: center;
             font-size: 30px;
             top: -10rem !important;
-            left:1rem;
+            left: 1rem;
         }
 
         .work_subtitle {
@@ -83,10 +90,9 @@
     .work {
         .work_title {
             position: relative;
-            padding-top: 4rem;
             text-align: center;
             font-size: 30px;
-            left: 0rem;
+            left: -0rem;
         }
 
         .work_subtitle {
@@ -110,6 +116,36 @@
     }
 }
 
+@media only screen and (min-width: 412px) and (max-width: 424px) {
+    .work {
+        .work_title {
+            position: relative;
+            text-align: center;
+            top: -8rem;
+        }
+
+        .work_subtitle {
+            position: relative;
+            top: -7rem;
+            text-align: center;
+            left: 40px;
+            min-width: 200px;
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 480px) {
+    .work_title {
+        position: relative;
+        left: -4rem !important;
+    }
+
+    .work_subtitle {
+        position: relative;
+        left: 20px !important;
+    }
+}
+
 /* Medium devices (Tablets, between 425px and 768px screenWidths) */
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     .work {
@@ -120,7 +156,45 @@
             min-width: 500px;
             position: relative;
             top: -7rem;
-            left: 0rem;
+            left: -6rem;
+        }
+
+        .work_subtitle {
+            position: relative;
+            top: -7rem;
+            text-align: center;
+            left: 60px;
+            min-width: 200px;
+        }
+
+        .read_more_btn {
+            position: relative;
+            top: -6rem;
+            text-align: center;
+            left: 1rem;
+        }
+
+        .map_graphic {
+            position: relative;
+            right: -1rem;
+            top: -6rem;
+            text-align: center;
+            min-width: 20rem;
+        }
+    }
+}
+
+/* Medium devices (Tablets, between 768px and 992px screenWidths) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .work {
+        position: relative;
+        top: 5rem;
+
+        .work_title {
+            min-width: 500px;
+            position: relative;
+            top: -7rem;
+            left: 2rem;
         }
 
         .work_subtitle {

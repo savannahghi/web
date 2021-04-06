@@ -1,5 +1,8 @@
 // string constants
 
+// head
+export const title = 'Savannah Global Health Institute | ';
+
 // navbar component
 export const homeNav = 'Home';
 export const storyNav = 'Our Story';
@@ -42,6 +45,8 @@ export const whyNowContent =
 // our work component
 export const workText = 'Work';
 export const ourWorkContent = 'Regions where SGHI has experts and have done relevant work';
+export const patientScreened = 'Patients Screened';
+export const counties = 'Counties attended to';
 
 // our DNA component
 export const ourDNATitle = 'is centered on four key pillars';
@@ -88,3 +93,24 @@ export const insightsCardContent =
 export const teamPageTitle = 'Team';
 export const teamContent =
     'Our belief is that by strengthening African healthcare systems so as to make them more resilient to the triple transition, we will be able to change and impact on the lives of our fellow Africans in the next decade…';
+
+// contact page
+export const contactPageTitle = 'Contact ';
+export const usText = 'Us ';
+export const nameLabel = 'Name ';
+export const nameRequiredPrompt = 'Your Name is required';
+export const emailLabel = 'Email ';
+export const emailRequiredPrompt = 'Your email address is required ';
+export const emailIsShortPrompt = 'This is too short to be a valid email';
+export const emailIsLongPrompt = 'This is too long to be a valid email';
+export const invalidEmailPrompt = 'Please enter a valid email address';
+export const messageRequiredPrompt = 'Your Message is required ';
+export const messageIsShortPrompt = 'This message is too short';
+export const messageIsLongPrompt = 'This message is too long';
+export const submitBtnText = 'Submit';
+export const reachOutPrompt = 'Or Reach Out to Us Via Our Social media handles';
+export const locationTitle = 'Savannah Global Health Institute';
+export const directionsTitle = 'Directions to Our Offices';
+
+// insights page
+export const errorOcccurred = 'An Error Occured, Try again';

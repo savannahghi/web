@@ -20,7 +20,7 @@ export default function Home() {
     };
 
     const storyProps = {
-        video: AssetConstants.videoThumbnail,
+        image: AssetConstants.storyThumb,
         name: StringConstants.sghiPresidentName,
         position: StringConstants.sghiPresident,
         first_title: StringConstants.ourText,
@@ -29,7 +29,7 @@ export default function Home() {
     };
 
     const whyNowProps = {
-        video: AssetConstants.videoThumbnail,
+        image: AssetConstants.whyNowVideoThumbnail,
         name: StringConstants.silCEOName,
         position: StringConstants.silCEOTitle,
         first_title: StringConstants.whyText,

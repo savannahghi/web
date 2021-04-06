@@ -1,14 +1,19 @@
 import Head from 'next/head';
+import * as StringConstants from '../components/constants/app_strings';
 
 export default function TitleBar({ props }) {
     return (
         <Head>
-            <title>Savannah Global Health Institute | {props.title}</title>
+            <title>
+                {StringConstants.title}
+                {props.title}
+            </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
             <meta
                 name="description"
                 content="We are on a mission, Access to quality affordable care remains out of reach for millions of Africans"
             />
-            {/* change content type to article dynamically when on insights page */}
+
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Savannah Global Health Institute" />
             <meta name="og:description" property="og:description" content="" />
@@ -19,12 +24,12 @@ export default function TitleBar({ props }) {
 
             <meta
                 name="twitter:card"
-                content="We are on a mission, Access to quality affordable care remains out of reach for millions of Africans"
+                content="1.2 BN Africans lack access to quality healthcare. We are making a difference."
             />
             <meta name="twitter:title" content="Savannah Global Health Institute" />
             <meta
                 name="twitter:description"
-                content="We are on a mission, Access to quality affordable care remains out of reach for millions of Africans"
+                content="1.2 BN Africans lack access to quality healthcare. We are making a difference."
             />
             <meta name="twitter:site" content="" />
             <meta name="twitter:creator" content="" />
@@ -37,7 +42,6 @@ export default function TitleBar({ props }) {
                 rel="stylesheet"
                 async
             />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link
                 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
                 rel="stylesheet"

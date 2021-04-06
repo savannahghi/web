@@ -50,7 +50,7 @@ export default function Insights({ posts }) {
                             <Pagination />
                         </div>
                     ) : (
-                        <p>An Error Occured, Try again</p>
+                        <p>{StringConstants.errorOcccurred}</p>
                     )}
                 </div>
             </main>

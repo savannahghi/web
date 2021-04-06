@@ -118,7 +118,7 @@ export default function Work() {
                                                         </span>
                                                         <br></br>
                                                         <span className="project-sub">
-                                                            Patients Screened
+                                                            {StringConstants.patientScreened}
                                                         </span>
                                                     </p>
                                                 </div>
@@ -129,14 +129,14 @@ export default function Work() {
                                                         </span>
                                                         <br></br>
                                                         <span className="project-sub">
-                                                            Counties attended to
+                                                            {StringConstants.counties}
                                                         </span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <Link href="/posts/mission">
                                                 <div className="round btn btn-sm btn-secondary mx-2 text-capitalize font-weight-bold">
-                                                    View More
+                                                    {StringConstants.viewMoreBtnText}
                                                 </div>
                                             </Link>
                                         </div>

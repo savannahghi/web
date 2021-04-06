@@ -5,6 +5,7 @@ import axios from 'axios';
 import NavBar from 'components/Navbar';
 import Footer from 'components/Footer';
 import TitleBar from '../components/TitleBar';
+import * as StringConstants from '../components/constants/app_strings';
 
 const ReactMapGL = dynamic(import('react-map-gl'), { loading: () => 'Loading Map...' });
 const Marker = dynamic(() => import('react-map-gl').then((mod) => mod.Marker));
@@ -63,7 +64,10 @@ export default function Contact() {
                     <div className="row">
                         <div className="col-12">
                             <p className="page-title text-center pt-5">
-                                <span className="page-title-second">Contact</span> Us
+                                <span className="page-title-second">
+                                    {StringConstants.contactPageTitle}
+                                </span>
+                                {StringConstants.usText}
                             </p>
                         </div>
 
@@ -76,7 +80,7 @@ export default function Contact() {
                                         className="p-3">
                                         <div className="mb-4">
                                             <label className="form-label" htmlFor="form2Example1">
-                                                Name
+                                                {StringConstants.nameLabel}
                                             </label>
                                             <input
                                                 type="text"
@@ -84,7 +88,7 @@ export default function Contact() {
                                                 ref={register({
                                                     required: {
                                                         value: true,
-                                                        message: 'Your Name is required'
+                                                        message: `${StringConstants.nameRequiredPrompt}`
                                                     }
                                                 })}
                                                 id="form2Example1"
@@ -96,7 +100,7 @@ export default function Contact() {
                                         </div>
                                         <div className="mb-4">
                                             <label className="form-label" htmlFor="form2Example1">
-                                                Email
+                                                {StringConstants.emailLabel}
                                             </label>
                                             <input
                                                 type="email"
@@ -104,22 +108,19 @@ export default function Contact() {
                                                 ref={register({
                                                     required: {
                                                         value: true,
-                                                        message: 'Your email address is required'
+                                                        message: `${StringConstants.emailRequiredPrompt}`
                                                     },
                                                     minLength: {
                                                         value: 8,
-                                                        message:
-                                                            'This is too short to be a valid email'
+                                                        message: `${StringConstants.emailIsShortPrompt}`
                                                     },
                                                     maxLength: {
                                                         value: 120,
-                                                        message:
-                                                            'This is too long to be a valid email'
+                                                        message: `${StringConstants.emailIsLongPrompt}`
                                                     },
                                                     pattern: {
                                                         value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                                                        message:
-                                                            'Please enter a valid email address'
+                                                        message: `${StringConstants.invalidEmailPrompt}`
                                                     }
                                                 })}
                                                 id="form2Example1"
@@ -138,15 +139,15 @@ export default function Contact() {
                                                 ref={register({
                                                     required: {
                                                         value: true,
-                                                        message: 'Your Message is required'
+                                                        message: `${StringConstants.messageRequiredPrompt}`
                                                     },
                                                     minLength: {
                                                         value: 50,
-                                                        message: 'This message is too short'
+                                                        message: `${StringConstants.messageIsShortPrompt}`
                                                     },
                                                     maxLength: {
                                                         value: 1000,
-                                                        message: 'This message is too long'
+                                                        message: `${StringConstants.messageIsLongPrompt}`
                                                     }
                                                 })}
                                                 className="form-control"
@@ -162,12 +163,12 @@ export default function Contact() {
                                                 aria-label="Submit Button"
                                                 type="submit"
                                                 className="btn btn-secondary font-weight-bold text-capitalize mb-4">
-                                                Submit
+                                                {StringConstants.submitBtnText}
                                             </button>
                                         </div>
 
                                         <div className="text-center">
-                                            <p>Or Reach Out to Us Via Our Social media handles</p>
+                                            <p>{StringConstants.reachOutPrompt}</p>
                                             <button
                                                 type="button"
                                                 aria-label="LinkedIn Button"
@@ -231,7 +232,7 @@ export default function Contact() {
                                                 e.preventDefault();
                                                 setSelectedLocation(true);
                                             }}>
-                                            Savannah Global Health Institute
+                                            {StringConstants.locationTitle}
                                         </button>
                                     </div>
                                 </Marker>
@@ -246,7 +247,7 @@ export default function Contact() {
                                         <div className="marker_popup">
                                             <div className="row p-3">
                                                 <div className="country-name">
-                                                    Directions to Our Offices
+                                                    {StringConstants.directionsTitle}
                                                 </div>
                                                 <hr className="divider"></hr>
                                             </div>

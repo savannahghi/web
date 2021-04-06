@@ -14,27 +14,18 @@
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (max-width: 320px) {
     .partners {
-        position: relative;
-        right: 2rem;
-        top: 2rem;
+        display: none;
 
         .partners_title {
-            top: -10rem !important;
-            font-size: 30px;
-            text-align: center;
+            display: none;
         }
 
         .partner_item {
-            width: 200px;
-            position: relative;
-            right: 0rem;
-            text-align: center;
+            display: none;
         }
 
         .all_partner_items {
-            position: relative;
-            right: -2rem;
-            top: -5rem;
+            display: none;
         }
     }
 }
@@ -42,25 +33,7 @@
 /* Small devices (phones, between 320px and 375px screenWidths) */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
     .partners {
-        .partners_title {
-            position: relative;
-            left: 1rem;
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .partner_item {
-            width: 200px;
-            position: relative;
-            left: 0rem;
-            text-align: center;
-        }
-
-        .all_partner_items {
-            position: relative;
-            // right: 4rem;
-            top: -5rem;
-        }
+        display: none;
     }
 }
 
@@ -94,11 +67,18 @@
     }
 }
 
+@media only screen and (min-width: 425px) and (max-width: 480px) {
+    .all_partner_items {
+        position: relative;
+        left: -2rem !important;
+    }
+}
+
 /* Medium devices (Tablets, between 425px and 768px screenWidths) */
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     .partners {
         position: relative;
-        top: -2rem;
+        top: -6rem;
         left: 5rem;
 
         .partners_title {
@@ -113,7 +93,37 @@
             position: relative;
             top: 2rem;
             min-width: 400px;
-            left: -3rem;
+            left: -11rem;
+        }
+
+        .partner_item {
+            width: 200px;
+            height: 100px;
+            position: relative;
+            right: 3rem;
+            text-align: center;
+        }
+    }
+}
+
+/* Medium devices (Tablets, between 768px and 992px screenWidths) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .partners {
+        padding-top: 5rem;
+
+        .partners_title {
+            position: relative;
+            top: 3rem;
+            left: -6rem;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .all_partner_items {
+            position: relative;
+            top: 2rem;
+            min-width: 400px;
+            left: -1rem;
         }
 
         .partner_item {

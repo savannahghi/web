@@ -232,6 +232,9 @@ a {
     .project-sub {
         font-size: 13px;
     }
+    .directions {
+        font-size: 12px !important;
+    }
 }
 
 /* Extra small devices (phones, 320 and down screenWidths) */
@@ -372,7 +375,7 @@ a {
 }
 
 /* Medium devices (large-phones, between 375px and 425px screenWidths) */
-@media only screen and (min-width: 375px) and (max-width: 425px) {
+@media only screen and (min-width: 375px) and (max-width: 424px) {
     html,
     body {
         padding: 0;
@@ -418,14 +421,35 @@ a {
 }
 
 @media only screen and (min-width: 425px) and (max-width: 480px) {
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500 !important;
+        line-height: 1.5;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero_title {
+        padding-top: 1rem;
+        font-size: 20px;
+        width: 700px;
+        position: relative;
+        left: 8px;
+    }
     .hero_subtitle {
         position: relative;
-        left: -6rem !important;
+        left: -15rem;
     }
 }
 
 /* Medium devices (Tablets, between 425px and 768px screenWidths) */
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     html,
     body {
         padding: 0;
@@ -562,6 +586,12 @@ a {
         position: relative;
         right: -5rem;
         top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .partner-link {
+        display: none !important;
     }
 }
 

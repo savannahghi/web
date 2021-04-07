@@ -250,6 +250,20 @@ export default function Contact() {
                                                     {StringConstants.directionsTitle}
                                                 </div>
                                                 <hr className="divider"></hr>
+                                                <p className="directions">
+                                                    From Kenya National Archives & Documentation
+                                                    Service, Moi Avenue, next to Ambassadeur Hotel,
+                                                    Nairobi
+                                                </p>
+                                                <p className="directions">
+                                                    Take City-Hall Way to Kenyatta Ave
+                                                </p>
+                                                <p className="directions">
+                                                    Continue on Kenyatta Ave. Take State House
+                                                    Rd/State House Avenue and Dennis Pritt Rd to
+                                                    Denis Pritt Rd
+                                                </p>
+                                                <p className="directions">Drive to Kayahwe Rd</p>
                                             </div>
                                         </div>
                                     </Popup>

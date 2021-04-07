@@ -1,30 +1,33 @@
 import nodemailer from 'nodemailer';
+import mailgun from 'nodemailer-mailgun-transport';
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        // Process a POST request
-
-        const transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
-            secure: true,
+        const auth = {
             auth: {
-                user: process.env.REACT_APP_SEND_MAIL_URL,
-                pass: process.env.REACT_APP_SEND_MAIL_PASS
+                api_key: `${process.env.MAILGUN_PRIVATE_API_KEY}`,
+                domain: `${process.env.MAILGUN_DOMAIN}`
+            }
+        };
+
+        const transporter = nodemailer.createTransport(mailgun(auth));
+
+        console.log(req);
+
+        const mailOptions = {
+            from: 'adanabdi036@gmail.com',
+            to: 'abdi.adan@healthcloud.co.ke',
+            subject: 'Test: Savannah Global Health Institute Contact',
+            text: '`<p> sent you an email from sghi-contact form with the following message: `'
+        };
+
+        transporter.sendMail(mailOptions, function (err, info) {
+            if (err) {
+                console.log('Error: ' + err);
+            } else {
+                console.log('Response: ' + info);
             }
         });
-
-        try {
-            await transporter.sendMail({
-                from: process.env.REACT_APP_SEND_MAIL_URL,
-                to: req.body.values.email,
-                subject: 'Savannah Global Health Institute Contact',
-                html: `<p> <Strong>${req.body.values.name}</strong> sent you an email from sghi-contact form with the following message: <strong>${req.body.values.message}</strong>`
-            });
-            console.log('email was sent');
-        } catch (error) {
-            console.log(error);
-        }
 
         res.status(200).json(req.body);
     }

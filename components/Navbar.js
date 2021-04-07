@@ -60,7 +60,7 @@ export default function NavBar({ props }) {
                                 </Link>
                             </div>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item partner-link">
                             <div className="nav-link">
                                 <Link href={props.title == 'Home' ? '#partners' : '/#partners'}>
                                     <a>{StringConstants.partnersNav}</a>
@@ -97,24 +97,6 @@ export default function NavBar({ props }) {
                                 </Link>
                             </div>
                         </li>
-                        {props.title == 'Our Insights' ? (
-                            <div>
-                                <form className="input-group search-bar-item ">
-                                    <input
-                                        type="search"
-                                        className="form-control round"
-                                        placeholder="Search"
-                                        aria-label={StringConstants.searchPlaceHolder}></input>
-                                    <button
-                                        className="btn btn-sm btn-secondary round"
-                                        type="button"
-                                        aria-label="Search Button"
-                                        data-mdb-ripple-color="dark">
-                                        <i className="fas fa-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        ) : null}
                     </ul>
                 </div>
             </div>

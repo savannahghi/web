@@ -32,50 +32,50 @@ export default function Partners() {
                         <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className={PartnerStyles.partner_item}>
                                 <Image
-                                    src={AssetConstants.pharmAccessLogo}
-                                    alt="Pharm Access Logo"
-                                    width={120}
-                                    height={120}
+                                    src="/images/world_bank_group.svg"
+                                    alt="World Bank Group Logo"
+                                    width={150}
+                                    height={150}
                                 />
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className={PartnerStyles.partner_item}>
                                 <Image
-                                    src={AssetConstants.jhpiegoLogo}
-                                    alt="jhpiego Logo"
-                                    width={120}
-                                    height={120}
+                                    src="/images/bandm.png"
+                                    alt="Bill And Melinda Gates Foundation Logo"
+                                    width={230}
+                                    height={200}
                                 />
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className={PartnerStyles.partner_item}>
                                 <Image
-                                    src={AssetConstants.resultsForDevLogo}
-                                    alt="Results for development Logo"
-                                    width={130}
-                                    height={130}
+                                    src="/images/brand_challenges_canada.svg"
+                                    alt="Brand Challenges Canada Logo"
+                                    width={150}
+                                    height={150}
                                 />
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className={PartnerStyles.partner_item}>
                                 <Image
-                                    src={AssetConstants.pathLogo}
-                                    alt="path Logo"
-                                    width={90}
-                                    height={90}
+                                    src="/images/sdg_philanthropy_platform.svg"
+                                    alt="SDG Philanthropy Platform Logo"
+                                    width={150}
+                                    height={150}
                                 />
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className={PartnerStyles.partner_item}>
                                 <Image
-                                    src={AssetConstants.chaiLogo}
-                                    alt="CHAI Logo"
-                                    width={90}
-                                    height={90}
+                                    src="/images/mcf.jpeg"
+                                    alt="Master Card Foundation Logo"
+                                    width={100}
+                                    height={100}
                                 />
                             </div>
                         </div>
@@ -92,10 +92,10 @@ export default function Partners() {
                         <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className={PartnerStyles.partner_item}>
                                 <Image
-                                    src={AssetConstants.dalbergLogo}
-                                    alt="Dalberg Logo"
-                                    width={120}
-                                    height={120}
+                                    src="/images/well.png"
+                                    alt="Wellcome Trust Logo"
+                                    width={90}
+                                    height={90}
                                 />
                             </div>
                         </div>

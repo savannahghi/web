@@ -1,0 +1,1817 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage renders compnent tree correctly 1`] = `
+<div>
+  <main
+    className="sghi_container"
+  >
+    <nav
+      className="navbar sticky-top navbar-expand-lg navbar-light bg-light w-100"
+      id="navbar"
+    >
+      <div
+        className="container"
+      >
+        <a
+          className="navbar-brand"
+          href="/"
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              alt="Brand Logo"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "visibility": "hidden",
+                  "width": 0,
+                }
+              }
+            />
+          </div>
+        </a>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          className="navbar-toggler"
+          data-mdb-target="#navbarSupportedContent"
+          data-mdb-toggle="collapse"
+          type="button"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </button>
+        <div
+          className="collapse navbar-collapse text-center menu-links"
+          id="navbarSupportedContent"
+        >
+          <ul
+            className="navbar-nav ms-auto mx-auto mb-2 mb-lg-0"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#our-story"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Our Story
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#our-work"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Our Work
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#dna"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Our DNA
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item partner-link"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#partners"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Partners
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/products"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Products
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/team"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Teams
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/contact"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Contact
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="hero"
+    >
+      <div>
+        <h1
+          className="hero_title"
+        >
+          1.2 BN Africans lack access to quality healthcare.
+        </h1>
+        <p
+          className="hero_subtitle"
+        >
+          We are making a difference 
+        </p>
+        <button
+          aria-label="Hero Call to action Button"
+          className="hero_cta"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="container"
+        id="our-story"
+      >
+        <div>
+          <div
+            className="row align-items-center set_gutters"
+          >
+            <div
+              className="col-sm-12 col-md-6 h-100"
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    role="presentation"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="Our Story Image"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "visibility": "hidden",
+                      "width": 0,
+                    }
+                  }
+                />
+              </div>
+              <p>
+                <span>
+                  Riro Matiko
+                </span>
+                <br />
+                 
+                SGHI President
+              </p>
+            </div>
+            <div
+              className="col-sm-12 col-md-6 h-100"
+            >
+              <p>
+                <span>
+                  Our 
+                </span>
+                Story
+              </p>
+              <p>
+                Millions of Africans lack access to quality, affordable healthcare. By strengthening healthcare systems undergoing the triple transition, we will be able to change and impact the lives of our fellow Africans in the next decade”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="row align-items-center set_gutters"
+        >
+          <div
+            className="col-sm-12 col-md-7"
+          >
+            <p>
+              We’re on a mission to make 
+              <br />
+              <span>
+                health systems resilient, responsive & people centric
+              </span>
+            </p>
+            <p>
+              Our vision is to improve access to quality and affordable healthcare to millions of African’s through the use of technology so as to strengthen healthcare systems which are undergoing the
+              <span>
+                 Triple Transition
+              </span>
+            </p>
+            <div>
+              <div
+                className="btn btn-secondary btn-rounded text-capitalize px-5"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                Read More
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-sm-12 col-md-5"
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    role="presentation"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="Our story"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "visibility": "hidden",
+                      "width": 0,
+                    }
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="container"
+        id="our-story"
+      >
+        <div>
+          <div
+            className="row align-items-center set_gutters"
+          >
+            <div
+              className="col-sm-12 col-md-6 h-100"
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    role="presentation"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="Our Story Image"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "visibility": "hidden",
+                      "width": 0,
+                    }
+                  }
+                />
+              </div>
+              <p>
+                <span>
+                  John Muthee
+                </span>
+                <br />
+                 
+                 CEO, Savannah Informatics
+              </p>
+            </div>
+            <div
+              className="col-sm-12 col-md-6 h-100"
+            >
+              <p>
+                <span>
+                  Why 
+                </span>
+                Now
+              </p>
+              <p>
+                COVID19 has challenged the healthcare system in multiple ways which has further impacted on access, affordability to care and is likely to worsen health outcomes for decades to come…
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="our-work"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="row align-items-center set_gutters"
+          >
+            <div
+              className="col-sm-12 col-md-12 text-center"
+            >
+              <p>
+                Our 
+                <span>
+                  Work
+                </span>
+              </p>
+              <p>
+                Regions where SGHI has experts and have done relevant work
+              </p>
+              <div>
+                <button
+                  aria-label="Read More Button"
+                  className="btn btn-secondary btn-rounded text-capitalize px-5"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div
+              className="col-sm-12 col-md-12 py-5"
+            >
+              <div>
+                Loading Map...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="dna"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-12 text-center"
+            >
+              <p>
+                Our 
+                <span>
+                  DNA 
+                </span>
+                is centered on four key pillars
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-12 col-md-6 py-3"
+              >
+                <div>
+                  <div
+                    className="p-3 align-items-center card"
+                  >
+                    <div>
+                      <div
+                        style={
+                          Object {
+                            "boxSizing": "border-box",
+                            "display": "inline-block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "overflow": "hidden",
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "maxWidth": "100%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            aria-hidden={true}
+                            role="presentation"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                            style={
+                              Object {
+                                "border": "none",
+                                "display": "block",
+                                "margin": 0,
+                                "maxWidth": "100%",
+                                "padding": 0,
+                              }
+                            }
+                          />
+                        </div>
+                        <img
+                          alt="Our story"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style={
+                            Object {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": undefined,
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "visibility": "hidden",
+                              "width": 0,
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      We strengthen healthcare systems to make them more resilient, agile and responsive to the
+                      <span>
+                         Triple Transition
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-12 col-md-6 py-3"
+              >
+                <div>
+                  <div
+                    className="p-3 align-items-center card"
+                  >
+                    <div>
+                      <div
+                        style={
+                          Object {
+                            "boxSizing": "border-box",
+                            "display": "inline-block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "overflow": "hidden",
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "maxWidth": "100%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            aria-hidden={true}
+                            role="presentation"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                            style={
+                              Object {
+                                "border": "none",
+                                "display": "block",
+                                "margin": 0,
+                                "maxWidth": "100%",
+                                "padding": 0,
+                              }
+                            }
+                          />
+                        </div>
+                        <img
+                          alt="Our story"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style={
+                            Object {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": undefined,
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "visibility": "hidden",
+                              "width": 0,
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      We are local. We design solutions based on our understanding of  healthcare delivery in Africa and emerging markets 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-12 col-md-6 py-3"
+              >
+                <div>
+                  <div
+                    className="p-3 align-items-center card"
+                  >
+                    <div>
+                      <div
+                        style={
+                          Object {
+                            "boxSizing": "border-box",
+                            "display": "inline-block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "overflow": "hidden",
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "maxWidth": "100%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            aria-hidden={true}
+                            role="presentation"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                            style={
+                              Object {
+                                "border": "none",
+                                "display": "block",
+                                "margin": 0,
+                                "maxWidth": "100%",
+                                "padding": 0,
+                              }
+                            }
+                          />
+                        </div>
+                        <img
+                          alt="Our story"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style={
+                            Object {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": undefined,
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "visibility": "hidden",
+                              "width": 0,
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      We are entrepreneurial. We come from a startup environment and take a sustainable, innovative and agile growth mindset to the projects we undertake
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-12 col-md-6 py-3"
+              >
+                <div>
+                  <div
+                    className="p-3 align-items-center card"
+                  >
+                    <div>
+                      <div
+                        style={
+                          Object {
+                            "boxSizing": "border-box",
+                            "display": "inline-block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "overflow": "hidden",
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "maxWidth": "100%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            aria-hidden={true}
+                            role="presentation"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                            style={
+                              Object {
+                                "border": "none",
+                                "display": "block",
+                                "margin": 0,
+                                "maxWidth": "100%",
+                                "padding": 0,
+                              }
+                            }
+                          />
+                        </div>
+                        <img
+                          alt="Our story"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style={
+                            Object {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": undefined,
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "visibility": "hidden",
+                              "width": 0,
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      We deliver more health for the money. We are driven by delivering results and impact. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="partners"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-12 text-center"
+            >
+              <p>
+                Our 
+                <span>
+                   Partners
+                </span>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              className="row align-items-center"
+            >
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="USAID Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="World Bank Group Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="Bill And Melinda Gates Foundation Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="Brand Challenges Canada Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="SDG Philanthropy Platform Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="Master Card Foundation Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="AstraZeneca Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 col-md-3 col-sm-12"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="Wellcome Trust Logo"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div>
+    <footer
+      className="text-white text-center text-lg-start"
+    >
+      <div
+        className="container p-4"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-5 col-md-12 mb-4 mb-md-0 p-3"
+          >
+            <div>
+              <div>
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "inline-block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "overflow": "hidden",
+                      "position": "relative",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style={
+                        Object {
+                          "border": "none",
+                          "display": "block",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "padding": 0,
+                        }
+                      }
+                    />
+                  </div>
+                  <img
+                    alt="Brand Logo"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "visibility": "hidden",
+                        "width": 0,
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <p>
+                About the SGHI
+              </p>
+              <p>
+                SGHI is a development ecosystem builder and optimizer that supports philanthropy and community effort to leverage investment and deliver lasting impact
+              </p>
+            </div>
+          </div>
+          <div
+            className="col-lg-2 col-md-6 mb-4 mb-md-0 pt-5 p-3"
+          >
+            <div>
+              <p>
+                Additional links
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Contact us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Why we exist
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    SGHI MISSION AND VISION
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="col-lg-5 col-md-6 col-sm-12 mb-4 mb-md-0 pt-5 ml-5"
+          >
+            <div>
+              <p>
+                Latest tweets
+              </p>
+              <ul>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-2"
+                    >
+                      <i
+                        className="fab fa-twitter"
+                      />
+                    </div>
+                    <div
+                      className="col-10"
+                    >
+                      <a
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        RT @wpklik: Here is our selection of 20 #Worldrevolutionaries @edgethemes @selectthemes @mi…
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-2"
+                    >
+                      <i
+                        className="fab fa-twitter"
+                      />
+                    </div>
+                    <div
+                      className="col-10"
+                    >
+                      <a
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        RT @wpklik: Here is our selection of 20 #Worldrevolutionaries @edgethemes @selectthemes @mi…
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="col-lg-5 col-md-6 mb-4 mb-md-0"
+          >
+            <div>
+              <p>
+                Connect with us
+              </p>
+              <div>
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col-1 mx-2"
+                  >
+                    <a
+                      aria-label="LinkedIn"
+                      href="https://www.linkedin.com/company/savannahglobalhealth"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-linkedin-in fa-2x"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    className="col-1 mx-2"
+                  >
+                    <a
+                      aria-label="Twitter"
+                      href="https://twitter.com/SGHI76989573"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-twitter fa-2x"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    className="col-1 mx-2"
+                  >
+                    <a
+                      aria-label="Facebook"
+                      href="https://fb.me/SavannahGlobalHealth"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-facebook-f fa-2x"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

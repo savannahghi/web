@@ -1,8 +1,8 @@
 import TitleBar from '../components/TitleBar';
-import NavBar from 'components/Navbar';
-import Footer from 'components/Footer';
-import TeamCard from 'components/TeamCard';
-import * as StringConstants from 'components/constants/app_strings';
+import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
+import TeamCard from '../components/TeamCard';
+import * as StringConstants from '../components/constants/app_strings';
 
 /**
  * This component is the Teams page

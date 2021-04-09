@@ -1,0 +1,957 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamPage renders compnent tree correctly 1`] = `
+<div>
+  <main
+    className="sghi_container"
+  >
+    <nav
+      className="navbar sticky-top navbar-expand-lg navbar-light bg-light w-100"
+      id="navbar"
+    >
+      <div
+        className="container"
+      >
+        <a
+          className="navbar-brand"
+          href="/"
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              alt="Brand Logo"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "visibility": "hidden",
+                  "width": 0,
+                }
+              }
+            />
+          </div>
+        </a>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          className="navbar-toggler"
+          data-mdb-target="#navbarSupportedContent"
+          data-mdb-toggle="collapse"
+          type="button"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </button>
+        <div
+          className="collapse navbar-collapse text-center menu-links"
+          id="navbarSupportedContent"
+        >
+          <ul
+            className="navbar-nav ms-auto mx-auto mb-2 mb-lg-0"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link"
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#our-story"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Our Story
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#our-work"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Our Work
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#dna"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Our DNA
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item partner-link"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/#partners"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Partners
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/products"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Products
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link active"
+              >
+                <a
+                  href="/team"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Teams
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/contact"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Contact
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      className="container"
+    >
+      <div
+        className="row py-5 px-5"
+      >
+        <div
+          className="col-12 my-3"
+        >
+          <p
+            className="page-title text-center"
+          >
+            Our 
+            <span
+              className="page-title-second"
+            >
+              Team
+            </span>
+          </p>
+          <p
+            className="text-center team-subtitle"
+          >
+            Our belief is that by strengthening African healthcare systems so as to make them more resilient to the triple transition, we will be able to change and impact on the lives of our fellow Africans in the next decade…
+          </p>
+        </div>
+        <div
+          className="col-lg-4 col-md-4 col-sm-12"
+        >
+          <div
+            className="card sghi-card p-3"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="Team Member Photo"
+                className="rounded-circle"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "visibility": "hidden",
+                    "width": 0,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="card-body"
+            >
+              <p
+                className="team-name"
+              >
+                Dr. Riro Matiko
+              </p>
+              <p
+                className="team-title"
+              >
+                SGHI President
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-lg-4 col-md-4 col-sm-12"
+        >
+          <div
+            className="card sghi-card p-3"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="Team Member Photo"
+                className="rounded-circle"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "visibility": "hidden",
+                    "width": 0,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="card-body"
+            >
+              <p
+                className="team-name"
+              >
+                Dr. John Muthee
+              </p>
+              <p
+                className="team-title"
+              >
+                CEO, Savannah Informatics
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-lg-4 col-md-4 col-sm-12"
+        >
+          <div
+            className="card sghi-card p-3"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="Team Member Photo"
+                className="rounded-circle"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "visibility": "hidden",
+                    "width": 0,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="card-body"
+            >
+              <p
+                className="team-name"
+              >
+                Eric Mbuthia
+              </p>
+              <p
+                className="team-title"
+              >
+                SGHI Team
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-lg-4 col-md-4 col-sm-12"
+        >
+          <div
+            className="card sghi-card p-3"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="Team Member Photo"
+                className="rounded-circle"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "visibility": "hidden",
+                    "width": 0,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="card-body"
+            >
+              <p
+                className="team-name"
+              >
+                Dr. Ngure Nyaga
+              </p>
+              <p
+                className="team-title"
+              >
+                SGHI Team
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-lg-4 col-md-4 col-sm-12"
+        >
+          <div
+            className="card sghi-card p-3"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="Team Member Photo"
+                className="rounded-circle"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "visibility": "hidden",
+                    "width": 0,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="card-body"
+            >
+              <p
+                className="team-name"
+              >
+                John Paul Ogalo
+              </p>
+              <p
+                className="team-title"
+              >
+                SGHI Team
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div>
+    <footer
+      className="text-white text-center text-lg-start"
+    >
+      <div
+        className="container p-4"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-5 col-md-12 mb-4 mb-md-0 p-3"
+          >
+            <div>
+              <div>
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "inline-block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "overflow": "hidden",
+                      "position": "relative",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style={
+                        Object {
+                          "border": "none",
+                          "display": "block",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "padding": 0,
+                        }
+                      }
+                    />
+                  </div>
+                  <img
+                    alt="Brand Logo"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "visibility": "hidden",
+                        "width": 0,
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <p>
+                About the SGHI
+              </p>
+              <p>
+                SGHI is a development ecosystem builder and optimizer that supports philanthropy and community effort to leverage investment and deliver lasting impact
+              </p>
+            </div>
+          </div>
+          <div
+            className="col-lg-2 col-md-6 mb-4 mb-md-0 pt-5 p-3"
+          >
+            <div>
+              <p>
+                Additional links
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Contact us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Why we exist
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    SGHI MISSION AND VISION
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="col-lg-5 col-md-6 col-sm-12 mb-4 mb-md-0 pt-5 ml-5"
+          >
+            <div>
+              <p>
+                Latest tweets
+              </p>
+              <ul>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-2"
+                    >
+                      <i
+                        className="fab fa-twitter"
+                      />
+                    </div>
+                    <div
+                      className="col-10"
+                    >
+                      <a
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        RT @wpklik: Here is our selection of 20 #Worldrevolutionaries @edgethemes @selectthemes @mi…
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-2"
+                    >
+                      <i
+                        className="fab fa-twitter"
+                      />
+                    </div>
+                    <div
+                      className="col-10"
+                    >
+                      <a
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        RT @wpklik: Here is our selection of 20 #Worldrevolutionaries @edgethemes @selectthemes @mi…
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="col-lg-5 col-md-6 mb-4 mb-md-0"
+          >
+            <div>
+              <p>
+                Connect with us
+              </p>
+              <div>
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col-1 mx-2"
+                  >
+                    <a
+                      aria-label="LinkedIn"
+                      href="https://www.linkedin.com/company/savannahglobalhealth"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-linkedin-in fa-2x"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    className="col-1 mx-2"
+                  >
+                    <a
+                      aria-label="Twitter"
+                      href="https://twitter.com/SGHI76989573"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-twitter fa-2x"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    className="col-1 mx-2"
+                  >
+                    <a
+                      aria-label="Facebook"
+                      href="https://fb.me/SavannahGlobalHealth"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-facebook-f fa-2x"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

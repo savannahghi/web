@@ -2,8 +2,8 @@ import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import axios from 'axios';
-import NavBar from 'components/Navbar';
-import Footer from 'components/Footer';
+import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
 import TitleBar from '../components/TitleBar';
 import * as StringConstants from '../components/constants/app_strings';
 

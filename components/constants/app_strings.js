@@ -12,7 +12,7 @@ export const productsNav = 'Products';
 export const insightsNav = 'Insights';
 export const partnersNav = 'Partners';
 export const teamNav = 'Teams';
-export const contactsNav = 'Contacts';
+export const contactsNav = 'Contact';
 export const searchPlaceHolder = 'Search';
 
 // hero component

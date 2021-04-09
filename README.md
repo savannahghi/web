@@ -152,7 +152,7 @@ Packages imported in every javascript file follow this order;
 8 . Relative files ('../../')
 ```
 
-All the imports MUST follow the paths defined at the `./jsconfig.json` file to enhance readability and eliminate long chains of relative imports and their associated changes. Here are a few examples
+Here are a few examples
 
 ```javascript
 // Next.js imports imports

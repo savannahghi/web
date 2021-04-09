@@ -1,8 +1,8 @@
 import TitleBar from '../components/TitleBar';
-import NavBar from 'components/Navbar';
-import Footer from 'components/Footer';
-import ProductsCard from 'components/ProductsCard';
-import * as StringConstants from 'components/constants/app_strings';
+import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ProductsCard from '../components/ProductsCard';
+import * as StringConstants from '../components/constants/app_strings';
 
 /**
  * This component is the Products page

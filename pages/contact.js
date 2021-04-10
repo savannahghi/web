@@ -79,7 +79,7 @@ export default function Contact() {
                                         method="post"
                                         className="p-3">
                                         <div className="mb-4">
-                                            <label className="form-label" htmlFor="form2Example1">
+                                            <label className="form-label" htmlFor="nameInput">
                                                 {StringConstants.nameLabel}
                                             </label>
                                             <input
@@ -91,7 +91,7 @@ export default function Contact() {
                                                         message: `${StringConstants.nameRequiredPrompt}`
                                                     }
                                                 })}
-                                                id="form2Example1"
+                                                id="nameInput"
                                                 className="form-control"
                                             />
                                             <span className="error_message">
@@ -99,7 +99,7 @@ export default function Contact() {
                                             </span>
                                         </div>
                                         <div className="mb-4">
-                                            <label className="form-label" htmlFor="form2Example1">
+                                            <label className="form-label" htmlFor="emailInput">
                                                 {StringConstants.emailLabel}
                                             </label>
                                             <input
@@ -123,7 +123,7 @@ export default function Contact() {
                                                         message: `${StringConstants.invalidEmailPrompt}`
                                                     }
                                                 })}
-                                                id="form2Example1"
+                                                id="emailInput"
                                                 className="form-control"
                                             />
                                             <span className="error_message">
@@ -131,11 +131,12 @@ export default function Contact() {
                                             </span>
                                         </div>
                                         <div className="mb-4">
-                                            <label className="form-label" htmlFor="form2Example1">
+                                            <label className="form-label" htmlFor="messageInput">
                                                 Message
                                             </label>
                                             <textarea
                                                 name="message"
+                                                type="text"
                                                 ref={register({
                                                     required: {
                                                         value: true,
@@ -151,7 +152,7 @@ export default function Contact() {
                                                     }
                                                 })}
                                                 className="form-control"
-                                                id="form4Example3"
+                                                id="messageInput"
                                                 rows="4"></textarea>
                                             <span className="error_message">
                                                 {errors?.message?.message}
@@ -162,6 +163,7 @@ export default function Contact() {
                                             <button
                                                 aria-label="Submit Button"
                                                 type="submit"
+                                                id="submitButton"
                                                 className="btn btn-secondary font-weight-bold text-capitalize mb-4">
                                                 {StringConstants.submitBtnText}
                                             </button>

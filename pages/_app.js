@@ -1,5 +1,6 @@
 import 'styles/globals.scss';
 
+/* istanbul ignore next */
 export function reportWebVitals(metric) {
     console.log(metric);
 }

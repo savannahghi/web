@@ -144,7 +144,7 @@
             position: relative;
             top: -15px;
             left: 60px;
-            width: 250px;
+            width: 300px;
         }
 
         .africa_graphic {
@@ -159,5 +159,59 @@
             position: relative;
             left: 1rem;
         }
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+    .mission {
+        position: relative;
+        top: 1rem;
+
+        .mission_title {
+            text-align: center;
+            position: relative;
+            top: -50px;
+            font-size: 20px;
+            left: 10px;
+        }
+
+        .mission_content {
+            text-align: center;
+            position: relative;
+            top: -15px;
+            left: 85px;
+            width: 300px;
+        }
+
+        .africa_graphic {
+            position: relative;
+            left: -8px;
+            min-width: 30rem;
+            text-align: center;
+            justify-content: center;
+        }
+        .story_btn {
+            text-align: center;
+            position: relative;
+            left: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .mission_content {
+        text-align: center;
+        position: relative;
+        top: -15px;
+        left: 100px !important;
+        width: 320px !important;
+    }
+}
+
+/* Medium devices (Tablets, between 768px and 992px screenWidths) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .africa_graphic {
+        position: relative;
+        left: -60px !important;
     }
 }

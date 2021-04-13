@@ -464,12 +464,6 @@ a {
         overflow-x: hidden;
     }
 
-    .search-bar {
-        position: relative;
-        left: 12rem;
-        width: 200px;
-        border-radius: 90px !important;
-    }
     .hero_title {
         padding-top: 1rem;
         font-size: 20px;
@@ -477,16 +471,10 @@ a {
         position: relative;
         left: 8px;
     }
+    
     .hero_subtitle {
-        font-size: 18px;
-        font-weight: 500;
-        width: 270px;
-        text-align: center;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
         position: relative;
-        justify-content: center;
-        left: 25px;
+        left: -15rem;
     }
 
     .hero_cta {
@@ -516,6 +504,13 @@ a {
         position: relative;
         right: -5rem;
         top: 5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .hero_subtitle {
+        position: relative;
+        left: -11rem;
     }
 }
 

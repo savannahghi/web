@@ -134,10 +134,10 @@
     }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 480px) {
+@media only screen and (min-width: 425px) and (max-width: 479px) {
     .work_title {
         position: relative;
-        left: -4rem !important;
+        left: 0rem !important;
     }
 
     .work_subtitle {
@@ -156,14 +156,14 @@
             min-width: 500px;
             position: relative;
             top: -7rem;
-            left: -6rem;
+            left: -3rem;
         }
 
         .work_subtitle {
             position: relative;
             top: -7rem;
             text-align: center;
-            left: 60px;
+            left: 17px;
             min-width: 200px;
         }
 
@@ -181,6 +181,13 @@
             text-align: center;
             min-width: 20rem;
         }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .work_title {
+        position: relative;
+        left: 0rem !important;
     }
 }
 

@@ -22,9 +22,13 @@ Looks like we are done with the prerequisites :-)
 
 5. Open your favourite browser at http://localhost:3000 to view your project
 
-## How to setup and run unit, widget and integration tests locally
+### How to setup and run unit, widget and integration tests locally
 
 1. Ensure all test dependencies are installed from the above process
+
+2. Run `npm run test -- --coverage --watchAll=false`
+
+3. To view your coverage information you can check on terminal output or run `google-chrome coverage/lcov-report/index.html` from the root of the project. (Replace google-chrome with your favourite browser)
 
 ## Project structure
 

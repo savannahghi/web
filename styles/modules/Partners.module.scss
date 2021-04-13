@@ -46,8 +46,8 @@
 
         .partners_title {
             position: relative;
-            top: -10rem;
-            left: 5rem;
+            top: -7rem;
+            left: 6rem;
             font-size: 30px;
             text-align: center;
         }
@@ -67,10 +67,10 @@
     }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 480px) {
+@media only screen and (min-width: 425px) and (max-width: 479px) {
     .all_partner_items {
         position: relative;
-        left: -2rem !important;
+        left: 1rem !important;
     }
 }
 
@@ -83,8 +83,8 @@
 
         .partners_title {
             position: relative;
-            top: 3rem;
-            left: -6rem;
+            top: 4rem;
+            left: -4rem;
             font-size: 30px;
             text-align: center;
         }
@@ -93,7 +93,7 @@
             position: relative;
             top: 2rem;
             min-width: 400px;
-            left: -11rem;
+            left: 0rem;
         }
 
         .partner_item {
@@ -106,6 +106,44 @@
     }
 }
 
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+    .partners {
+        position: relative;
+        top: -6rem;
+        left: 5rem;
+
+        .partners_title {
+            position: relative;
+            top: 6rem;
+            left: -4rem;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .all_partner_items {
+            position: relative;
+            top: 4rem;
+            min-width: 400px;
+            left: 0rem;
+        }
+
+        .partner_item {
+            width: 200px;
+            height: 100px;
+            position: relative;
+            right: 3rem;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .all_partner_items {
+        position: relative;
+        left: 3rem !important;
+    }
+}
+
 /* Medium devices (Tablets, between 768px and 992px screenWidths) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .partners {
@@ -114,7 +152,7 @@
         .partners_title {
             position: relative;
             top: 3rem;
-            left: -6rem;
+            left: -4rem;
             font-size: 30px;
             text-align: center;
         }

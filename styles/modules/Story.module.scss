@@ -156,11 +156,11 @@
     }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 480px) {
+@media only screen and (min-width: 425px) and (max-width: 479px) {
     .story_title {
         position: relative;
         top: -29rem !important;
-        left: 7rem;
+        left: 6rem;
     }
 
     .salutation {
@@ -172,12 +172,11 @@
 
     .story_sub {
         position: relative;
-        top: -60px;
+        top: -85px;
         text-align: center;
-        left: 40px !important;
+        left: 24px !important;
         width: 300px !important;
     }
-
 }
 
 /* Medium devices (Tablets, between 425px and 768px screenWidths) */
@@ -185,7 +184,8 @@
     .story {
         .story_title {
             position: relative;
-            top: -28rem;
+            top: -34rem;
+            left: 8rem;
         }
 
         .video_component {
@@ -198,8 +198,8 @@
         .salutation {
             position: relative;
             text-align: center;
-            left: 30px;
-            top: 30px;
+            left: 10px;
+            top: -55px;
         }
 
         .story_sub {
@@ -207,7 +207,7 @@
             top: -60px;
             text-align: center;
             left: 60px;
-            width: 250px;
+            width: 300px;
         }
 
         .story_btn {
@@ -218,12 +218,67 @@
     }
 }
 
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+    .story {
+        .story_title {
+            position: relative;
+            top: -37rem;
+            left: 8rem;
+        }
+
+        .video_component {
+            position: relative;
+            top: 30px;
+            left: 40px;
+            width: auto;
+        }
+
+        .salutation {
+            position: relative;
+            text-align: center;
+            left: 10px;
+            top: -55px;
+        }
+
+        .story_sub {
+            position: relative;
+            top: -60px;
+            text-align: center;
+            left: 85px;
+            width: 300px;
+        }
+
+        .story_btn {
+            text-align: center;
+            position: relative;
+            left: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .story_title {
+        position: relative;
+        top: -41rem !important;
+        left: 11rem !important;
+    }
+
+    .story_sub {
+        position: relative;
+        top: -60px;
+        text-align: center;
+        left: 85px;
+        width: 320px !important;
+    }
+}
+
 /* Medium devices (Tablets, between 768px and 992px screenWidths) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .story {
         .story_title {
             position: relative;
-            top: -6rem;
+            top: -4rem !important;
+            left: 6rem !important;
         }
 
         .video_component {

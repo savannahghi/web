@@ -4,6 +4,9 @@
         url('/images/hero.svg');
     height: 39rem;
     max-width: 100rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

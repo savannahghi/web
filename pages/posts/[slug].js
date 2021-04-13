@@ -1,4 +1,5 @@
 import { getSinglePost, getPosts } from '../../lib/posts';
+import Image from 'next/image';
 import TitleBar from '../../components/TitleBar';
 import NavBar from 'components/Navbar';
 import Footer from 'components/Footer';
@@ -16,11 +17,26 @@ export default function PostPage(props) {
 
             <NavBar props={titleProps} />
 
-            <div className="container pb-5">
+            <div className="container pb-5 pt-5">
                 {props ? (
-                    <div className={PostStyles.posts}>
-                        <h1 className="py-5">{props.post.title}</h1>
-                        <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+                    <div className={PostStyles.gh_canvas}>
+                        <h1 className="py-3 font-weight-bold">{props.post.title}</h1>
+                        <div className="">
+                            {props.post.feature_image ? (
+                                <Image
+                                    src={props.post.feature_image}
+                                    alt="Post Image"
+                                    width={10}
+                                    className="py-3"
+                                    height={6.075}
+                                    sizes="(min-width: 100vw) 50px"
+                                />
+                            ) : null}
+                        </div>
+                        <div
+                            className={`${PostStyles.gh_content}`}
+                            dangerouslySetInnerHTML={{ __html: props.post.html }}
+                        />
                     </div>
                 ) : (
                     <p>An Error Occured, Please try again</p>

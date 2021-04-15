@@ -22,14 +22,7 @@ describe('Homepage', () => {
             screen.getByText('1.2 BN Africans lack access to quality healthcare.')
         ).toBeInTheDocument();
         expect(screen.getByText('Our Story')).toBeInTheDocument();
-        expect(screen.getByText('We’re on a mission to make')).toBeInTheDocument();
-        expect(screen.getByText('Why')).toBeInTheDocument();
         expect(screen.getByText('Our Work')).toBeInTheDocument();
-        expect(
-            screen.getByText(
-                'We are local. We design solutions based on our understanding of healthcare delivery in Africa and emerging markets'
-            )
-        ).toBeInTheDocument();
     });
 
     it('should render empty title', async () => {

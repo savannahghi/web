@@ -3,7 +3,7 @@ import * as StringConstants from '../components/constants/app_strings';
 
 export default function PartnersGrid() {
     return (
-        <div className="container">
+        <div id="partners" className="container py-5">
             <div className="row">
                 <div className="col-12">
                     <p className={PartnersGridStyles.title}>

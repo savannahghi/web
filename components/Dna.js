@@ -1,101 +1,88 @@
 import Image from 'next/image';
-import * as AssetConstants from './constants/app_assets';
+import FadeInAnimation from './Animation';
+import useIsInViewport from 'use-is-in-viewport';
 import * as StringConstants from './constants/app_strings';
 import DNAStyles from '../styles/modules/OurDna.module.scss';
 
 export default function OurDna() {
+    const [isInViewport, targetRef] = useIsInViewport();
+
     return (
-        <div id="dna" className={DNAStyles.main}>
+        <div ref={targetRef} id="dna" className={DNAStyles.main}>
             <div className="container">
-                <div className="row">
-                    <div className="col-12 text-center">
-                        <p className={DNAStyles.dna_title}>
-                            {StringConstants.ourText}
-                            <span className={DNAStyles.dna_title_first}>
-                                {StringConstants.dnaText}
-                            </span>
-                            {StringConstants.ourDNATitle}
-                        </p>
-                    </div>
-                </div>
+                {isInViewport ? (
+                    <FadeInAnimation wrapperElement="div" direction="down" delay={0.5}>
+                        <div className="row">
+                            <div className="col-12 text-center">
+                                <p className={DNAStyles.dna_title}>
+                                    {StringConstants.ourText}
+                                    <span className={DNAStyles.dna_title_first}>
+                                        {StringConstants.dnaText}
+                                    </span>
+                                    {StringConstants.ourDNATitle}
+                                </p>
+                            </div>
+                        </div>
+                    </FadeInAnimation>
+                ) : null}
                 <div className={DNAStyles.dna_pillars}>
                     <div className="row">
-                        <div className="col-sm-12 col-md-6 py-3">
-                            <div className={DNAStyles.dna_item}>
-                                <div className="p-3 align-items-center card">
-                                    <div className={DNAStyles.illustration}>
-                                        <Image
-                                            src={AssetConstants.healthProfessionalTeamIllustration}
-                                            alt="Our story"
-                                            width={150}
-                                            height={150}
-                                        />
-                                    </div>
-                                    <p className={DNAStyles.dna_content}>
-                                        {StringConstants.dnaContentOne}
-                                        <span className={DNAStyles.dna_content_bold}>
-                                            {StringConstants.tripleTransition}
-                                        </span>
-                                    </p>
-                                </div>
+                        {dnaData.map((dna) => (
+                            <div key={dna.id} className="col-sm-12 col-md-6 py-3">
+                                {isInViewport ? (
+                                    <FadeInAnimation
+                                        wrapperElement="div"
+                                        direction="left"
+                                        delay={0.5}>
+                                        <div className={DNAStyles.dna_item}>
+                                            <div className="p-3 align-items-center card">
+                                                <div className={DNAStyles.illustration}>
+                                                    <Image
+                                                        src={dna.image}
+                                                        alt="Our story"
+                                                        width={150}
+                                                        height={150}
+                                                    />
+                                                </div>
+                                                <p className={DNAStyles.dna_content}>
+                                                    {dna.content}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </FadeInAnimation>
+                                ) : null}
                             </div>
-                        </div>
-                        <div className="col-sm-12 col-md-6 py-3">
-                            <div className={DNAStyles.dna_item}>
-                                <div className="p-3 align-items-center card">
-                                    <div className={DNAStyles.illustration}>
-                                        <Image
-                                            src={AssetConstants.currentLocationIllustration}
-                                            alt="Our story"
-                                            width={150}
-                                            height={150}
-                                        />
-                                    </div>
-                                    <p className={DNAStyles.dna_content}>
-                                        {StringConstants.dnaContentTwo}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-sm-12 col-md-6 py-3">
-                            <div className={DNAStyles.dna_item}>
-                                <div className="p-3 align-items-center card">
-                                    <div className={DNAStyles.illustration}>
-                                        <Image
-                                            src={AssetConstants.companyIllustration}
-                                            alt="Our story"
-                                            width={150}
-                                            height={150}
-                                        />
-                                    </div>
-                                    <p className={DNAStyles.dna_content}>
-                                        {StringConstants.dnaContentThree}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-sm-12 col-md-6 py-3">
-                            <div className={DNAStyles.dna_item}>
-                                <div className="p-3 align-items-center card">
-                                    <div className={DNAStyles.illustration}>
-                                        <Image
-                                            src={AssetConstants.doctorIllustration}
-                                            alt="Our story"
-                                            width={150}
-                                            height={150}
-                                        />
-                                    </div>
-                                    <p className={DNAStyles.dna_content}>
-                                        {StringConstants.dnaContentFour}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
     );
 }
+
+const dnaData = [
+    {
+        id: 0,
+        image: '/images/health_professional_team_cuate.svg',
+        content:
+            'We strengthen healthcare systems to make them more resilient, agile and responsive to the Triple Transition'
+    },
+    {
+        id: 1,
+        image: '/images/current_location_rafiki.svg',
+        content:
+            'We are local. We design solutions based on our understanding of  healthcare delivery in Africa and emerging markets '
+    },
+    {
+        id: 2,
+        image: '/images/company_cuate.svg',
+        content:
+            'We are entrepreneurial. We come from a startup environment and take a sustainable, innovative and agile growth mindset to the projects we undertake'
+    },
+    {
+        id: 3,
+        image: '/images/doctor.svg',
+        content:
+            'We deliver more health for the money. We are driven by delivering results and impact. '
+    }
+];

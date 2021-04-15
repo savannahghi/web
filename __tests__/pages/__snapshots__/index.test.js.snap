@@ -160,7 +160,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
               </div>
             </li>
             <li
-              className="nav-item partner-link"
+              className="nav-item"
             >
               <div
                 className="nav-link"
@@ -247,102 +247,41 @@ exports[`Homepage renders compnent tree correctly 1`] = `
         </button>
       </div>
     </div>
-    <div>
+    <div
+      className="container"
+    >
       <div
         className="container"
-        id="our-story"
       >
         <div>
-          <div
-            className="row align-items-center set_gutters"
-          >
-            <div
-              className="col-sm-12 col-md-6 h-100"
-            >
-              <div
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "overflow": "hidden",
-                    "position": "relative",
-                  }
-                }
-              >
-                <div
-                  style={
-                    Object {
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "maxWidth": "100%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    role="presentation"
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                    style={
-                      Object {
-                        "border": "none",
-                        "display": "block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "padding": 0,
-                      }
-                    }
-                  />
-                </div>
-                <img
-                  alt="Our Story Image"
-                  decoding="async"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "visibility": "hidden",
-                      "width": 0,
-                    }
-                  }
-                />
-              </div>
+          <div>
+            <div>
+              <img
+                alt="Our Story"
+                src="/images/drMatiko.svg"
+              />
+            </div>
+            <div>
               <p>
-                <span>
+                <strong>
                   Riro Matiko
-                </span>
-                <br />
-                 
+                </strong>
+                , 
                 SGHI President
               </p>
             </div>
-            <div
-              className="col-sm-12 col-md-6 h-100"
-            >
+          </div>
+          <div>
+            <div>
               <p>
-                <span>
+                <strong>
                   Our 
-                </span>
+                </strong>
+                 
                 Story
               </p>
+            </div>
+            <div>
               <p>
                 Millions of Africans lack access to quality, affordable healthcare. By strengthening healthcare systems undergoing the triple transition, we will be able to change and impact the lives of our fellow Africans in the next decade”
               </p>
@@ -456,99 +395,36 @@ exports[`Homepage renders compnent tree correctly 1`] = `
       </div>
       <div
         className="container"
-        id="our-story"
       >
         <div>
-          <div
-            className="row align-items-center set_gutters"
-          >
-            <div
-              className="col-sm-12 col-md-6 h-100"
-            >
-              <div
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "overflow": "hidden",
-                    "position": "relative",
-                  }
-                }
-              >
-                <div
-                  style={
-                    Object {
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "maxWidth": "100%",
-                    }
-                  }
-                >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    role="presentation"
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                    style={
-                      Object {
-                        "border": "none",
-                        "display": "block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "padding": 0,
-                      }
-                    }
-                  />
-                </div>
-                <img
-                  alt="Our Story Image"
-                  decoding="async"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "visibility": "hidden",
-                      "width": 0,
-                    }
-                  }
-                />
-              </div>
+          <div>
+            <div>
+              <img
+                alt="Why Now"
+                src="/images/muthee.svg"
+              />
+            </div>
+            <div>
               <p>
-                <span>
+                <strong>
                   John Muthee
-                </span>
-                <br />
-                 
+                </strong>
+                , 
                  CEO, Savannah Informatics
               </p>
             </div>
-            <div
-              className="col-sm-12 col-md-6 h-100"
-            >
+          </div>
+          <div>
+            <div>
               <p>
-                <span>
+                <strong>
                   Why 
-                </span>
+                </strong>
+                 
                 Now
               </p>
+            </div>
+            <div>
               <p>
                 COVID19 has challenged the healthcare system in multiple ways which has further impacted on access, affordability to care and is likely to worsen health outcomes for decades to come…
               </p>
@@ -953,606 +829,86 @@ exports[`Homepage renders compnent tree correctly 1`] = `
         </div>
       </div>
       <div
-        id="partners"
+        className="container"
       >
         <div
-          className="container"
+          className="row"
         >
           <div
-            className="row"
+            className="col-12"
           >
-            <div
-              className="col-12 text-center"
-            >
-              <p>
-                Our 
-                <span>
-                   Partners
-                </span>
-              </p>
-            </div>
+            <p>
+              Our 
+              <strong>
+                 Partners
+              </strong>
+            </p>
           </div>
-          <div>
-            <div
-              className="row align-items-center"
-            >
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="USAID Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="World Bank Group Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="Bill And Melinda Gates Foundation Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="Brand Challenges Canada Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="SDG Philanthropy Platform Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="Master Card Foundation Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="AstraZeneca Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-md-3 col-sm-12"
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
-                    <div
-                      style={
-                        Object {
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "maxWidth": "100%",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
-                        style={
-                          Object {
-                            "border": "none",
-                            "display": "block",
-                            "margin": 0,
-                            "maxWidth": "100%",
-                            "padding": 0,
-                          }
-                        }
-                      />
-                    </div>
-                    <img
-                      alt="Wellcome Trust Logo"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div>
+          <div
+            className="card"
+          >
+            <img
+              alt="USAID Logo"
+              src="/images/partners/usaid.svg"
+            />
+          </div>
+          <div
+            className="card"
+          >
+            <img
+              alt="The World Bank Logo"
+              src="/images/partners/worldBankLogo.svg"
+            />
+          </div>
+          <div
+            className="card"
+          >
+            <img
+              alt="Bill and Melinda Gates Foundation Logo"
+              src="/images/partners/bamgFoundation.svg"
+            />
+          </div>
+          <div
+            className="card"
+          >
+            <img
+              alt="Grand Challenges Canada Logo"
+              src="/images/partners/grandChallengesCanada.svg"
+            />
+          </div>
+          <div
+            className="card"
+          >
+            <img
+              alt="SDG Philanthropy Platform Logo"
+              src="/images/partners/sdgPhilanthropyPlatform.svg"
+            />
+          </div>
+          <div
+            className="card"
+          >
+            <img
+              alt="MasterCard Foundation Logo"
+              src="/images/partners/mcf.svg"
+            />
+          </div>
+          <div
+            className="card"
+          >
+            <img
+              alt="AstraZeneca Logo"
+              src="/images/partners/astraZeneca.svg"
+            />
+          </div>
+          <div
+            className="card"
+          >
+            <img
+              alt="Wellcome Trust Logo"
+              src="/images/partners/wellcomeTrust.svg"
+            />
           </div>
         </div>
       </div>

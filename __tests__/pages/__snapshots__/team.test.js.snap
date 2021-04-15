@@ -160,7 +160,7 @@ exports[`TeamPage renders compnent tree correctly 1`] = `
               </div>
             </li>
             <li
-              className="nav-item partner-link"
+              className="nav-item"
             >
               <div
                 className="nav-link"

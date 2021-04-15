@@ -60,7 +60,7 @@ export default function NavBar({ props }) {
                                 </Link>
                             </div>
                         </li>
-                        <li className="nav-item partner-link">
+                        <li className="nav-item">
                             <div className="nav-link">
                                 <Link href={props.title == 'Home' ? '#partners' : '/#partners'}>
                                     <a>{StringConstants.partnersNav}</a>

@@ -152,11 +152,6 @@ a {
     font-weight: bold;
 }
 
-.pagination {
-    align-items: center;
-    justify-content: center;
-}
-
 .iframe_size {
     width: 100rem !important;
     height: 30rem;
@@ -189,6 +184,8 @@ a {
     left: -6rem;
     position: relative;
 }
+
+
 
 .marker_popup {
     border-radius: 10px !important;
@@ -473,7 +470,7 @@ a {
         position: relative;
         left: 8px;
     }
-    
+
     .hero_subtitle {
         position: relative;
         left: -15rem;
@@ -583,12 +580,6 @@ a {
         position: relative;
         right: -5rem;
         top: 5rem;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .partner-link {
-        display: none !important;
     }
 }
 

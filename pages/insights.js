@@ -3,7 +3,6 @@ import TitleBar from '../components/TitleBar';
 import NavBar from 'components/Navbar';
 import Footer from 'components/Footer';
 import InsightCard from 'components/InsightsCard';
-import Pagination from 'components/Pagination';
 import * as StringConstants from 'components/constants/app_strings';
 
 export async function getStaticProps(context) {
@@ -47,7 +46,6 @@ export default function Insights({ posts }) {
                             {posts.map((post) => (
                                 <InsightCard key={post.id} props={post} />
                             ))}
-                            <Pagination />
                         </div>
                     ) : (
                         <p>{StringConstants.errorOcccurred}</p>

@@ -2,12 +2,11 @@ import TitleBar from '../components/TitleBar';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import Story from '../components/Story';
+import StoryGrid from '../components/StoryGrid';
 import Mission from '../components/Mission';
 import Work from '../components/Work';
 import OurDna from '../components/Dna';
-import Partners from '../components/Partners';
-import MainStyles from '../styles/modules/Main.module.scss';
+import PartnersGrid from '../components/PartnersGrid';
 import * as StringConstants from '../components/constants/app_strings';
 import * as AssetConstants from '../components/constants/app_assets';
 
@@ -21,20 +20,22 @@ export default function Home() {
 
     const storyProps = {
         image: AssetConstants.storyThumb,
+        image_alt: 'Our Story',
         name: StringConstants.sghiPresidentName,
         position: StringConstants.sghiPresident,
-        first_title: StringConstants.ourText,
-        second_title: StringConstants.storyText,
-        subtitle: StringConstants.storyContents
+        title_one: StringConstants.ourText,
+        title_two: StringConstants.storyText,
+        content: StringConstants.storyContents
     };
 
     const whyNowProps = {
         image: AssetConstants.whyNowVideoThumbnail,
+        image_alt: 'Why Now',
         name: StringConstants.silCEOName,
         position: StringConstants.silCEOTitle,
-        first_title: StringConstants.whyText,
-        second_title: StringConstants.nowText,
-        subtitle: StringConstants.whyNowContent
+        title_one: StringConstants.whyText,
+        title_two: StringConstants.nowText,
+        content: StringConstants.whyNowContent
     };
 
     return (
@@ -46,18 +47,18 @@ export default function Home() {
 
                 <Hero />
 
-                <div className={MainStyles.main}>
-                    <Story props={storyProps} />
+                <div className="container">
+                    <StoryGrid props={storyProps} />
 
                     <Mission />
 
-                    <Story props={whyNowProps} />
+                    <StoryGrid props={whyNowProps} />
 
                     <Work />
 
                     <OurDna />
 
-                    <Partners />
+                    <PartnersGrid />
                 </div>
             </main>
 

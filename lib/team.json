@@ -1,0 +1,84 @@
+[{
+    "id": 0,
+    "name": "Dr. Riro Matiko",
+    "title": "SGHI President",
+    "headshot": "/images/team/matiko.svg",
+    "bio": "",
+    "fellow": false
+},
+{
+    "id": 1,
+    "name": "Dr. John Muthee",
+    "title": "CEO, Savannah Informatics",
+    "headshot": "/images/team/john_muthee.svg",
+    "bio": "",
+    "fellow": false
+},
+{
+    "id": 2,
+    "name": "Eric Mbuthia",
+    "title": "SGHI Team",
+    "headshot": "/images/team/eric_mbuthia.svg",
+    "fellow": false,
+    "bio":
+        "Dr. Eric Mbuthia is a Health Informatics professional and general practitioner with over 10 years’ experience. As the Technical Director for Access Afya, Eric has led the development of digital patient management and engagement tools and reporting frameworks to provide actionable insights that support agile decision making. As a member of the Research Analyst team at the SAIL Databank in Wales, he was involved in building analytics for common disease measures. His experience at SAIL extended to information governance and data quality practices, all in research-based projects supported by multi-disciplinary teams. Eric has a passion for uncovering insights from data and leveraging technology in healthcare service delivery. He believes the healthcare delivery paradigm is changing; data and technology will have an increasingly important role in delivering more accessible and higher quality services to the mass market. Patients should be active participants in their care, clinicians are better supported in their work and that institutions can respond faster and more accurately to emerging trends. Led by an insatiable curiosity, Eric seeks to apply analytics and digital healthcare concepts to solve for challenges arising in direct patient care, at institutional level as well as informing policy development."
+},
+{
+    "id": 3,
+    "name": "Dr. Ngure Nyaga",
+    "title": "SGHI Team",
+    "headshot": "/images/team/team_member.jpg",
+    "bio": "",
+    "fellow": false
+},
+{
+    "id": 4,
+    "name": "Dr. John Paul Ogalo",
+    "title": "SGHI Team",
+    "headshot": "/images/team/jp_ogalo.svg",
+    "fellow": false,
+    "bio":
+        "Dr. Ogalo holds a masters degree in Plastic Reconstructive and Aesthetic surgery. He is a published researcher in peer reviewed journals in the fields of Surgery and Disruptive Healthcare technology. He has project experience in translating innovative healthcare technologies and business models to service delivery practices in low to middle income countries. He brings along 10years of clinical practice experience in both the Public and Private sector."
+},
+{
+    "id": 5,
+    "name": "Joy Kiguta",
+    "title": "SGHI Team",
+    "headshot": "/images/team/team_member.jpg",
+    "fellow": false,
+    "bio":
+        "Joy is currently the Chief Commercial Officer at Savannah Informatics Limited with 6 years’ experience in the healthcare industry. She leads the commercial services team as well as work with multidisciplinary teams to provide strategy for service delivery and customer satisfaction. She has also been involved in global health programs at Savannah Informatics which were committed to tackling hypertension and the increasing burden of cardiovascular disease (CVD) with technology at the forefront. Through her involvement in the programs, she has come to appreciate the need for integration and cohesion between different stakeholders in the healthcare industry. Joy is passionate about creating an ecosystem that will positively impact health service delivery for all individuals. She believes that health disparities can be minimized through visionary partnerships. Joy holds a Bachelor’s degree (BBS) in Financial Economics from Strathmore Universities and a Master’s degree (MA) in Health Management, Planning and Policy from University of Leeds. "
+},
+{
+    "id": 6,
+    "name": "Abdi Adan",
+    "title": "Software Engineer",
+    "headshot": "/images/team/adan.svg",
+    "bio": "",
+    "fellow": true
+},
+{
+    "id": 7,
+    "name": "Elsardt Kigen",
+    "title": "UX/UI Engineer",
+    "headshot": "/images/team/team_member.jpg",
+    "bio": "",
+    "fellow": true
+},
+{
+    "id": 8,
+    "name": "Vincent Michuki",
+    "title": "Software Engineer",
+    "headshot": "/images/team/team_member.jpg",
+    "bio": "",
+    "fellow": true
+},
+{
+    "id": 9,
+    "name": "Dr. Ryan Nyotu",
+    "title": "SGHI Team",
+    "headshot": "/images/team/team_member.jpg",
+    "bio": "Dr Nyotu Gitau is a health Innovation consultant and researcher. He is a young scientist with a passion for knowledge generation and translation. He holds a BSc in Medical Physiology, an MBChB (UON) and an MPhil in Health Innovation from the University of Cape Town, department of Biomedical Engineering. He was involved in assessing eHealth Knowledge diffusion within the Kenya Public health sector using social network analysis. This is a project that sought to map out eHealth development, implementation, and utilisation stakeholders in the country and showed that county governments did not participate as much in this process despite controlling majority of the health service delivery in the country. He works as a health innovation consultant who draws part of his tacit knowledge capacity from his research and clinical practice background to provide value in the design, implementation, and evaluation of innovations in health care. He also has a history of leading large collaborative research endeavours through his biomedical research company called Trek Science Kenya Limited and was awarded the Mandela Rhodes Scholarship for leadership and entrepreneurship in Africa in 2018. His area of work interest is in increasing adoption of technology within the health sector through the development of triple helix collaboration models. He is currently working on developing a network analysis-based surveillance and testing system for COVID 19. ",
+    "fellow": false
+}
+]

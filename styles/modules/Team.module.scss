@@ -1,0 +1,31 @@
+.banner {
+    background-color: #c2368c;
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.join_us_title {
+    font-size: 25px;
+    color: #c2368c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.join_sub{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.join_us_subtitle {
+    font-size: 16px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: calc(100vw / 2);
+}

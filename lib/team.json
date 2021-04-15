@@ -27,7 +27,7 @@
     "id": 3,
     "name": "Dr. Ngure Nyaga",
     "title": "SGHI Team",
-    "headshot": "/images/team/team_member.jpg",
+    "headshot": "/images/team/team_member.svg",
     "bio": "",
     "fellow": false
 },
@@ -44,7 +44,7 @@
     "id": 5,
     "name": "Joy Kiguta",
     "title": "SGHI Team",
-    "headshot": "/images/team/team_member.jpg",
+    "headshot": "/images/team/team_member.svg",
     "fellow": false,
     "bio":
         "Joy is currently the Chief Commercial Officer at Savannah Informatics Limited with 6 years’ experience in the healthcare industry. She leads the commercial services team as well as work with multidisciplinary teams to provide strategy for service delivery and customer satisfaction. She has also been involved in global health programs at Savannah Informatics which were committed to tackling hypertension and the increasing burden of cardiovascular disease (CVD) with technology at the forefront. Through her involvement in the programs, she has come to appreciate the need for integration and cohesion between different stakeholders in the healthcare industry. Joy is passionate about creating an ecosystem that will positively impact health service delivery for all individuals. She believes that health disparities can be minimized through visionary partnerships. Joy holds a Bachelor’s degree (BBS) in Financial Economics from Strathmore Universities and a Master’s degree (MA) in Health Management, Planning and Policy from University of Leeds. "
@@ -61,7 +61,7 @@
     "id": 7,
     "name": "Elsardt Kigen",
     "title": "UX/UI Engineer",
-    "headshot": "/images/team/team_member.jpg",
+    "headshot": "/images/team/team_member.svg",
     "bio": "",
     "fellow": true
 },
@@ -69,7 +69,7 @@
     "id": 8,
     "name": "Vincent Michuki",
     "title": "Software Engineer",
-    "headshot": "/images/team/team_member.jpg",
+    "headshot": "/images/team/team_member.svg",
     "bio": "",
     "fellow": true
 },
@@ -77,7 +77,7 @@
     "id": 9,
     "name": "Dr. Ryan Nyotu",
     "title": "SGHI Team",
-    "headshot": "/images/team/team_member.jpg",
+    "headshot": "/images/team/team_member.svg",
     "bio": "Dr Nyotu Gitau is a health Innovation consultant and researcher. He is a young scientist with a passion for knowledge generation and translation. He holds a BSc in Medical Physiology, an MBChB (UON) and an MPhil in Health Innovation from the University of Cape Town, department of Biomedical Engineering. He was involved in assessing eHealth Knowledge diffusion within the Kenya Public health sector using social network analysis. This is a project that sought to map out eHealth development, implementation, and utilisation stakeholders in the country and showed that county governments did not participate as much in this process despite controlling majority of the health service delivery in the country. He works as a health innovation consultant who draws part of his tacit knowledge capacity from his research and clinical practice background to provide value in the design, implementation, and evaluation of innovations in health care. He also has a history of leading large collaborative research endeavours through his biomedical research company called Trek Science Kenya Limited and was awarded the Mandela Rhodes Scholarship for leadership and entrepreneurship in Africa in 2018. His area of work interest is in increasing adoption of technology within the health sector through the development of triple helix collaboration models. He is currently working on developing a network analysis-based surveillance and testing system for COVID 19. ",
     "fellow": false
 }

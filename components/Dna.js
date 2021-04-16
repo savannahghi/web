@@ -34,6 +34,26 @@ export default function OurDna() {
                                         wrapperElement="div"
                                         direction="left"
                                         delay={0.5}>
+                                        <div>
+                                            <div className={DNAStyles.dna_item}>
+                                                <div className="p-3 align-items-center card">
+                                                    <div className={DNAStyles.illustration}>
+                                                        <Image
+                                                            src={dna.image}
+                                                            alt="Our story"
+                                                            width={150}
+                                                            height={150}
+                                                        />
+                                                    </div>
+                                                    <p className={DNAStyles.dna_content}>
+                                                        {dna.content}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </FadeInAnimation>
+                                ) : (
+                                    <div className="spacer">
                                         <div className={DNAStyles.dna_item}>
                                             <div className="p-3 align-items-center card">
                                                 <div className={DNAStyles.illustration}>
@@ -49,8 +69,8 @@ export default function OurDna() {
                                                 </p>
                                             </div>
                                         </div>
-                                    </FadeInAnimation>
-                                ) : null}
+                                    </div>
+                                )}
                             </div>
                         ))}
                     </div>

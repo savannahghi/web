@@ -252,11 +252,49 @@ exports[`Homepage renders compnent tree correctly 1`] = `
     >
       <div
         className="container"
-        id="our-story"
       >
         <div>
-          <div />
-          <div />
+          <div>
+            <div
+              className="spacer"
+            >
+              <div>
+                <img
+                  alt="Our Story"
+                  src="/images/drMatiko.svg"
+                />
+              </div>
+              <div>
+                <p>
+                  <strong>
+                    Riro Matiko
+                  </strong>
+                  , 
+                  SGHI President
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className="spacer"
+            >
+              <div>
+                <p>
+                  <strong>
+                    Our 
+                  </strong>
+                   
+                  Story
+                </p>
+              </div>
+              <div>
+                <p>
+                  Millions of Africans lack access to quality, affordable healthcare. By strengthening healthcare systems undergoing the triple transition, we will be able to change and impact the lives of our fellow Africans in the next decade”
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div>
@@ -266,20 +304,158 @@ exports[`Homepage renders compnent tree correctly 1`] = `
           >
             <div
               className="col-sm-12 col-md-7"
-            />
+            >
+              <div
+                className="spacer"
+              >
+                <p>
+                  We’re on a mission to make 
+                  <br />
+                  <span>
+                    health systems resilient, responsive & people centric
+                  </span>
+                </p>
+                <p>
+                  Our vision is to improve access to quality and affordable healthcare to millions of African’s through the use of technology so as to strengthen healthcare systems which are undergoing the
+                  <span>
+                     Triple Transition
+                  </span>
+                </p>
+                <div>
+                  <div
+                    className="btn btn-secondary btn-rounded text-capitalize px-5"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Read More
+                  </div>
+                </div>
+              </div>
+            </div>
             <div
               className="col-sm-12 col-md-5"
-            />
+            >
+              <div
+                className="spacer"
+              >
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "boxSizing": "border-box",
+                        "display": "inline-block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "overflow": "hidden",
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        aria-hidden={true}
+                        role="presentation"
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        style={
+                          Object {
+                            "border": "none",
+                            "display": "block",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "padding": 0,
+                          }
+                        }
+                      />
+                    </div>
+                    <img
+                      alt="Our story"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "visibility": "hidden",
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div
         className="container"
-        id="our-story"
       >
         <div>
-          <div />
-          <div />
+          <div>
+            <div
+              className="spacer"
+            >
+              <div>
+                <img
+                  alt="Why Now"
+                  src="/images/muthee.svg"
+                />
+              </div>
+              <div>
+                <p>
+                  <strong>
+                    John Muthee
+                  </strong>
+                  , 
+                   CEO, Savannah Informatics
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className="spacer"
+            >
+              <div>
+                <p>
+                  <strong>
+                    Why 
+                  </strong>
+                   
+                  Now
+                </p>
+              </div>
+              <div>
+                <p>
+                  COVID19 has challenged the healthcare system in multiple ways which has further impacted on access, affordability to care and is likely to worsen health outcomes for decades to come…
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -334,16 +510,344 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             >
               <div
                 className="col-sm-12 col-md-6 py-3"
-              />
+              >
+                <div
+                  className="spacer"
+                >
+                  <div>
+                    <div
+                      className="p-3 align-items-center card"
+                    >
+                      <div>
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "inline-block",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "maxWidth": "100%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              aria-hidden={true}
+                              role="presentation"
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                              style={
+                                Object {
+                                  "border": "none",
+                                  "display": "block",
+                                  "margin": 0,
+                                  "maxWidth": "100%",
+                                  "padding": 0,
+                                }
+                              }
+                            />
+                          </div>
+                          <img
+                            alt="Our story"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style={
+                              Object {
+                                "border": "none",
+                                "bottom": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": 0,
+                                "left": 0,
+                                "margin": "auto",
+                                "maxHeight": "100%",
+                                "maxWidth": "100%",
+                                "minHeight": "100%",
+                                "minWidth": "100%",
+                                "objectFit": undefined,
+                                "objectPosition": undefined,
+                                "padding": 0,
+                                "position": "absolute",
+                                "right": 0,
+                                "top": 0,
+                                "visibility": "hidden",
+                                "width": 0,
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                      <p>
+                        We strengthen healthcare systems to make them more resilient, agile and responsive to the Triple Transition
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 className="col-sm-12 col-md-6 py-3"
-              />
+              >
+                <div
+                  className="spacer"
+                >
+                  <div>
+                    <div
+                      className="p-3 align-items-center card"
+                    >
+                      <div>
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "inline-block",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "maxWidth": "100%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              aria-hidden={true}
+                              role="presentation"
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                              style={
+                                Object {
+                                  "border": "none",
+                                  "display": "block",
+                                  "margin": 0,
+                                  "maxWidth": "100%",
+                                  "padding": 0,
+                                }
+                              }
+                            />
+                          </div>
+                          <img
+                            alt="Our story"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style={
+                              Object {
+                                "border": "none",
+                                "bottom": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": 0,
+                                "left": 0,
+                                "margin": "auto",
+                                "maxHeight": "100%",
+                                "maxWidth": "100%",
+                                "minHeight": "100%",
+                                "minWidth": "100%",
+                                "objectFit": undefined,
+                                "objectPosition": undefined,
+                                "padding": 0,
+                                "position": "absolute",
+                                "right": 0,
+                                "top": 0,
+                                "visibility": "hidden",
+                                "width": 0,
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                      <p>
+                        We are local. We design solutions based on our understanding of  healthcare delivery in Africa and emerging markets 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 className="col-sm-12 col-md-6 py-3"
-              />
+              >
+                <div
+                  className="spacer"
+                >
+                  <div>
+                    <div
+                      className="p-3 align-items-center card"
+                    >
+                      <div>
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "inline-block",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "maxWidth": "100%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              aria-hidden={true}
+                              role="presentation"
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                              style={
+                                Object {
+                                  "border": "none",
+                                  "display": "block",
+                                  "margin": 0,
+                                  "maxWidth": "100%",
+                                  "padding": 0,
+                                }
+                              }
+                            />
+                          </div>
+                          <img
+                            alt="Our story"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style={
+                              Object {
+                                "border": "none",
+                                "bottom": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": 0,
+                                "left": 0,
+                                "margin": "auto",
+                                "maxHeight": "100%",
+                                "maxWidth": "100%",
+                                "minHeight": "100%",
+                                "minWidth": "100%",
+                                "objectFit": undefined,
+                                "objectPosition": undefined,
+                                "padding": 0,
+                                "position": "absolute",
+                                "right": 0,
+                                "top": 0,
+                                "visibility": "hidden",
+                                "width": 0,
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                      <p>
+                        We are entrepreneurial. We come from a startup environment and take a sustainable, innovative and agile growth mindset to the projects we undertake
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 className="col-sm-12 col-md-6 py-3"
-              />
+              >
+                <div
+                  className="spacer"
+                >
+                  <div>
+                    <div
+                      className="p-3 align-items-center card"
+                    >
+                      <div>
+                        <div
+                          style={
+                            Object {
+                              "boxSizing": "border-box",
+                              "display": "inline-block",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "maxWidth": "100%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              aria-hidden={true}
+                              role="presentation"
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                              style={
+                                Object {
+                                  "border": "none",
+                                  "display": "block",
+                                  "margin": 0,
+                                  "maxWidth": "100%",
+                                  "padding": 0,
+                                }
+                              }
+                            />
+                          </div>
+                          <img
+                            alt="Our story"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style={
+                              Object {
+                                "border": "none",
+                                "bottom": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": 0,
+                                "left": 0,
+                                "margin": "auto",
+                                "maxHeight": "100%",
+                                "maxWidth": "100%",
+                                "minHeight": "100%",
+                                "minWidth": "100%",
+                                "objectFit": undefined,
+                                "objectPosition": undefined,
+                                "padding": 0,
+                                "position": "absolute",
+                                "right": 0,
+                                "top": 0,
+                                "visibility": "hidden",
+                                "width": 0,
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                      <p>
+                        We deliver more health for the money. We are driven by delivering results and impact. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

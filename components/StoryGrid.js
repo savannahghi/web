@@ -20,8 +20,9 @@ export default function StoryGrid({ props }) {
                                     />
                                 </div>
                                 <div className={StoryGridStyles.name}>
-                                    <p>
-                                        <strong>{props.name}</strong>, {props.position}
+                                    <p className="text-center">
+                                        <strong className="signature">{props.name}</strong>{' '}
+                                        <br></br> {props.position}
                                     </p>
                                 </div>
                             </div>
@@ -37,7 +38,10 @@ export default function StoryGrid({ props }) {
                             </div>
                             <div className={StoryGridStyles.name}>
                                 <p>
-                                    <strong>{props.name}</strong>, {props.position}
+                                    <strong className={StoryGridStyles.signature}>
+                                        {props.name}
+                                    </strong>
+                                    , {props.position}
                                 </p>
                             </div>
                         </div>
@@ -45,9 +49,9 @@ export default function StoryGrid({ props }) {
                 </div>
                 <div>
                     {isInViewport ? (
-                        <FadeInAnimation wrapperElement="div" direction="right" delay={0.5}>
+                        <FadeInAnimation wrapperElement="div" direction="right" delay={1}>
                             <div className={StoryGridStyles.title}>
-                                <p>
+                                <p className="text-left">
                                     <strong>{props.title_one}</strong> {props.title_two}
                                 </p>
                             </div>

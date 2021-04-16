@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     align-items: center;
     justify-content: center;
+    grid-gap: 0px;
 }
 
 .name,
@@ -16,19 +19,21 @@
 
 .story_image {
     padding: 2rem;
-    max-width: 400px;
 }
 
-.title{
+.title {
     color: #c2368c;
     font-size: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .content {
-    padding: 2rem;
+    padding-right: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     font-size: 16px;
     width: clamp(100px 1fr 150px);
 }

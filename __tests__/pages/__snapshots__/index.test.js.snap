@@ -151,21 +151,6 @@ exports[`Homepage renders compnent tree correctly 1`] = `
                 className="nav-link"
               >
                 <a
-                  href="/#dna"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                >
-                  Our DNA
-                </a>
-              </div>
-            </li>
-            <li
-              className="nav-item"
-            >
-              <div
-                className="nav-link"
-              >
-                <a
                   href="/#partners"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -186,6 +171,21 @@ exports[`Homepage renders compnent tree correctly 1`] = `
                   onMouseEnter={[Function]}
                 >
                   Products
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/insights"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Insights
                 </a>
               </div>
             </li>
@@ -298,112 +298,118 @@ exports[`Homepage renders compnent tree correctly 1`] = `
         </div>
       </div>
       <div>
-        <div>
+        <div
+          className="d-flex align-items-center justify-content-center"
+        >
           <div
-            className="row align-items-center set_gutters"
+            className="clamp"
           >
             <div
-              className="col-sm-12 col-md-7"
+              className=" row align-items-center set_gutters"
             >
               <div
-                className="spacer"
+                className="col-sm-12 col-md-7"
               >
-                <p>
-                  We’re on a mission to make 
-                  <br />
-                  <span>
-                    health systems resilient, responsive & people centric
-                  </span>
-                </p>
-                <p>
-                  Our vision is to improve access to quality and affordable healthcare to millions of African’s through the use of technology so as to strengthen healthcare systems which are undergoing the
-                  <span>
-                     Triple Transition
-                  </span>
-                </p>
-                <div>
-                  <div
-                    className="btn btn-secondary btn-rounded text-capitalize px-5"
-                    onClick={[Function]}
-                    onMouseEnter={[Function]}
-                  >
-                    Read More
+                <div
+                  className="spacer"
+                >
+                  <p>
+                    We’re on a mission to make 
+                    <br />
+                    <span>
+                      health systems resilient, responsive & people centric
+                    </span>
+                  </p>
+                  <p>
+                    Our vision is to improve access to quality and affordable healthcare to millions of African’s through the use of technology so as to strengthen healthcare systems which are undergoing the
+                    <span>
+                       Triple Transition
+                    </span>
+                  </p>
+                  <div>
+                    <div
+                      className="btn btn-secondary btn-rounded text-capitalize px-5"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      Read More
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              className="col-sm-12 col-md-5"
-            >
               <div
-                className="spacer"
+                className="col-sm-12 col-md-5"
               >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "boxSizing": "border-box",
-                        "display": "inline-block",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "overflow": "hidden",
-                        "position": "relative",
-                      }
-                    }
-                  >
+                <div
+                  className="spacer"
+                >
+                  <div>
                     <div
                       style={
                         Object {
                           "boxSizing": "border-box",
-                          "display": "block",
+                          "display": "inline-block",
+                          "margin": 0,
                           "maxWidth": "100%",
+                          "overflow": "hidden",
+                          "position": "relative",
                         }
                       }
                     >
+                      <div
+                        style={
+                          Object {
+                            "boxSizing": "border-box",
+                            "display": "block",
+                            "maxWidth": "100%",
+                          }
+                        }
+                      >
+                        <img
+                          alt=""
+                          aria-hidden={true}
+                          role="presentation"
+                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                          style={
+                            Object {
+                              "border": "none",
+                              "display": "block",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "padding": 0,
+                            }
+                          }
+                        />
+                      </div>
                       <img
-                        alt=""
-                        aria-hidden={true}
-                        role="presentation"
-                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                        alt="Our story"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style={
                           Object {
                             "border": "none",
+                            "bottom": 0,
+                            "boxSizing": "border-box",
                             "display": "block",
-                            "margin": 0,
+                            "height": 0,
+                            "left": 0,
+                            "margin": "auto",
+                            "maxHeight": "100%",
                             "maxWidth": "100%",
+                            "minHeight": "100%",
+                            "minWidth": "100%",
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
                             "padding": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "visibility": "hidden",
+                            "width": 0,
                           }
                         }
                       />
                     </div>
-                    <img
-                      alt="Our story"
-                      decoding="async"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        Object {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "visibility": "hidden",
-                          "width": 0,
-                        }
-                      }
-                    />
                   </div>
                 </div>
               </div>
@@ -462,7 +468,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
         id="our-work"
       >
         <div
-          className="container"
+          className="container d-flex align-items-center justify-content-center"
         >
           <div
             className="row align-items-center set_gutters"
@@ -516,7 +522,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
                 >
                   <div>
                     <div
-                      className="p-3 align-items-center card"
+                      className="p-3 align-items-center dna-card"
                     >
                       <div>
                         <div
@@ -601,7 +607,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
                 >
                   <div>
                     <div
-                      className="p-3 align-items-center card"
+                      className="p-3 align-items-center dna-card"
                     >
                       <div>
                         <div
@@ -686,7 +692,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
                 >
                   <div>
                     <div
-                      className="p-3 align-items-center card"
+                      className="p-3 align-items-center dna-card"
                     >
                       <div>
                         <div
@@ -771,7 +777,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
                 >
                   <div>
                     <div
-                      className="p-3 align-items-center card"
+                      className="p-3 align-items-center dna-card"
                     >
                       <div>
                         <div
@@ -872,7 +878,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
         </div>
         <div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="USAID Logo"
@@ -880,7 +886,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             />
           </div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="The World Bank Logo"
@@ -888,7 +894,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             />
           </div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="Bill and Melinda Gates Foundation Logo"
@@ -896,7 +902,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             />
           </div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="Grand Challenges Canada Logo"
@@ -904,7 +910,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             />
           </div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="SDG Philanthropy Platform Logo"
@@ -912,7 +918,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             />
           </div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="MasterCard Foundation Logo"
@@ -920,7 +926,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             />
           </div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="AstraZeneca Logo"
@@ -928,7 +934,7 @@ exports[`Homepage renders compnent tree correctly 1`] = `
             />
           </div>
           <div
-            className="card"
+            className="dna-card"
           >
             <img
               alt="Wellcome Trust Logo"

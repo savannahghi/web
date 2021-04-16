@@ -33,10 +33,10 @@ export default function OurDna() {
                                     <FadeInAnimation
                                         wrapperElement="div"
                                         direction="left"
-                                        delay={0.5}>
+                                        delay={dna.delay}>
                                         <div>
                                             <div className={DNAStyles.dna_item}>
-                                                <div className="p-3 align-items-center card">
+                                                <div className="p-3 align-items-center dna-card">
                                                     <div className={DNAStyles.illustration}>
                                                         <Image
                                                             src={dna.image}
@@ -55,7 +55,7 @@ export default function OurDna() {
                                 ) : (
                                     <div className="spacer">
                                         <div className={DNAStyles.dna_item}>
-                                            <div className="p-3 align-items-center card">
+                                            <div className="p-3 align-items-center dna-card">
                                                 <div className={DNAStyles.illustration}>
                                                     <Image
                                                         src={dna.image}
@@ -84,24 +84,32 @@ const dnaData = [
     {
         id: 0,
         image: '/images/health_professional_team_cuate.svg',
+        delay: '0.4',
+        direction: 'right',
         content:
             'We strengthen healthcare systems to make them more resilient, agile and responsive to the Triple Transition'
     },
     {
         id: 1,
         image: '/images/current_location_rafiki.svg',
+        delay: '0.8',
+        direction: 'left',
         content:
             'We are local. We design solutions based on our understanding of  healthcare delivery in Africa and emerging markets '
     },
     {
         id: 2,
         image: '/images/company_cuate.svg',
+        delay: '1.2',
+        direction: 'right',
         content:
             'We are entrepreneurial. We come from a startup environment and take a sustainable, innovative and agile growth mindset to the projects we undertake'
     },
     {
         id: 3,
         image: '/images/doctor.svg',
+        delay: '1.6',
+        direction: 'left',
         content:
             'We deliver more health for the money. We are driven by delivering results and impact. '
     }

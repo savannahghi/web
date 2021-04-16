@@ -14,7 +14,7 @@ export default function PartnersGrid() {
             </div>
             <div className={PartnersGridStyles.main}>
                 {partnersData.map((partner) => (
-                    <div className="card" key={partner.id}>
+                    <div className="dna-card" key={partner.id}>
                         <img src={partner.image} alt={partner.title} />
                     </div>
                 ))}

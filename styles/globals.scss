@@ -135,6 +135,12 @@ a {
     text-align: center;
     margin: 1rem;
 }
+.team_modal_card {
+    width: auto;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
 
 .card-title {
     font-size: 14px;
@@ -189,6 +195,42 @@ a {
     padding-top: 3rem;
     padding: 0px 0px;
     margin-bottom: 10rem !important;
+}
+
+.dna-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px !important;
+}
+
+.mission-point {
+    position: relative;
+    animation: bounce 0.6s ease infinite alternate !important;
+}
+
+@keyframes bounce {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 5px;
+    }
+}
+
+.clamp {
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-submit-btn {

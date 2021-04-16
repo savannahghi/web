@@ -55,13 +55,6 @@ export default function NavBar({ props }) {
                         </li>
                         <li className="nav-item">
                             <div className="nav-link">
-                                <Link href={props.title == 'Home' ? '#dna' : '/#dna'}>
-                                    <a>{StringConstants.dnaNav}</a>
-                                </Link>
-                            </div>
-                        </li>
-                        <li className="nav-item">
-                            <div className="nav-link">
                                 <Link href={props.title == 'Home' ? '#partners' : '/#partners'}>
                                     <a>{StringConstants.partnersNav}</a>
                                 </Link>
@@ -74,6 +67,16 @@ export default function NavBar({ props }) {
                                 }>
                                 <Link href="/products">
                                     <a>{StringConstants.productsNav}</a>
+                                </Link>
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <div
+                                className={
+                                    props.title == 'Our Insights' ? 'nav-link active' : 'nav-link'
+                                }>
+                                <Link href="/insights">
+                                    <a>Insights</a>
                                 </Link>
                             </div>
                         </li>

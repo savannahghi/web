@@ -29,16 +29,17 @@ export default function Work() {
     const [viewport, setViewport] = useState({
         latitude: -1.2879224276460453,
         longitude: 36.78368589113946,
-        zoom: 0.3,
+        zoom: 1,
         height: '30rem',
-        width: '100vw'
+        width: '100vw',
+        scrollZoom: false
     });
 
     const [selectedCountry, setSelectedCountry] = useState(null);
 
     return (
         <div id="our-work" className={WorkStyles.work}>
-            <div className="container">
+            <div className="container d-flex align-items-center justify-content-center">
                 <div className="row align-items-center set_gutters">
                     <div className="col-sm-12 col-md-12 text-center">
                         <p className={WorkStyles.work_title}>
@@ -153,7 +154,7 @@ export default function Work() {
 
 const data = [
     {
-        name: 'United States Of America',
+        name: 'United States',
         id: 0,
         initials: 'USA',
         'iso-code': 'USA',

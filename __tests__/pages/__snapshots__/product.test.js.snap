@@ -151,21 +151,6 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
                 className="nav-link"
               >
                 <a
-                  href="/#dna"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                >
-                  Our DNA
-                </a>
-              </div>
-            </li>
-            <li
-              className="nav-item"
-            >
-              <div
-                className="nav-link"
-              >
-                <a
                   href="/#partners"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -186,6 +171,21 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
                   onMouseEnter={[Function]}
                 >
                   Products
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <div
+                className="nav-link"
+              >
+                <a
+                  href="/insights"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Insights
                 </a>
               </div>
             </li>

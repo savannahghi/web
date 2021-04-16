@@ -6,6 +6,13 @@
     border-top-right-radius: 10px;
 }
 
+.team_modal_card {
+    width: auto;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
 .join_us_title {
     font-size: 25px;
     color: #c2368c;
@@ -16,11 +23,10 @@
     padding-bottom: 2rem;
 }
 
-.join_sub{
+.join_sub {
     display: grid;
     justify-content: center;
     align-items: center;
-  
 }
 
 .join_us_subtitle {

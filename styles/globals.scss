@@ -45,14 +45,18 @@ a {
     background-color: #c2368c;
 }
 
-.hidden,
-.visible {
-  transition: opacity 1s ease-in-out;;
-  will-change: opacity;
-  opacity: 0;
+#nprogress .bar {
+    height: 6px !important;
+    background: #c2368c !important;
 }
-.visible {
-  opacity: 1;
+
+#nprogress .spinner-icon {
+    border-top-color: #c2368c !important;
+    border-left-color: #c2368c !important;
+}
+
+.spacer {
+    opacity: 0;
 }
 
 .search-bar {
@@ -158,20 +162,20 @@ a {
     left: 10%;
 }
 
-.btn-team{
+.btn-team {
     border-radius: 100%;
 }
 
-.linkedIn{
-    background-color: #2867B2 !important;
+.linkedIn {
+    background-color: #2867b2 !important;
 }
 
-.google{
-    background-color: #DB4437 !important;
+.google {
+    background-color: #db4437 !important;
 }
 
-.twitter{
-    background-color: #1DA1F2 !important;
+.twitter {
+    background-color: #1da1f2 !important;
 }
 
 .team-name {
@@ -210,8 +214,6 @@ a {
     left: -6rem;
     position: relative;
 }
-
-
 
 .marker_popup {
     border-radius: 10px !important;

@@ -3,7 +3,7 @@ import * as StringConstants from '../components/constants/app_strings';
 
 export default function PartnersGrid() {
     return (
-        <div id="partners" className="container py-5">
+        <div id="partners" className="container py-5 ">
             <div className="row">
                 <div className="col-12">
                     <p className={PartnersGridStyles.title}>
@@ -37,7 +37,7 @@ const partnersData = [
     {
         id: 2,
         title: 'Bill and Melinda Gates Foundation Logo',
-        image: '/images/partners/bamgFoundation.svg'
+        image: '/images/partners/billAndMelinda.svg'
     },
     {
         id: 3,
@@ -63,5 +63,25 @@ const partnersData = [
         id: 7,
         title: 'Wellcome Trust Logo',
         image: '/images/partners/wellcomeTrust.svg'
+    },
+    {
+        id: 8,
+        title: 'Abt Associates Logo',
+        image: '/images/partners/abtAssociates.svg'
+    },
+    {
+        id: 9,
+        title: 'Safaricom Logo',
+        image: '/images/partners/safaricom.svg'
+    },
+    {
+        id: 10,
+        title: 'intelliSoft Logo',
+        image: '/images/partners/intelliSoft.svg'
+    },
+    {
+        id: 11,
+        title: 'University of Nairobi Logo',
+        image: '/images/partners/uon.svg'
     }
 ];

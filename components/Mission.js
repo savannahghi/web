@@ -10,7 +10,7 @@ export default function Mission() {
     const [isInViewport, targetRef] = useIsInViewport();
 
     return (
-        <div ref={targetRef}>
+        <div ref={targetRef} className={MissionStyles.mission_wrapper}>
             <div className="d-flex align-items-center justify-content-center">
                 <div className="clamp">
                     <div className=" row align-items-center set_gutters">

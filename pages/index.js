@@ -56,9 +56,9 @@ export default function Home() {
 
                     <Work />
 
-                    <OurDna />
-
                     <PartnersGrid />
+
+                    <OurDna />
                 </div>
             </main>
 

@@ -8,7 +8,6 @@
     grid-gap: 0px;
 }
 
-.name,
 .image,
 .title,
 .content {
@@ -21,19 +20,27 @@
     padding: 2rem;
 }
 
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10vw;
+}
+
 .title {
     color: #c2368c;
     font-size: 30px;
+}
+
+.title, .content{
     display: flex;
     justify-content: start;
     align-items: center;
+    padding: 0px 2rem;
 }
 
 .content {
-    padding-right: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: start;
     font-size: 16px;
     width: clamp(100px 1fr 150px);
 }

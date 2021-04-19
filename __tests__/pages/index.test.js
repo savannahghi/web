@@ -46,6 +46,6 @@ describe('Home page', () => {
         expect(screen.getByText('Our Story')).toBeInTheDocument();
 
         fireEvent.click(screen.getByText('Teams'));
-        await screen.findByText('Dr. Riro Matiko');
+        await screen.findAllByText('Dr. Riro Matiko');
     });
 });

@@ -505,6 +505,123 @@ exports[`Homepage renders compnent tree correctly 1`] = `
         </div>
       </div>
       <div
+        className="container py-5 "
+        id="partners"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-12"
+          >
+            <p>
+              Our 
+              <strong>
+                 Partners
+              </strong>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="USAID Logo"
+              src="/images/partners/usaid.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="The World Bank Logo"
+              src="/images/partners/worldBankLogo.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="Bill and Melinda Gates Foundation Logo"
+              src="/images/partners/billAndMelinda.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="Grand Challenges Canada Logo"
+              src="/images/partners/grandChallengesCanada.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="SDG Philanthropy Platform Logo"
+              src="/images/partners/sdgPhilanthropyPlatform.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="MasterCard Foundation Logo"
+              src="/images/partners/mcf.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="AstraZeneca Logo"
+              src="/images/partners/astraZeneca.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="Wellcome Trust Logo"
+              src="/images/partners/wellcomeTrust.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="Abt Associates Logo"
+              src="/images/partners/abtAssociates.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="Safaricom Logo"
+              src="/images/partners/safaricom.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="intelliSoft Logo"
+              src="/images/partners/intelliSoft.svg"
+            />
+          </div>
+          <div
+            className="dna-card"
+          >
+            <img
+              alt="University of Nairobi Logo"
+              src="/images/partners/uon.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div
         id="dna"
       >
         <div
@@ -855,91 +972,6 @@ exports[`Homepage renders compnent tree correctly 1`] = `
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="container py-5"
-        id="partners"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="col-12"
-          >
-            <p>
-              Our 
-              <strong>
-                 Partners
-              </strong>
-            </p>
-          </div>
-        </div>
-        <div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="USAID Logo"
-              src="/images/partners/usaid.svg"
-            />
-          </div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="The World Bank Logo"
-              src="/images/partners/worldBankLogo.svg"
-            />
-          </div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="Bill and Melinda Gates Foundation Logo"
-              src="/images/partners/bamgFoundation.svg"
-            />
-          </div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="Grand Challenges Canada Logo"
-              src="/images/partners/grandChallengesCanada.svg"
-            />
-          </div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="SDG Philanthropy Platform Logo"
-              src="/images/partners/sdgPhilanthropyPlatform.svg"
-            />
-          </div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="MasterCard Foundation Logo"
-              src="/images/partners/mcf.svg"
-            />
-          </div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="AstraZeneca Logo"
-              src="/images/partners/astraZeneca.svg"
-            />
-          </div>
-          <div
-            className="dna-card"
-          >
-            <img
-              alt="Wellcome Trust Logo"
-              src="/images/partners/wellcomeTrust.svg"
-            />
           </div>
         </div>
       </div>

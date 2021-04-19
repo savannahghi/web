@@ -45,17 +45,16 @@ export default function TitleBar({ props }) {
             <link
                 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
                 rel="stylesheet"
-                async
             />
-            <script
-                async
-                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
-            <script async src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+
             <link
                 href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
                 rel="stylesheet"
-                async
+                defer
             />
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+            <script defer src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
         </Head>
     );
 }

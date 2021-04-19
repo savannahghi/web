@@ -260,12 +260,6 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
               >
                 Healthcare governance
               </h5>
-              <a
-                className="d-block my-3 btn btn-secondary btn-rounded text-capitalize px-5"
-                href="#!"
-              >
-                View More
-              </a>
             </div>
           </div>
         </div>
@@ -286,12 +280,6 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
               >
                 Information and Technology
               </h5>
-              <a
-                className="d-block my-3 btn btn-secondary btn-rounded text-capitalize px-5"
-                href="#!"
-              >
-                View More
-              </a>
             </div>
           </div>
         </div>
@@ -312,12 +300,6 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
               >
                 Healthcare Financing
               </h5>
-              <a
-                className="d-block my-3 btn btn-secondary btn-rounded text-capitalize px-5"
-                href="#!"
-              >
-                View More
-              </a>
             </div>
           </div>
         </div>
@@ -338,12 +320,6 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
               >
                 Service delivery
               </h5>
-              <a
-                className="d-block my-3 btn btn-secondary btn-rounded text-capitalize px-5"
-                href="#!"
-              >
-                View More
-              </a>
             </div>
           </div>
         </div>
@@ -364,12 +340,6 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
               >
                 Healthcare workforce
               </h5>
-              <a
-                className="d-block my-3 btn btn-secondary btn-rounded text-capitalize px-5"
-                href="#!"
-              >
-                View More
-              </a>
             </div>
           </div>
         </div>
@@ -390,12 +360,6 @@ exports[`ProductsPage renders compnent tree correctly 1`] = `
               >
                 Medicine & Technologies
               </h5>
-              <a
-                className="d-block my-3 btn btn-secondary btn-rounded text-capitalize px-5"
-                href="#!"
-              >
-                View More
-              </a>
             </div>
           </div>
         </div>

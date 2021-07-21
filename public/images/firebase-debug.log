@@ -1,0 +1,22 @@
+[debug] [2021-07-21T08:10:20.576Z] ----------------------------------------------------------------------
+[debug] [2021-07-21T08:10:20.578Z] Command:       /Users/gandalf/.nvm/versions/node/v14.17.0/bin/node /usr/local/bin/firebase init
+[debug] [2021-07-21T08:10:20.578Z] CLI Version:   9.10.2
+[debug] [2021-07-21T08:10:20.578Z] Platform:      darwin
+[debug] [2021-07-21T08:10:20.578Z] Node Version:  v14.17.0
+[debug] [2021-07-21T08:10:20.579Z] Time:          Wed Jul 21 2021 11:10:20 GMT+0300 (East Africa Time)
+[debug] [2021-07-21T08:10:20.580Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-21T08:10:20.583Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-21T08:10:20.603Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-21T08:10:20.603Z] > authorizing via signed-in user (ngure@hyperionconsult.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/gandalf/Code/sghi-web/public/images
+
